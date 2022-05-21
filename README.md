@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# KepWeb
+
+This is the code for my web development portfolio page
+
+## Deployment
+
+This page will be deployed to
+[KepWeb.dev homepage](https://kepweb.dev)
+
+This site is currently being designed and constructed
+
+----
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
