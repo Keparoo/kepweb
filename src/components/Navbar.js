@@ -14,8 +14,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = [ 'Products', 'Pricing', 'Blog' ];
-const settings = [ 'Profile', 'Account', 'Dashboard', 'Logout' ];
+const pages = [ 'About', 'Portfolio', 'Resume' ];
+const settings = [ 'Profile', 'Account', 'Dashboard' ];
 
 const Navbar = () => {
   const [ anchorElNav, setAnchorElNav ] = React.useState(null);
@@ -56,7 +56,7 @@ const Navbar = () => {
               textDecoration: 'none'
             }}
           >
-            LOGO
+            Kep Kaeppeler
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -112,7 +112,7 @@ const Navbar = () => {
               textDecoration: 'none'
             }}
           >
-            LOGO
+            Kep
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
