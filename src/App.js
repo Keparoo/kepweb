@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
+import ProjectList from './components/ProjectList.js';
 import Footer from './components/Footer';
 
 import { Container } from '@mui/material';
@@ -14,7 +14,7 @@ function App() {
       <body>
         <Container>
           <Hero />
-          <Projects />
+          <ProjectList />
         </Container>
       </body>
       <footer>
