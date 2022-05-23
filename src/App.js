@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectList from './components/ProjectList.js';
 import Footer from './components/Footer';
+import './App.css';
 
 import { Container } from '@mui/material';
 import React from 'react';

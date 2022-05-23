@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { indigo, cyan } from '@mui/material/colors';
+
+// Primary color: #546e7a, Secondary color: #fbc02d
+const theme = createTheme({
+  palette: {
+    primary: { main: '#6f79a8' },
+    secondary: { main: '#6ff9ff' }
+  }
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
