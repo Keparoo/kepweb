@@ -17,6 +17,7 @@ export default function Footer() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
+        sx={{ bgcolor: '#e0e0e0' }}
       >
         <BottomNavigationAction icon={<InfoIcon />} />
         <BottomNavigationAction icon={<LinkedInIcon />} />
