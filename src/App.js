@@ -4,6 +4,7 @@ import ProjectList from './components/ProjectList.js';
 import Footer from './components/Footer';
 
 import { Container } from '@mui/material';
+import React from 'react';
 
 function App() {
   return (
@@ -12,12 +13,10 @@ function App() {
         <Navbar />
       </header>
 
-      <body>
-        <Container>
-          <Hero />
-          <ProjectList />
-        </Container>
-      </body>
+      <Container>
+        <Hero />
+        <ProjectList />
+      </Container>
 
       <footer>
         <Container>
