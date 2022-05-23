@@ -11,14 +11,18 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
+
       <body>
         <Container>
           <Hero />
           <ProjectList />
         </Container>
       </body>
+
       <footer>
-        <Footer />
+        <Container>
+          <Footer />
+        </Container>
       </footer>
     </div>
   );
