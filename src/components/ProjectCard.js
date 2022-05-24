@@ -6,9 +6,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function ProjectCard({ title, description, image }) {
+export default function ProjectCard({
+  title,
+  description,
+  backend,
+  frontend,
+  image
+}) {
   return (
-    <Card sx={{ maxWidth: 360, marginTop: '20px' }}>
+    <Card sx={{ maxWidth: 400, marginTop: '20px' }}>
       <CardMedia component="img" height="220" image={image} alt={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -16,6 +22,9 @@ export default function ProjectCard({ title, description, image }) {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {description}
+          <br />
+          {backend} <br />
+          {frontend}
         </Typography>
       </CardContent>
       <CardActions>

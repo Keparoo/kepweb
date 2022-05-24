@@ -5,7 +5,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <Box sx={{ marginTop: '72px', marginBottom: '72px' }}>
+    <Box sx={{ marginTop: '72px', marginBottom: '144px' }}>
       <Grid container spacing={2}>
         <Grid item md={4} sm={12}>
           <Typography
@@ -22,9 +22,7 @@ const Hero = () => {
             sx={{ fontFamily: 'Gruppo', fontSize: '36px' }}
           >
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            I'm a full stack web developer living in Cape Cod, Massachusetts.
           </Typography>
         </Grid>
       </Grid>
