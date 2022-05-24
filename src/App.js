@@ -1,11 +1,15 @@
+import React from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ProjectList from './components/ProjectList.js';
+import ProjectList from './components/ProjectList';
+import About from './components/About';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
+
 import './App.css';
 
 import { Container } from '@mui/material';
-import React from 'react';
 
 function App() {
   return (
@@ -17,6 +21,8 @@ function App() {
       <Container>
         <Hero />
         <ProjectList />
+        <About />
+        <Contact />
       </Container>
 
       <footer>

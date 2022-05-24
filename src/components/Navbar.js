@@ -12,7 +12,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import CodeIcon from '@mui/icons-material/Code';
 
 const pages = [ 'About', 'Portfolio', 'Resume', 'Contact' ];
 const settings = [ 'Profile', 'Account', 'Dashboard' ];
@@ -40,7 +40,7 @@ const Navbar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -95,7 +95,7 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
