@@ -6,6 +6,7 @@ import ProjectList from './components/ProjectList';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import resume from './static/web-dev-resume-5-2022.pdf';
 
 import './App.css';
 
@@ -22,6 +23,9 @@ function App() {
         <Hero />
         <ProjectList />
         <About />
+        <a href={resume} download="kep-kaeppeler-resume">
+          Download resume
+        </a>
         <Contact />
       </Container>
 
