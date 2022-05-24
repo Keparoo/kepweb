@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <Box sx={{ marginTop: '72px', marginBottom: '144px' }}>
+    <Box id="hero" sx={{ marginTop: '72px', marginBottom: '144px' }}>
       <Grid container spacing={2}>
         <Grid item md={4} sm={12}>
           <Typography

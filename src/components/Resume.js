@@ -8,7 +8,7 @@ import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Resume = () => {
   return (
-    <Box>
+    <Box id="resume">
       <Typography variant="h2">Resume</Typography>
       <Stack spacing={1}>
         <Stack direction="row" spacing={1}>

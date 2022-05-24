@@ -9,7 +9,7 @@ import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Contact = () => {
   return (
-    <Box sx={{ marginTop: '72px', marginBottom: '144px' }}>
+    <Box id="contact" sx={{ marginTop: '72px', marginBottom: '144px' }}>
       <Grid container spacing={2}>
         <Grid item md={6} sm={12}>
           <Typography variant="h2">

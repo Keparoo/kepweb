@@ -3,7 +3,7 @@ import { Box, Grid, Stack, Typography } from '@mui/material';
 
 const About = () => {
   return (
-    <Box sx={{ marginTop: '72px' }}>
+    <Box sx={{ marginTop: '72px' }} id="about">
       <Grid container>
         <Grid item md={6}>
           <Typography variant="h2">About Me</Typography>
