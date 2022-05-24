@@ -4,7 +4,8 @@ import { Box, Grid, Link, Stack, Typography } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from '@mui/icons-material/Article';
-import resume from '../static/web-dev-resume-5-2022.pdf';
+import PrintIcon from '@mui/icons-material/Print';
+import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Contact = () => {
   return (
@@ -53,6 +54,18 @@ const Contact = () => {
                 download="kep-kaeppeler-resume"
               >
                 Download resume
+              </Link>
+            </Stack>
+
+            <Stack direction="row" spacing={1}>
+              <PrintIcon />
+              <Link
+                href={resume}
+                target="_blank"
+                underline="hover"
+                sx={{ marginBottom: '4px' }}
+              >
+                Print resume
               </Link>
             </Stack>
           </Stack>

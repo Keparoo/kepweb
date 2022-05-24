@@ -1,5 +1,5 @@
-import { Box, Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Grid, Stack, Typography } from '@mui/material';
 
 const About = () => {
   return (
@@ -37,7 +37,7 @@ const About = () => {
             <Typography variant="body1">
               <strong>Skills</strong>: Javascript, Node.js, Express, Axios,
               AJAX, Python, Flask, SQL, PostgreSQL, React, PHP, HTML, CSS, Git,
-              Jest, Supertest, Deployment, Linux, Unix, Data Structures,
+              Jest, Vitest, Supertest, Deployment, Linux, Unix, Data Structures,
               Algorithms, Android, Adobe Creative Suite, Affinity Design Suite
             </Typography>
           </Stack>
