@@ -26,6 +26,8 @@ const ProjectList = () => {
               </span>
             }
             image={tapntableScreenshot}
+            demo="https://tapntable.herokuapp.com/"
+            github="https://github.com/Keparoo/tapntable-backend"
           />
         </Grid>
 
@@ -44,6 +46,8 @@ const ProjectList = () => {
               </span>
             }
             image={tapntableScreenshot}
+            demo="https://spotiflavor.herokuapp.com/"
+            github="https://github.com/Keparoo/Tuttitracks"
           />
         </Grid>
 
@@ -60,6 +64,8 @@ const ProjectList = () => {
               </span>
             }
             image={tapntableScreenshot}
+            demo="https://kep-casting-agency.herokuapp.com/"
+            github="https://github.com/Keparoo/casting-agency"
           />
         </Grid>
 

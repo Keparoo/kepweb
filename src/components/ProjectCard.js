@@ -5,13 +5,16 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from '@mui/material';
 
 export default function ProjectCard({
   title,
   description,
   backend,
   frontend,
-  image
+  image,
+  demo,
+  github
 }) {
   return (
     <Card sx={{ maxWidth: 400, marginTop: '20px' }}>
@@ -28,8 +31,12 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Demo</Button>
-        <Button size="small">Github</Button>
+        <Button component="a" href={demo} target="_blank" size="small">
+          Demo
+        </Button>
+        <Button component="a" href={github} target="_blank" size="small">
+          Github
+        </Button>
       </CardActions>
     </Card>
   );

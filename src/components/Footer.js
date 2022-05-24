@@ -20,8 +20,18 @@ export default function Footer() {
         sx={{ bgcolor: '#e0e0e0' }}
       >
         <BottomNavigationAction icon={<InfoIcon />} />
-        <BottomNavigationAction icon={<LinkedInIcon />} />
-        <BottomNavigationAction icon={<GitHubIcon />} />
+        <BottomNavigationAction
+          component="a"
+          href="https://www.linkedin.com/in/kep-kaeppeler/"
+          target="_blank"
+          icon={<LinkedInIcon />}
+        />
+        <BottomNavigationAction
+          component="a"
+          href="https://github.com/Keparoo"
+          target="_blank"
+          icon={<GitHubIcon />}
+        />
       </BottomNavigation>
     </Box>
   );
