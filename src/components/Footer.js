@@ -5,6 +5,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
+import { Typography } from '@mui/material';
 
 export default function Footer() {
   const [ value, setValue ] = React.useState(0);
@@ -24,15 +25,18 @@ export default function Footer() {
           component="a"
           href="https://www.linkedin.com/in/kep-kaeppeler/"
           target="_blank"
+          rel="noopener"
           icon={<LinkedInIcon />}
         />
         <BottomNavigationAction
           component="a"
           href="https://github.com/Keparoo"
           target="_blank"
+          rel="noopener"
           icon={<GitHubIcon />}
         />
       </BottomNavigation>
+      <Typography align="center">&copy; 2022 Kepweb.dev</Typography>
     </Box>
   );
 }
