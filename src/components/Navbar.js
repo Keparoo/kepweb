@@ -15,7 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import CodeIcon from '@mui/icons-material/Code';
 
-const pages = [ 'About', 'Portfolio', 'Resume', 'Contact' ];
+const pages = [ 'About', 'Projects', 'Resume', 'Contact' ];
 const settings = [ 'Profile', 'Account', 'Dashboard' ];
 
 const Navbar = () => {

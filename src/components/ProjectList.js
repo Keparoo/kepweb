@@ -1,14 +1,18 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import tapntableScreenshot from '../static/tapntableScreenshot.jpg';
+import tapntable from '../static/tapntable.jpg';
+import tuttitracks from '../static/tuttitracks.jpg';
+import castingAgency from '../static/castingAgency.jpg';
 import { Box, Grid, Typography } from '@mui/material';
 
 const ProjectList = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Typography variant="h2">Projects</Typography>
-      <Grid container direction="row" justifyContent="space-around">
-        <Grid item md={6}>
+      <Typography variant="h2" id="projects">
+        Projects
+      </Typography>
+      <Grid container direction="row" justifyContent="space-around" spacing={4}>
+        <Grid item md={6} lg={4}>
           <ProjectCard
             title="Tapntable"
             description={
@@ -25,13 +29,13 @@ const ProjectList = () => {
                 management
               </span>
             }
-            image={tapntableScreenshot}
+            image={tapntable}
             demo="https://tapntable.herokuapp.com/"
             github="https://github.com/Keparoo/tapntable-backend"
           />
         </Grid>
 
-        <Grid item md={6}>
+        <Grid item md={6} lg={4}>
           <ProjectCard
             title="TuttiTracks"
             description={
@@ -45,13 +49,13 @@ const ProjectList = () => {
                 <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.
               </span>
             }
-            image={tapntableScreenshot}
+            image={tuttitracks}
             demo="https://spotiflavor.herokuapp.com/"
             github="https://github.com/Keparoo/Tuttitracks"
           />
         </Grid>
 
-        <Grid item md={6}>
+        <Grid item md={6} lg={4}>
           <ProjectCard
             title="Casting Agency"
             description={
@@ -63,17 +67,9 @@ const ProjectList = () => {
                 test suite, and deployed to Heroku.
               </span>
             }
-            image={tapntableScreenshot}
+            image={castingAgency}
             demo="https://kep-casting-agency.herokuapp.com/"
             github="https://github.com/Keparoo/casting-agency"
-          />
-        </Grid>
-
-        <Grid item md={6}>
-          <ProjectCard
-            title="Lorem Ipsum"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            image={tapntableScreenshot}
           />
         </Grid>
       </Grid>
