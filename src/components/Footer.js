@@ -20,7 +20,11 @@ export default function Footer() {
         }}
         sx={{ bgcolor: '#e0e0e0' }}
       >
-        <BottomNavigationAction icon={<InfoIcon />} />
+        <BottomNavigationAction
+          component="a"
+          href="#about"
+          icon={<InfoIcon />}
+        />
         <BottomNavigationAction
           component="a"
           href="https://www.linkedin.com/in/kep-kaeppeler/"
