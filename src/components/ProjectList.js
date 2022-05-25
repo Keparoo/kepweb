@@ -30,7 +30,7 @@ const ProjectList = () => {
               </span>
             }
             image={tapntable}
-            demo="https://tapntable.herokuapp.com/"
+            demo="https://tapntable.surge.sh/"
             github="https://github.com/Keparoo/tapntable-backend"
           />
         </Grid>
