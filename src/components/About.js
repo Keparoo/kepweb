@@ -36,13 +36,19 @@ const About = () => {
               including Joseph and the Amazing Technicolor Dreamcoat, starring
               Patrick Cassidy, and The King and I, starring Sandy Duncan.
             </Typography>
+            <Typography variant="h6">Skills:</Typography>
             <Typography variant="body1">
-              <strong>Skills</strong>: Javascript ES6, Python, Flask, HTML, CSS,
-              React, Next.js, PHP, AJAX<br />
-              Node.js, Express, Axios, SQL, PostgreSQL, Jest, Vitest, Supertest,<br
-              />
-              Git, Deployment, Linux, Unix, Data Structures, Algorithms,
-              Android, Adobe Creative Suite, Affinity Design Suite
+              <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
+              Express, Axios,<br />
+              SQL, PostgreSQL, Jest, Vitest, Supertest
+            </Typography>
+            <Typography variant="body1">
+              <strong>Frontend</strong>: HTML, CSS, Flask, React, Next.js, AJAX
+            </Typography>
+            <Typography variant="body1">
+              <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
+              Structures, Algorithms, Typography, Android, Adobe Creative Suite,
+              Affinity Design Suite
             </Typography>
           </Stack>
         </Grid>

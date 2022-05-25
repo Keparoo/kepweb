@@ -8,7 +8,7 @@ import { Box, Grid, Typography } from '@mui/material';
 const ProjectList = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Typography variant="h2" id="projects">
+      <Typography variant="h2" id="projects" sx={{ marginBottom: '72px' }}>
         Projects
       </Typography>
       <Grid container direction="row" justifyContent="space-around" spacing={4}>
