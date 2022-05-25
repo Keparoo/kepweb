@@ -32,14 +32,17 @@ const About = () => {
             </Typography>
             <Typography variant="body1">
               I'm also a musician who spent years as a musical-director and
-              conductor of resident and touring productions of Broadway shows.
+              conductor of resident and touring productions of Broadway shows
+              including Joseph and the Amazing Technicolor Dreamcoat, starring
+              Patrick Cassidy, and The King and I, starring Sandy Duncan.
             </Typography>
             <Typography variant="body1">
-              <strong>Skills</strong>: Javascript, Node.js, Express, Axios,
-              AJAX, Python, Flask, SQL, PostgreSQL, React, Next.js, PHP, HTML,
-              CSS, Git, Jest, Vitest, Supertest, Deployment, Linux, Unix, Data
-              Structures, Algorithms, Android, Adobe Creative Suite, Affinity
-              Design Suite
+              <strong>Skills</strong>: Javascript ES6, Python, Flask, HTML, CSS,
+              React, Next.js, PHP, AJAX<br />
+              Node.js, Express, Axios, SQL, PostgreSQL, Jest, Vitest, Supertest,<br
+              />
+              Git, Deployment, Linux, Unix, Data Structures, Algorithms,
+              Android, Adobe Creative Suite, Affinity Design Suite
             </Typography>
           </Stack>
         </Grid>
