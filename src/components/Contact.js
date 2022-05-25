@@ -3,6 +3,7 @@ import React from 'react';
 import { Box, Grid, Link, Stack, Typography } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 import resume from '../static/kep-kaeppeler-resume.pdf';
@@ -41,6 +42,19 @@ const Contact = () => {
                 sx={{ marginBottom: '4px' }}
               >
                 LinkedIn.com/in/kep-kaeppeler
+              </Link>
+            </Stack>
+
+            <Stack direction="row" spacing={1}>
+              <GitHubIcon />
+              <Link
+                href="https://github.com/Keparoo"
+                target="_blank"
+                underline="hover"
+                rel="noopener"
+                sx={{ marginBottom: '4px' }}
+              >
+                Github.com/Keparoo
               </Link>
             </Stack>
 
