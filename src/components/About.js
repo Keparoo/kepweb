@@ -36,9 +36,10 @@ const About = () => {
             </Typography>
             <Typography variant="body1">
               <strong>Skills</strong>: Javascript, Node.js, Express, Axios,
-              AJAX, Python, Flask, SQL, PostgreSQL, React, PHP, HTML, CSS, Git,
-              Jest, Vitest, Supertest, Deployment, Linux, Unix, Data Structures,
-              Algorithms, Android, Adobe Creative Suite, Affinity Design Suite
+              AJAX, Python, Flask, SQL, PostgreSQL, React, Next.js, PHP, HTML,
+              CSS, Git, Jest, Vitest, Supertest, Deployment, Linux, Unix, Data
+              Structures, Algorithms, Android, Adobe Creative Suite, Affinity
+              Design Suite
             </Typography>
           </Stack>
         </Grid>
