@@ -38,6 +38,10 @@ const About = () => {
               well as the keyboard programming for the Celebrating Sondheim
               Concert at Avery Fisher Hall, Lincoln Center, New York City.
             </Typography>
+            <Typography>
+              French: limited working proficiency<br />
+              German: elementary proficiency
+            </Typography>
             <Typography variant="h6">Skills:</Typography>
             <Typography variant="body1">
               <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
