@@ -42,10 +42,11 @@ const About = () => {
             <Typography variant="body1">
               <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
               Express, Axios,<br />
-              SQL, PostgreSQL, Jest, Vitest, Supertest
+              SQL, PostgreSQL, OAuth, Jest, Vitest, Supertest, PyTest
             </Typography>
             <Typography variant="body1">
-              <strong>Frontend</strong>: HTML, CSS, Flask, React, Next.js, AJAX
+              <strong>Frontend</strong>: HTML5, CSS3, Flask, React, Redux,
+              Next.js, AJAX
             </Typography>
             <Typography variant="body1">
               <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
