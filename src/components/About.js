@@ -10,7 +10,9 @@ const About = () => {
         </Grid>
         <Grid item md={6}>
           <Stack spacing={2} sx={{ marginTop: '26px' }}>
-            <Typography variant="h4">Hi, I'm Kep</Typography>
+            <Typography variant="h4" component="h3">
+              Hi, I'm Kep
+            </Typography>
             <Typography variant="body1" gutterBottom>
               I’m a Javascript, Node, React, Redux, Python, Flask, and SQL
               developer with graphic design skills who loves to capture the
@@ -39,9 +41,12 @@ const About = () => {
               Concert at Avery Fisher Hall, Lincoln Center, New York City.
             </Typography>
             <Typography>
-              Every day I further my French language skills.
+              Every day I further my French language skills, and practice
+              mindfulness and meditation.
             </Typography>
-            <Typography variant="h6">Skills:</Typography>
+            <Typography variant="h6" component="h4">
+              Skills:
+            </Typography>
             <Typography variant="body1">
               <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
               Express, Axios,<br />

@@ -32,10 +32,20 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <IconButton href={demo} target="_blank" size="small">
+        <IconButton
+          href={demo}
+          target="_blank"
+          size="small"
+          aria-label="App Demo"
+        >
           <WebIcon />
         </IconButton>
-        <IconButton href={github} target="_blank" size="small">
+        <IconButton
+          href={github}
+          target="_blank"
+          size="small"
+          aria-label="GitHub repository"
+        >
           <GitHubIcon />
         </IconButton>
       </CardActions>

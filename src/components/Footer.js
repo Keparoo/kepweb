@@ -24,6 +24,7 @@ export default function Footer() {
           component="a"
           href="#about"
           icon={<InfoIcon />}
+          aria-label="About me"
         />
         <BottomNavigationAction
           component="a"
@@ -31,6 +32,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener"
           icon={<LinkedInIcon />}
+          aria-label="LinkedIn profile"
         />
         <BottomNavigationAction
           component="a"
@@ -38,9 +40,12 @@ export default function Footer() {
           target="_blank"
           rel="noopener"
           icon={<GitHubIcon />}
+          aria-label="GitHub repository"
         />
       </BottomNavigation>
-      <Typography align="center">&copy; 2022 Kepweb.dev</Typography>
+      <Typography align="center" paddingBottom={2}>
+        &copy; 2022 Kepweb.dev
+      </Typography>
     </Box>
   );
 }

@@ -27,6 +27,7 @@ const Contact = () => {
                 target="_blank"
                 underline="hover"
                 rel="noopener"
+                color="inherit"
               >
                 Kep@kepweb.dev
               </Link>
@@ -39,7 +40,7 @@ const Contact = () => {
                 target="_blank"
                 underline="hover"
                 rel="noopener"
-                sx={{ marginBottom: '4px' }}
+                color="inherit"
               >
                 LinkedIn.com/in/kep-kaeppeler
               </Link>
@@ -52,7 +53,7 @@ const Contact = () => {
                 target="_blank"
                 underline="hover"
                 rel="noopener"
-                sx={{ marginBottom: '4px' }}
+                color="inherit"
               >
                 Github.com/Keparoo
               </Link>
@@ -64,8 +65,8 @@ const Contact = () => {
                 href={resume}
                 target="_blank"
                 underline="hover"
-                sx={{ marginBottom: '4px' }}
                 download="kep-kaeppeler-resume"
+                color="inherit"
               >
                 Download resume
               </Link>
@@ -77,7 +78,7 @@ const Contact = () => {
                 href={resume}
                 target="_blank"
                 underline="hover"
-                sx={{ marginBottom: '4px' }}
+                color="inherit"
               >
                 Print resume
               </Link>
