@@ -39,8 +39,7 @@ const About = () => {
               Concert at Avery Fisher Hall, Lincoln Center, New York City.
             </Typography>
             <Typography>
-              French: limited working proficiency<br />
-              German: elementary proficiency
+              Every day I further my French language skills.
             </Typography>
             <Typography variant="h6">Skills:</Typography>
             <Typography variant="body1">
