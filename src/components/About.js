@@ -32,6 +32,7 @@ const About = () => {
               My recent focus has been on backend development skills which now
               allow me to create a more dynamic web experience for clients.
             </Typography>
+
             <Typography variant="body1">
               I'm also a musician who spent years as a musical-director and
               conductor of resident and touring productions of Broadway shows
@@ -60,6 +61,10 @@ const About = () => {
               <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
               Structures, Algorithms, Typography, Android, Adobe Creative Suite,
               Affinity Design Suite
+            </Typography>
+            <Typography variant="body1">
+              This website was created with <strong>React v18</strong> and
+              design elements from Material UI.
             </Typography>
           </Stack>
         </Grid>
