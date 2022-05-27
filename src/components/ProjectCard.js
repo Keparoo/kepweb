@@ -19,7 +19,7 @@ export default function ProjectCard({
   github
 }) {
   return (
-    <Card sx={{ maxWidth: 400, marginTop: '20px' }}>
+    <Card sx={{ maxWidth: 350, marginTop: '20px' }}>
       <CardHeader title={title} />
 
       <CardMedia component="img" height="220" image={image} alt={title} />

@@ -1,8 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import tapntable from '../static/tapntable.jpg';
-import tuttitracks from '../static/tuttitracks.jpg';
-import castingAgency from '../static/castingAgency.jpg';
+import tapntable from '../static/tapntable-700x440.jpg';
+import tuttitracks from '../static/tuttitracks-700x440.jpg';
+import castingAgency from '../static/castingAgency-700x440.jpg';
 import { Box, Grid, Typography } from '@mui/material';
 
 const ProjectList = () => {
