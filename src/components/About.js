@@ -36,10 +36,11 @@ const About = () => {
             <Typography variant="body1">
               I'm also a musician who spent years as a musical-director and
               conductor of resident and touring productions of Broadway shows
-              including Joseph and the Amazing Technicolor Dreamcoat, starring
-              Patrick Cassidy, and The King and I, starring Sandy Duncan, as
-              well as the keyboard programming for the Celebrating Sondheim
-              Concert at Avery Fisher Hall, Lincoln Center, New York City.
+              including <em>Joseph and the Amazing Technicolor Dreamcoat</em>,
+              starring Patrick Cassidy, and <em>The King and I</em>, starring
+              Sandy Duncan, as well as the keyboard programming for the{' '}
+              <em>Celebrating Sondheim Concert</em> at Avery Fisher Hall,
+              Lincoln Center, New York City.
             </Typography>
             <Typography>
               Every day I further my French language skills, and practice
