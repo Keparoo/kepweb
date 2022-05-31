@@ -8,13 +8,19 @@ const Tapntable = () => {
     <div>
       <Navbar />
       <Typography variant="h1">Tapntable</Typography>
+      <Typography variant="h4" component="h2">
+        Tapntable is a web based Point of Sale (POS) for managing a restaurant.
+      </Typography>
+      <Typography variant="body2">
+        It serves as an employee timeclock, logging an employee's hours
+      </Typography>
     </div>
   );
 };
 
 export default Tapntable;
 /*
-Tapntable is a web based Point of Sale (POS) for managing a restaurant.
+
 
 * It serves as an employee timeclock, logging an employee's hours
 * It maintains a database of items sold, availability, price and sales
