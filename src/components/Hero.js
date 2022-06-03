@@ -27,5 +27,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// sx={{ fontFamily: 'Gruppo', fontSize: '36px' }}
