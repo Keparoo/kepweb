@@ -2,13 +2,6 @@ import React, { useState } from 'react';
 import { Button, Stack, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
-// <form
-// action="mailto:contact@yourdomain.com"
-// method="POST"
-// enctype="multipart/form-data"
-// name="EmailForm"
-// />
-
 const Email = () => {
   const [ form, setForm ] = useState({ name: '', email: '', message: '' });
 
@@ -66,3 +59,10 @@ const Email = () => {
 };
 
 export default Email;
+
+// <form
+// action="mailto:contact@yourdomain.com"
+// method="POST"
+// enctype="multipart/form-data"
+// name="EmailForm"
+// />
