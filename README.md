@@ -11,6 +11,12 @@ The site is built using React 18 with design elements from Material UI
 This page is deployed to
 [KepWeb.dev homepage](https://kepweb.dev)
 
+## Under Construction
+
+Create Next.js version of site
+Create email web form page
+Create page for each project
+
 ----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
