@@ -52,7 +52,8 @@ const About = () => {
             <Typography variant="body1">
               <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
               Express, Axios,<br />
-              SQL, PostgreSQL, OAuth, Jest, Vitest, Supertest, PyTest
+              SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest, Supertest,
+              PyTest
             </Typography>
             <Typography variant="body1">
               <strong>Frontend</strong>: HTML5, CSS3, Flask, React, Redux,
