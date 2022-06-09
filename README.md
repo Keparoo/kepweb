@@ -17,6 +17,7 @@ This page is deployed to
 * Create email web form page
 * Create page for each project
 * Helper text for links
+* Create more project screenshots
 
 ----
 
