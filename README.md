@@ -16,6 +16,7 @@ This page is deployed to
 * Create Next.js version of site: The next branch is a Next.js version in progress
 * Create email web form page
 * Create page for each project
+* Helper text for links
 
 ----
 
