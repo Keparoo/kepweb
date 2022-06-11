@@ -14,7 +14,7 @@ This page is deployed to
 ## Under Construction
 
 * Create Next.js version of site: The next branch is a Next.js version in progress
-* Create email web form page
+* Create email web form component
 * Create page for each project
 * Helper text for links
 * Create more project screenshots
