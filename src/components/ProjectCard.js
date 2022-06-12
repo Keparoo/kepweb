@@ -38,7 +38,7 @@ export default function ProjectCard({
           size="small"
           aria-label="GitHub repository"
         >
-          <Tooltip title="Go to project repository">
+          <Tooltip title="Go to project repository" enterTouchDelay={0}>
             <GitHubIcon />
           </Tooltip>
         </IconButton>

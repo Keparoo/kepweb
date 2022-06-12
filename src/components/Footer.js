@@ -26,7 +26,7 @@ export default function Footer() {
           component="a"
           href="/"
           icon={
-            <Tooltip title="Go Home">
+            <Tooltip title="Go Home" enterTouchDelay={0}>
               <HomeIcon />
             </Tooltip>
           }
@@ -37,7 +37,7 @@ export default function Footer() {
           component="a"
           href="#about"
           icon={
-            <Tooltip title="Go to About Me">
+            <Tooltip title="Go to About Me" enterTouchDelay={0}>
               <InfoIcon />
             </Tooltip>
           }
@@ -49,7 +49,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener"
           icon={
-            <Tooltip title="Open my LinkedIn page">
+            <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
               <LinkedInIcon />
             </Tooltip>
           }
@@ -61,7 +61,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener"
           icon={
-            <Tooltip title="Open my GitHub page">
+            <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
               <GitHubIcon />
             </Tooltip>
           }

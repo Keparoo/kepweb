@@ -23,7 +23,7 @@ const Contact = () => {
           <Stack spacing={1}>
             <Stack direction="row" spacing={1}>
               <EmailIcon />
-              <Tooltip title="Send me an email">
+              <Tooltip title="Send me an email" enterTouchDelay={0}>
                 <Link
                   href="mailto:kep@kepweb.dev"
                   target="_blank"
@@ -38,7 +38,7 @@ const Contact = () => {
 
             <Stack direction="row" spacing={1}>
               <LinkedInIcon />
-              <Tooltip title="Open my LinkedIn page">
+              <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
                 <Link
                   href="https://www.linkedin.com/in/kep-kaeppeler"
                   target="_blank"
@@ -53,7 +53,7 @@ const Contact = () => {
 
             <Stack direction="row" spacing={1}>
               <GitHubIcon />
-              <Tooltip title="Open my GitHub page">
+              <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
                 <Link
                   href="https://github.com/Keparoo"
                   target="_blank"
