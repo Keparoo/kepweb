@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,14 +7,14 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
-
 import CodeIcon from '@mui/icons-material/Code';
+
 import { Box, Menu, MenuItem, Stack } from '@mui/material';
 
 import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Navbar = () => {
-  const [ anchorElNav, setAnchorElNav ] = React.useState(null);
+  const [ anchorElNav, setAnchorElNav ] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -23,6 +23,29 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const navLinks = [
+    {
+      name: 'About',
+      href: '#about',
+      target: false
+    },
+    {
+      name: 'Projects',
+      href: '#projects',
+      target: false
+    },
+    {
+      name: 'Contact',
+      href: '#contact',
+      target: false
+    },
+    {
+      name: 'Resume',
+      href: '#resume',
+      target: true
+    }
+  ];
 
   return (
     <AppBar position="fixed">
@@ -33,7 +56,7 @@ const Navbar = () => {
             size="large"
             edge="start"
             color="inherit"
-            aria-label="logo"
+            aria-label="code icon"
           >
             <CodeIcon sx={{ display: { md: 'flex' }, mr: 1 }} />
           </IconButton>
@@ -60,7 +83,7 @@ const Navbar = () => {
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="headings of website"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -68,6 +91,7 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -86,26 +110,17 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' }
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Button color="inherit" href="#about">
-                  About
-                </Button>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Button color="inherit" href="#projects">
-                  Projects
-                </Button>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Button color="inherit" href="#contact">
-                  Contact
-                </Button>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Button color="inherit" href={resume} target="_blank">
-                  Resume
-                </Button>
-              </MenuItem>
+              {navLinks.map((link) => (
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Button
+                    color="inherit"
+                    href={link.href}
+                    target={link.target ? '_blank' : ''}
+                  >
+                    {link.name}
+                  </Button>
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
 
@@ -114,18 +129,15 @@ const Navbar = () => {
             spacing={2}
             sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
           >
-            <Button color="inherit" href="#about">
-              About
-            </Button>
-            <Button color="inherit" href="#projects">
-              Projects
-            </Button>
-            <Button color="inherit" href="#contact">
-              Contact
-            </Button>
-            <Button color="inherit" href={resume} target="_blank">
-              Resume
-            </Button>
+            {navLinks.map((link) => (
+              <Button
+                color="inherit"
+                href={link.href}
+                target={link.target ? '_blank' : ''}
+              >
+                {link.name}
+              </Button>
+            ))}
           </Stack>
         </Toolbar>
       </Container>
