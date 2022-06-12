@@ -5,9 +5,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import WebIcon from '@mui/icons-material/Web';
+// import WebIcon from '@mui/icons-material/Web';
 import Typography from '@mui/material/Typography';
-import { CardHeader, IconButton } from '@mui/material';
+import { CardHeader, IconButton, Tooltip } from '@mui/material';
 
 export default function ProjectCard({
   title,
@@ -33,22 +33,27 @@ export default function ProjectCard({
       </CardContent>
       <CardActions>
         <IconButton
-          href={demo}
-          target="_blank"
-          size="small"
-          aria-label="App Demo"
-        >
-          <WebIcon />
-        </IconButton>
-        <IconButton
           href={github}
           target="_blank"
           size="small"
           aria-label="GitHub repository"
         >
-          <GitHubIcon />
+          <Tooltip title="Go to project repository">
+            <GitHubIcon />
+          </Tooltip>
         </IconButton>
       </CardActions>
     </Card>
   );
 }
+
+// <IconButton
+// href={demo}
+// target="_blank"
+// size="small"
+// aria-label="App Demo"
+// >
+// <Tooltip title="Go to project deployment">
+//   <WebIcon />
+// </Tooltip>
+// </IconButton>

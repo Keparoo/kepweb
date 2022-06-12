@@ -1,8 +1,11 @@
 import React from 'react';
+
 import ProjectCard from './ProjectCard';
+
 import tapntable from '../static/tapntable-700x440.jpg';
 import tuttitracks from '../static/tuttitracks-700x440.jpg';
 import castingAgency from '../static/castingAgency-700x440.jpg';
+
 import { Box, Grid, Typography } from '@mui/material';
 
 const ProjectList = () => {
@@ -43,7 +46,7 @@ const ProjectList = () => {
                 A web app leveraging the Spotify API to search for and save song
                 tracks and audio information including tempo, time signature,
                 and key. A user can create and edit playlists that may be
-                uploaded to the user’s Spotify account.<br />
+                uploaded to the user's Spotify account.<br />
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
                 RESTful API, Oauth authorization, and unittest test suite.<br />
                 <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.
@@ -63,8 +66,8 @@ const ProjectList = () => {
                 A web API to manage movies and actor assignments for a casting
                 agency<br />
                 <strong>Backend</strong>: PostgreSQL database with a RESTful API
-                using Python and Flask, role-based access control authorization,
-                test suite, and deployed to Heroku.
+                using Python and Flask, role-based access control authorization
+                utilizing Auth0, test suite, and deployed to Heroku.
               </span>
             }
             image={castingAgency}

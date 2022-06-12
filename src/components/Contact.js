@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
+
 import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Contact = () => {
