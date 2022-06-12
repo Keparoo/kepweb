@@ -42,7 +42,7 @@ const Navbar = () => {
     },
     {
       name: 'Resume',
-      href: '#resume',
+      href: resume,
       target: true
     }
   ];
