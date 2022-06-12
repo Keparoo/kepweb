@@ -11,6 +11,11 @@ import './App.css';
 
 import { Container } from '@mui/material';
 
+// Disable right click / long-press
+// document.addEventListener('contextmenu', (event) => {
+//   event.preventDefault();
+// });
+
 function App() {
   return (
     <div className="App">
