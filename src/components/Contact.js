@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Grid, Link, Stack, Typography } from '@mui/material';
+import { Box, Grid, Link, Stack, Tooltip, Typography } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -22,41 +22,47 @@ const Contact = () => {
           <Stack spacing={1}>
             <Stack direction="row" spacing={1}>
               <EmailIcon />
-              <Link
-                href="mailto:kep@kepweb.dev"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                Kep@kepweb.dev
-              </Link>
+              <Tooltip title="Send me an email">
+                <Link
+                  href="mailto:kep@kepweb.dev"
+                  target="_blank"
+                  underline="hover"
+                  rel="noopener"
+                  color="inherit"
+                >
+                  Kep@kepweb.dev
+                </Link>
+              </Tooltip>
             </Stack>
 
             <Stack direction="row" spacing={1}>
               <LinkedInIcon />
-              <Link
-                href="https://www.linkedin.com/in/kep-kaeppeler"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                LinkedIn.com/in/kep-kaeppeler
-              </Link>
+              <Tooltip title="Open my LinkedIn page">
+                <Link
+                  href="https://www.linkedin.com/in/kep-kaeppeler"
+                  target="_blank"
+                  underline="hover"
+                  rel="noopener"
+                  color="inherit"
+                >
+                  LinkedIn.com/in/kep-kaeppeler
+                </Link>
+              </Tooltip>
             </Stack>
 
             <Stack direction="row" spacing={1}>
               <GitHubIcon />
-              <Link
-                href="https://github.com/Keparoo"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                Github.com/Keparoo
-              </Link>
+              <Tooltip title="Open my GitHub page">
+                <Link
+                  href="https://github.com/Keparoo"
+                  target="_blank"
+                  underline="hover"
+                  rel="noopener"
+                  color="inherit"
+                >
+                  Github.com/Keparoo
+                </Link>
+              </Tooltip>
             </Stack>
 
             <Stack direction="row" spacing={1}>

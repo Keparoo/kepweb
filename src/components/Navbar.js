@@ -111,7 +111,7 @@ const Navbar = () => {
               }}
             >
               {navLinks.map((link) => (
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem key={link.name} onClick={handleCloseNavMenu}>
                   <Button
                     color="inherit"
                     href={link.href}
@@ -131,6 +131,7 @@ const Navbar = () => {
           >
             {navLinks.map((link) => (
               <Button
+                key={link.name}
                 color="inherit"
                 href={link.href}
                 target={link.target ? '_blank' : ''}
