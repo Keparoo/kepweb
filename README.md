@@ -17,6 +17,7 @@ This page is deployed to
 * Create email web form component
 * Create page for each project
 * Create more project screenshots
+* Include website design portfolio
 
 ----
 
