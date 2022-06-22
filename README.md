@@ -14,6 +14,7 @@ This page is deployed to
 ## Under Construction
 
 * Create Next.js version of site: The next branch is a Next.js version in progress
+* Copy starter files for Next.js
 * Create email web form component
 * Create page for each project
 * Create more project screenshots
