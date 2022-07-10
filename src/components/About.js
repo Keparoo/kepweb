@@ -43,7 +43,7 @@ const About = () => {
               Lincoln Center, New York City.
             </Typography>
             <Typography>
-              Every day I further my French language skills, and practice
+              Every day I further my French language skills and practice
               mindfulness and meditation.
             </Typography>
             <Typography variant="h6" component="h4">
