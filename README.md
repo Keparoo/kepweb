@@ -13,14 +13,15 @@ This page is deployed to
 
 ## Under Construction
 
-* Create Next.js version of site: The next branch is a Next.js version in progress
-* Copy starter files for Next.js and Material UI
-* Create email web form component
-* Create page for each project
-* Create more project screenshots
-* Include website design portfolio
+- Create Next.js version of site: The next branch is a Next.js version in progress
+- Copy starter files for Next.js and Material UI
+- Create email web form component
+- Create page for each project
+- Create more project screenshots
+- Include website design portfolio
+- Optimize Twitter Cards and Open Graph meta tags
 
-----
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
