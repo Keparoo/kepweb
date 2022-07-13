@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@emotion/cache": "latest",
     "@emotion/react": "^11.9.0",
+    "@emotion/server": "latest",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.0",
@@ -13,7 +15,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "web-vitals": "^2.1.4",
-    "next": "latest"
+    "next": "latest",
+    "prop-types": "latest"
   },
   "scripts": {
     "dev": "next dev",

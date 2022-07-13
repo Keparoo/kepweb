@@ -11,7 +11,7 @@ import CodeIcon from '@mui/icons-material/Code';
 
 import { Box, Menu, MenuItem, Stack } from '@mui/material';
 
-import resume from '../static/kep-kaeppeler-resume.pdf';
+// import resume from '../static/kep-kaeppeler-resume.pdf';
 
 const Navbar = () => {
   const [ anchorElNav, setAnchorElNav ] = useState(null);
@@ -42,7 +42,7 @@ const Navbar = () => {
     },
     {
       name: 'Resume',
-      href: resume,
+      href: '/static/kep-kaeppeler-resume.pdf',
       target: true
     }
   ];

@@ -2,9 +2,9 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 
-import tapntable from '../static/tapntable-700x440.jpg';
-import tuttitracks from '../static/tuttitracks-700x440.jpg';
-import castingAgency from '../static/castingAgency-700x440.jpg';
+// import tapntable from '/static/tapntable-700x440.jpg';
+// import tuttitracks from '/static/tuttitracks-700x440.jpg';
+// import castingAgency from '/static/castingAgency-700x440.jpg';
 
 import { Box, Grid, Typography } from '@mui/material';
 
@@ -35,7 +35,7 @@ const ProjectList = () => {
                 in with a demo-pin: 12345 to try out the app.
               </span>
             }
-            image={tapntable}
+            image='/static/tapntable-700x440.jpg'
             demo="https://tapntable.surge.sh/"
             github="https://github.com/Keparoo/tapntable-backend"
           />
@@ -61,7 +61,7 @@ const ProjectList = () => {
                 a Tuttitracks account to create and manage playlists.
               </span>
             }
-            image={tuttitracks}
+            image='/static/tuttitracks-700x440.jpg'
             demo="https://spotiflavor.herokuapp.com/"
             github="https://github.com/Keparoo/Tuttitracks"
           />
@@ -84,7 +84,7 @@ const ProjectList = () => {
                 Currently there is no interactive front-end written.
               </span>
             }
-            image={castingAgency}
+            image='/static/castingAgency-700x440.jpg'
             demo="https://kep-casting-agency.herokuapp.com/"
             github="https://github.com/Keparoo/casting-agency"
           />

@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 
-import resume from '../static/kep-kaeppeler-resume.pdf';
+// import resume from './kep-kaeppeler-resume.pdf';
 
 const Contact = () => {
   return (
@@ -69,7 +69,7 @@ const Contact = () => {
             <Stack direction="row" spacing={1}>
               <ArticleIcon />
               <Link
-                href={resume}
+                href="/static/kep-kaeppeler-resume.pdf"
                 target="_blank"
                 underline="hover"
                 download="kep-kaeppeler-resume"
@@ -82,7 +82,7 @@ const Contact = () => {
             <Stack direction="row" spacing={1}>
               <PrintIcon />
               <Link
-                href={resume}
+                href="/static/kep-kaeppeler-resume.pdf"
                 target="_blank"
                 underline="hover"
                 color="inherit"
