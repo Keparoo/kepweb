@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
           <link rel="canonical" href="https://kepweb.dev" />
           
           {/* Fonts and styles */}
@@ -19,6 +20,11 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+          {/* manifest.json provides metadata used when your web app is installed on a
+          user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ */}
+          
+          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}
