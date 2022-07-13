@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Typography } from '@mui/material';
-import Navbar from '../components/Navbar';
+import Navbar from '../src/Navbar';
 
 const Tapntable = () => {
   return (
