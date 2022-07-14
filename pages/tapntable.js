@@ -12,7 +12,7 @@ const Tapntable = () => {
         Tapntable is a web based Point of Sale (POS) for managing a restaurant.
       </Typography>
       <Typography variant="body2">
-        It serves as an employee timeclock, logging an employee's hours
+        It serves as an employee timeclock, logging the hours of the employee
       </Typography>
     </div>
   );
