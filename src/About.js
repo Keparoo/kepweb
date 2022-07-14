@@ -65,8 +65,8 @@ const About = () => {
               Affinity Design Suite
             </Typography>
             <Typography variant="body1">
-              This website was created with <strong>React v18</strong> and
-              design elements from Material UI.
+              This website was created with <strong>React v18</strong> and <strong>Next.js</strong> with
+              design elements from <strong>Material UI</strong>.
             </Typography>
           </Stack>
         </Grid>
