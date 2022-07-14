@@ -4,6 +4,7 @@ import { Box, Grid, Link, Stack, Tooltip, Typography } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 
@@ -65,6 +66,21 @@ const Contact = () => {
                 </Link>
               </Tooltip>
             </Stack>
+
+            <Stack direction="row" spacing={1}>
+            <TwitterIcon />
+            <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
+              <Link
+                href="https://twitter.com/KepKaeppeler"
+                target="_blank"
+                underline="hover"
+                rel="noopener"
+                color="inherit"
+              >
+                Twitter.com/KepKaeppeler
+              </Link>
+            </Tooltip>
+          </Stack>
 
             <Stack direction="row" spacing={1}>
               <ArticleIcon />
