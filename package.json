@@ -2,6 +2,12 @@
   "name": "kepweb",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "^11.9.0",
@@ -14,10 +20,9 @@
     "next": "latest",
     "prop-types": "latest"
   },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest"
   },
   "eslintConfig": {
     "extends": [ "react-app", "react-app/jest" ]

@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+          <link rel="apple-touch-icon" href="/logo192.png" />
           <link rel="canonical" href="https://kepweb.dev" />
           
           {/* Fonts and styles */}
