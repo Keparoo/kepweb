@@ -57,7 +57,7 @@ const About = () => {
             </Typography>
             <Typography variant="body1">
               <strong>Frontend</strong>: HTML5, CSS3, Flask, React, Redux,
-              Next.js, AJAX
+              Next.js, AJAX, Bootstrap, Material UI, Tailwind
             </Typography>
             <Typography variant="body1">
               <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
