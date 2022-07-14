@@ -57,7 +57,7 @@ const About = () => {
             </Typography>
             <Typography variant="body1">
               <strong>Frontend</strong>: HTML5, CSS3, Flask, React, Redux,
-              Next.js, AJAX
+              Next.js, AJAX, Bootstrap, Material UI, Tailwind
             </Typography>
             <Typography variant="body1">
               <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
@@ -65,8 +65,8 @@ const About = () => {
               Affinity Design Suite
             </Typography>
             <Typography variant="body1">
-              This website was created with <strong>React v18</strong> and
-              design elements from Material UI.
+              This website was created with <strong>React v18</strong> with
+              design elements from <strong>Material UI</strong>.
             </Typography>
           </Stack>
         </Grid>
