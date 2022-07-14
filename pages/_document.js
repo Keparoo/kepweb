@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
           {/* manifest.json provides metadata used when your web app is installed on a
           user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ */}
           
-          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
 
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}
