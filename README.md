@@ -1,4 +1,4 @@
-# KepWeb
+# Kep Kaeppeler Portfolio Site
 
 This is the repository for Kep Kaeppeler's web development portfolio site.
 
