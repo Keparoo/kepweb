@@ -6,7 +6,7 @@ This is the repository for Kep Kaeppeler's web development portfolio site.
 
 The site is built using React 18 with design elements from Material UI
 
-This project was originally bootstrapped with Create-React-App. It has been refactored and restructured to use Vite as the development server.
+This project was originally bootstrapped with create-react-app. It has been refactored and restructured to use Vite as the development server.
 
 ## Deployment
 
