@@ -52,7 +52,7 @@ const ProjectList = () => {
                 and key. A user can create and edit playlists that may be
                 uploaded to the user's Spotify account.<br />
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
-                RESTful API, Oauth authorization, and unittest test suite.<br />
+                RESTful API, SQLAlchemy ORM, Oauth authorization, and unittest test suite.<br />
                 <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.{' '}
                 <br />
                 <br />
@@ -86,7 +86,7 @@ const ProjectList = () => {
             }
             image={jobly}
             demo="https://hot-soap.surge.sh/"
-            github="https://github.com/Keparoo/Jobly-Backend"
+            github="https://github.com/Keparoo/Jobly"
           />
         </Grid>
 
