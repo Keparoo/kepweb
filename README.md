@@ -23,4 +23,32 @@ This page is deployed to
 
 ---
 
-## Available Scripts
+## Available scripts
+
+To compile the files and start the development server on `localhost:3000`
+
+```bash
+npm run dev
+```
+
+To create a production build and save in .next folder
+
+```bash
+npm run build
+```
+
+To start a Next.js production server
+
+```bash
+npm run start
+```
+
+To set up Next.js' built-in ESLint configuration
+
+```bash
+npm run lint
+```
+
+## Contributors
+
+This entire website, tests, and all documentation was designed and developed by Kep Kaeppeler, copyright 2022
