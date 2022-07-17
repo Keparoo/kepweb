@@ -12,7 +12,7 @@ import PrintIcon from '@mui/icons-material/Print';
 
 const Contact = () => {
   return (
-    <Box id="contact" sx={{ paddingBottom: '72px', paddingTop: '60px' }}>
+    <Box id="contact" sx={{ paddingBottom: '4.5em', paddingTop: '3.75em' }}>
       <Grid container spacing={2}>
         <Grid item md={6} sm={12}>
           <Typography variant="h2">
@@ -20,7 +20,7 @@ const Contact = () => {
           </Typography>
         </Grid>
 
-        <Grid item md={6} sm={12} sx={{ marginTop: '20px' }}>
+        <Grid item md={6} sm={12} sx={{ marginTop: '1.25em' }}>
           <Stack spacing={1}>
             <Stack direction="row" spacing={1}>
               <EmailIcon />

@@ -17,7 +17,7 @@ const Resume = () => {
             href={resume}
             target="_blank"
             underline="hover"
-            sx={{ marginBottom: '4px' }}
+            sx={{ marginBottom: '.25em' }}
             download="kep-kaeppeler-resume"
           >
             Download resume
@@ -30,7 +30,7 @@ const Resume = () => {
             href={resume}
             target="_blank"
             underline="hover"
-            sx={{ marginBottom: '4px' }}
+            sx={{ marginBottom: '.25em' }}
           >
             Print resume
           </Link>

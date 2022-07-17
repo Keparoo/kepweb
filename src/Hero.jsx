@@ -4,19 +4,19 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <Box id="hero" sx={{ paddingTop: '204px', paddingBottom: '84px' }}>
+    <Box id="hero" sx={{ paddingTop: '12.75em', paddingBottom: '5.25em' }}>
       <Grid container spacing={2}>
         <Grid item md={4} sm={12}>
           <Typography
             variant="h1"
-            sx={{ fontFamily: 'Asap', fontSize: '144px' }}
+            sx={{ fontFamily: 'Asap', fontSize: '9rem' }}
           >
             Kep
           </Typography>
         </Grid>
 
         <Grid item md={8} sm={12}>
-          <Typography variant="p" sx={{ fontSize: '36px' }}>
+          <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
             <br />
             I'm a full stack web developer living in Cape Cod, Massachusetts.
           </Typography>

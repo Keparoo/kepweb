@@ -10,8 +10,8 @@ import { Box, Grid, Typography } from '@mui/material';
 
 const ProjectList = () => {
   return (
-    <Box sx={{ flexGrow: 1, paddingBottom: '72px' }}>
-      <Typography variant="h2" id="projects" sx={{ paddingTop: '60px' }}>
+    <Box sx={{ flexGrow: 1, paddingBottom: '4.5em' }}>
+      <Typography variant="h2" id="projects" sx={{ paddingTop: '1.5em' }}>
         Projects
       </Typography>
       <Grid container direction="row" justifyContent="space-around" spacing={4}>
