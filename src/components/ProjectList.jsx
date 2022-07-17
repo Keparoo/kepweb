@@ -31,7 +31,7 @@ const ProjectList = () => {
                 reconciliation, sales reports, timeclock, and database
                 management.<br />
                 <br />
-                <strong>Note:</strong>The deployed site will allow a user to log
+                <strong>Note: </strong>The deployed site will allow a user to log
                 in with a demo-pin: 12345 to try out the app.
               </span>
             }
@@ -64,6 +64,28 @@ const ProjectList = () => {
             image={tuttitracks}
             demo="https://spotiflavor.herokuapp.com/"
             github="https://github.com/Keparoo/Tuttitracks"
+          />
+        </Grid>
+
+        <Grid item md={6} lg={4}>
+          <ProjectCard
+            title="Jobly"
+            description={
+              <span>
+                A web app for searching, exploring and applying for listed jobs on a job posting site.<br />
+                <strong>Backend</strong>: PostgreSQL database with a RESTful API
+                using Node.js and Express with a comprehensive test suite written in Jest.
+                The app implements role based authorization using JWTs, manages data validation with json schema, and is currently deployed to Heroku. <br />
+                <strong>Frontend:</strong> A Single-page React app interface using React-Router for routing and protecting routes
+                 based on JWT permissions, and local storage to manage user persistence. It is currently deployed using Surge.<br />
+                <br/>
+                <strong>Note: </strong>The deployed site will allow a user to log
+                in with username: 'testuser' and password 'password' for demonstration purposes.
+              </span>
+            }
+            image={castingAgency}
+            demo="https://hot-soap.surge.sh/"
+            github="https://github.com/Keparoo/Jobly-Backend"
           />
         </Grid>
 
