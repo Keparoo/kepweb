@@ -13,7 +13,7 @@ export default function Footer() {
   const [ value, setValue ] = useState(0);
 
   return (
-    <Box sx={{ width: '100%', marginTop: '1.875em' }}>
+    <Box sx={{ width: '100%', marginTop: '2em' }}>
       <BottomNavigation
         showLabels
         value={value}
