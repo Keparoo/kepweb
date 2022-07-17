@@ -80,6 +80,7 @@ const Navbar = () => {
             Kep Kaeppeler
           </Typography>
 
+          {/* Nav dropdown for sizes xs-sm */}
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -124,22 +125,25 @@ const Navbar = () => {
             </Menu>
           </Box>
 
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
-          >
-            {navLinks.map((link) => (
-              <Button
-                key={link.name}
-                color="inherit"
-                href={link.href}
-                target={link.target ? '_blank' : ''}
-              >
-                {link.name}
-              </Button>
-            ))}
-          </Stack>
+          {/* Nav bar for sizes md-xl */}
+          <nav>
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
+            >
+              {navLinks.map((link) => (
+                <Button
+                  key={link.name}
+                  color="inherit"
+                  href={link.href}
+                  target={link.target ? '_blank' : ''}
+                >
+                  {link.name}
+                </Button>
+              ))}
+            </Stack>
+          </nav>
         </Toolbar>
       </Container>
     </AppBar>
