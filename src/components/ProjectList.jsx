@@ -5,7 +5,8 @@ import ProjectCard from './ProjectCard';
 import tapntable from '../static/tapntable-700x440.jpg';
 import tuttitracks from '../static/tuttitracks-700x440.jpg';
 import castingAgency from '../static/castingAgency-700x440.jpg';
-import jobly from '../static/jobly-700x440.jpg'
+import jobly from '../static/jobly-700x440.jpg';
+import connect4 from '../static/connect-4-700x440.jpg';
 
 import { Box, Grid, Typography } from '@mui/material';
 
@@ -112,6 +113,20 @@ const ProjectList = () => {
             github="https://github.com/Keparoo/casting-agency"
           />
         </Grid>
+
+        <Grid item md={6} lg={4}>
+        <ProjectCard
+          title="Connect 4"
+          description={
+            <span>
+              This is a simple vanilla Javascript web app of the game Connect 4<br />
+            </span>
+          }
+          image={connect4}
+          demo="https://connect4-keparoo.vercel.app/"
+          github="https://github.com/Keparoo/Connect4"
+        />
+      </Grid>
       </Grid>
     </Box>
   );
