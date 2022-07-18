@@ -119,7 +119,7 @@ const ProjectList = () => {
           title="Connect 4"
           description={
             <span>
-              This is a simple vanilla Javascript web app of the game Connect 4<br />
+              A simple vanilla Javascript web app implementing the game Connect 4<br />
             </span>
           }
           image={connect4}
