@@ -3,7 +3,7 @@ import { Button, Stack, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 const Email = () => {
-  const [ form, setForm ] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (event) => {
     const value = event.target.value;
@@ -15,7 +15,7 @@ const Email = () => {
   };
 
   return (
-    <div>
+    <>
       <Typography variant="h2">Contact me</Typography>
       <Box
         component="form"
@@ -54,7 +54,7 @@ const Email = () => {
           Send
         </Button>
       </Box>
-    </div>
+    </>
   );
 };
 
