@@ -1,4 +1,9 @@
 :root {
+  --clr-primary-original: hsl(230, 30%, 46);
+  --clr-accent-original: hsl(182, 100%, 72);
+  --clr-background-original: hsl(0, 0, 88);
+  --clr-background: hsl(192, 9%, 89);
+
   --clr-primary-400: hsl(228, 39%, 23%);
 
   --clr-accent-500: hsl(12, 60%, 45%);
@@ -8,6 +13,7 @@
 
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-100: hsl(0, 0%, 100%);
+  /* --background-color: #e0e0e0; */
 
   --ff-primary: 'Be Vietnam Pro', sans-serif;
 
