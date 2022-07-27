@@ -23,12 +23,14 @@ function App() {
         <Navbar />
       </header>
 
-      <Container>
-        <Hero />
-        <ProjectList />
-        <About />
-        <Contact />
-      </Container>
+      <main>
+        <Container>
+          <Hero />
+          <ProjectList />
+          <About />
+          <Contact />
+        </Container>
+      </main>
 
       <footer>
         <Container>
