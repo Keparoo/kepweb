@@ -1,6 +1,8 @@
-.App {
-  background-color: #e0e0e0;
-  background-color: #e0e4e5;
+:root {
+  --clr-bg-original: hsl(0, 0%, 88%); /* #e0e0e0 */
+  --clr-bg: hsl(192, 9%, 89%); /* e0e4e5 */
 }
 
-/* Create new css rules */
+.App {
+  background-color: var(--clr-bg-original);
+}
