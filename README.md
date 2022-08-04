@@ -24,6 +24,7 @@ The nextjs branch is a second version of the website refactored to use Next.js. 
 - Create more project screenshots
 - Include website design portfolio
 - Optimize Twitter Cards and Open Graph meta tags
+- Link to WebToSmart
 
 ---
 
