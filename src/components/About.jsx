@@ -49,25 +49,33 @@ const About = () => {
             <Typography variant="h6" component="h4">
               Skills:
             </Typography>
-            <Typography variant="body1">
-              <strong>Backend</strong>: Python, PHP, Node.js, Express, Axios,
-              <br />
-              SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest, Supertest,
-              PyTest
-            </Typography>
+
             <Typography variant="body1">
               <strong>Frontend</strong>: HTML5, CSS3, Javascript ES6,
               Typescript, Flask, React, Redux, Next.js, AJAX, Bootstrap,
               Material UI, Tailwind
             </Typography>
+
             <Typography variant="body1">
-              <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
-              Structures, Algorithms, Typography, Android, Adobe Creative Suite,
-              Affinity Design Suite
+              <strong>Backend</strong>: Python, PHP, Node.js, Express, Axios,
+              SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest, Supertest,
+              PyTest
             </Typography>
+
             <Typography variant="body1">
-              This website was created with <strong>React v18</strong> with
-              design elements from <strong>Material UI</strong>.
+              <strong>Development</strong>: Linux, Unix, Git, GitHub, ZenHub,
+              Agile workflow, Deployment, Data Structures, Algorithms, Android,
+              <br />
+            </Typography>
+
+            <Typography variant="body1">
+              <strong>Design</strong>: Figma, Typography, Affinity Design Suite,
+              Adobe Creative Suite,
+            </Typography>
+
+            <Typography variant="body1">
+              This website was created with <strong>React v18</strong>
+              <br /> with design elements from <strong>Material UI</strong>.
             </Typography>
           </Stack>
         </Grid>

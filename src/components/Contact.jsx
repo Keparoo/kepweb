@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 
-import resume from '../static/kep-kaeppeler-resume.pdf';
+import resume from '../static/kep-kaeppeler-resume.8.3.pdf';
 
 const Contact = () => {
   return (
@@ -68,19 +68,19 @@ const Contact = () => {
             </Stack>
 
             <Stack direction="row" spacing={1}>
-            <TwitterIcon />
-            <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
-              <Link
-                href="https://twitter.com/KepKaeppeler"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                Twitter.com/KepKaeppeler
-              </Link>
-            </Tooltip>
-          </Stack>
+              <TwitterIcon />
+              <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
+                <Link
+                  href="https://twitter.com/KepKaeppeler"
+                  target="_blank"
+                  underline="hover"
+                  rel="noopener"
+                  color="inherit"
+                >
+                  Twitter.com/KepKaeppeler
+                </Link>
+              </Tooltip>
+            </Stack>
 
             <Stack direction="row" spacing={1}>
               <ArticleIcon />

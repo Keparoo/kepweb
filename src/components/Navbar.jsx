@@ -11,10 +11,10 @@ import CodeIcon from '@mui/icons-material/Code';
 
 import { Box, Menu, MenuItem, Stack } from '@mui/material';
 
-import resume from '../static/kep-kaeppeler-resume.pdf';
+import resume from '../static/kep-kaeppeler-resume.8.3.pdf';
 
 const Navbar = () => {
-  const [ anchorElNav, setAnchorElNav ] = useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -28,23 +28,23 @@ const Navbar = () => {
     {
       name: 'About',
       href: '#about',
-      target: false
+      target: false,
     },
     {
       name: 'Projects',
       href: '#projects',
-      target: false
+      target: false,
     },
     {
       name: 'Contact',
       href: '#contact',
-      target: false
+      target: false,
     },
     {
       name: 'Resume',
       href: resume,
-      target: true
-    }
+      target: true,
+    },
   ];
 
   return (
@@ -74,7 +74,7 @@ const Navbar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              flexGrow: 1
+              flexGrow: 1,
             }}
           >
             Kep Kaeppeler
@@ -98,17 +98,17 @@ const Navbar = () => {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
-                horizontal: 'left'
+                horizontal: 'left',
               }}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
-                horizontal: 'left'
+                horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' }
+                display: { xs: 'block', md: 'none' },
               }}
             >
               {navLinks.map((link) => (
