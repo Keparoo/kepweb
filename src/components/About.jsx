@@ -14,9 +14,9 @@ const About = () => {
               Hi, I'm Kep
             </Typography>
             <Typography variant="body1" gutterBottom>
-              I’m a Javascript, Node, React, Redux, Python, Flask, and SQL
-              developer with graphic design skills who loves to capture the
-              personality and flair of a client in the websites and printed
+              I’m a Javascript, Typescript, Node, React, Redux, Python, Flask,
+              and SQL developer with graphic design skills who loves to capture
+              the personality and flair of a client in the websites and printed
               materials that represent them. Over the past decade, I have
               created websites, restaurant menus, signage, and social media
               campaigns for businesses on Cape Cod establishing for them
@@ -50,14 +50,15 @@ const About = () => {
               Skills:
             </Typography>
             <Typography variant="body1">
-              <strong>Backend</strong>: Javascript ES6, Python, PHP, Node.js,
-              Express, Axios,<br />
+              <strong>Backend</strong>: Python, PHP, Node.js, Express, Axios,
+              <br />
               SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest, Supertest,
               PyTest
             </Typography>
             <Typography variant="body1">
-              <strong>Frontend</strong>: HTML5, CSS3, Flask, React, Redux,
-              Next.js, AJAX, Bootstrap, Material UI, Tailwind
+              <strong>Frontend</strong>: HTML5, CSS3, Javascript ES6,
+              Typescript, Flask, React, Redux, Next.js, AJAX, Bootstrap,
+              Material UI, Tailwind
             </Typography>
             <Typography variant="body1">
               <strong>Development</strong>: Linux, Unix, Git, Deployment, Data
