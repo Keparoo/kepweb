@@ -14,7 +14,7 @@ const About = () => {
               Hi, I'm Kep
             </Typography>
             <Typography variant="body1" gutterBottom>
-              I’m a Javascript, Typescript, Node, React, Redux, Python, Flask,
+              I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask,
               and SQL developer with graphic design skills who loves to capture
               the personality and flair of a client in the websites and printed
               materials that represent them. Over the past decade, I have
@@ -51,8 +51,8 @@ const About = () => {
             </Typography>
 
             <Typography variant="body1">
-              <strong>Frontend</strong>: HTML5, CSS3, Javascript ES6,
-              Typescript, Flask, React, Redux, Next.js, AJAX, Bootstrap,
+              <strong>Frontend</strong>: HTML5, CSS3, JavaScript ES6,
+              TypeScript, Flask, React, Redux, Next.js, AJAX, Bootstrap,
               Material UI, Tailwind
             </Typography>
 

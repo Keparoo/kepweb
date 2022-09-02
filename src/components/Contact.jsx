@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 
-import resume from '../static/kep-kaeppeler-resume.8.3.pdf';
+import resume from '../static/kep-kaeppeler-resume.9.1.pdf';
 
 const Contact = () => {
   return (
