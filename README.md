@@ -27,6 +27,7 @@ The nextjs branch is a second version of the website refactored to use Next.js. 
 - Link to WebToSmart
 - Redesign CSS color palette
 - Create custom components
+- Redeploy
 
 ---
 
