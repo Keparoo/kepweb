@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 
+import maple from '../static/maple-700x440.jpg';
 import tapntable from '../static/tapntable-700x440.jpg';
 import tuttitracks from '../static/tuttitracks-700x440.jpg';
 import castingAgency from '../static/castingAgency-700x440.jpg';
@@ -27,7 +28,7 @@ const ProjectList = () => {
                 brigade and grassroots organization.
                 <br />I work with a group of volunteers developing this project
                 which endeavors to produce a digital public space wherein
-                Massachusetts constituents can share their expertise, stories
+                Massachusetts constituents can share their expertise, stories,
                 and opinions on the legislation that shapes their lives.
                 <br />
                 <strong>Backend:</strong> Firebase with React-Hooks
@@ -39,7 +40,7 @@ const ProjectList = () => {
                 <strong>Note: </strong>The project is currently in beta testing.
               </span>
             }
-            image={tapntable}
+            image={maple}
             demo="https://mapletestimony.org/"
             github="https://github.com/codeforboston/advocacy-maps"
           />
