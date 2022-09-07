@@ -20,9 +20,13 @@ const ProjectList = () => {
       <Grid container direction="row" justifyContent="space-around" spacing={4}>
         <Grid item md={6} lg={4}>
           <ProjectCard
-            title="Massachusetts Platform for Legislative Engagement"
+            title="MAPLE"
             description={
               <span>
+                <strong>
+                  Massachusetts Platform for Legislative Engagement
+                </strong>
+                <br />
                 An project initiative under development by{' '}
                 <strong>Code for Boston</strong>, a <em>Code for America</em>{' '}
                 brigade and grassroots organization.

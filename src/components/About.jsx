@@ -16,25 +16,25 @@ const About = () => {
             <Typography variant="body1" gutterBottom>
               I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask,
               and SQL developer with graphic design skills who loves to capture
-              the personality and flair of a client in the websites and printed
-              materials that represent them. Over the past decade, I have
-              created websites, restaurant menus, signage, and social media
-              campaigns for businesses on Cape Cod establishing for them
-              stronger branding, greater community recognition, and increased
-              customer volume.
+              the personality and zeitgeist of a client in the websites and
+              printed materials that represent them. Over the past decade, I
+              have created websites, restaurant menus, signage, brand
+              identities, and social media campaigns for businesses on Cape Cod
+              to establish for them more vital branding, greater community
+              recognition, and increased customer volume.
             </Typography>
             <Typography variant="body1">
-              Client training and tech support are important to me. I excel at
+              Client training and tech support are essential to me. I excel at
               patiently working with clients until they can confidently use
               technology to further their business needs.
             </Typography>
             <Typography variant="body1">
-              My recent focus has been on backend development skills which now
-              allow me to create a more dynamic web experience for clients.
+              My recent focus has been on backend development skills allowing me
+              to create a more dynamic web experience for clients.
             </Typography>
 
             <Typography variant="body1">
-              I'm also a musician who spent years as a musical-director and
+              I'm also a musician who spent years as a musical director and
               conductor of resident and touring productions of Broadway shows
               including <em>Joseph and the Amazing Technicolor Dreamcoat</em>,
               starring Patrick Cassidy, and <em>The King and I</em>, starring
@@ -52,7 +52,7 @@ const About = () => {
 
             <Typography variant="body1">
               <strong>Frontend</strong>: HTML5, CSS3, JavaScript ES6,
-              TypeScript, Flask, React, Redux, Next.js, AJAX, Bootstrap,
+              TypeScript, AJAX, Flask, React, Redux, Next.js, Bootstrap,
               Material UI, Tailwind
             </Typography>
 
@@ -64,18 +64,20 @@ const About = () => {
 
             <Typography variant="body1">
               <strong>Development</strong>: Linux, Unix, Git, GitHub, ZenHub,
-              Agile workflow, Deployment, Data Structures, Algorithms, Android,
+              Agile workflow, Data Structures, Algorithms, Deployment, Android
               <br />
             </Typography>
 
             <Typography variant="body1">
               <strong>Design</strong>: Figma, Typography, Affinity Design Suite,
-              Adobe Creative Suite,
+              Adobe Creative Suite
             </Typography>
 
             <Typography variant="body1">
-              This website was created with <strong>React v18</strong>
-              <br /> with design elements from <strong>Material UI</strong>.
+              This website was created with <strong>React v18</strong> in a Vite
+              environment
+              <br />
+              with design elements from <strong>Material UI</strong>.
             </Typography>
           </Stack>
         </Grid>
