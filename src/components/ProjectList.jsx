@@ -23,17 +23,19 @@ const ProjectList = () => {
             title="MAPLE"
             description={
               <span>
-                <strong>
-                  Massachusetts Platform for Legislative Engagement
-                </strong>
-                <br />
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>
+                    Massachusetts Platform for Legislative Engagement
+                  </strong>
+                </Typography>
                 An project initiative under development by{' '}
                 <strong>Code for Boston</strong>, a <em>Code for America</em>{' '}
                 brigade and grassroots organization.
-                <br />I work with a group of volunteers developing this project
-                which endeavors to produce a digital public space wherein
-                Massachusetts constituents can share their expertise, stories,
-                and opinions on the legislation that shapes their lives.
+                <br />I work with a team of volunteer designers and developers
+                on this project which endeavors to produce a digital public
+                space wherein Massachusetts constituents can share their
+                expertise, stories, and opinions on the legislation that shapes
+                their lives.
                 <br />
                 <strong>Backend:</strong> Firebase with React-Hooks
                 <br />
@@ -41,7 +43,7 @@ const ProjectList = () => {
                 Bootstrap
                 <br />
                 <br />
-                <strong>Note: </strong>The project is currently in beta testing.
+                <strong>Note: </strong>This web app is currently beta testing.
               </span>
             }
             image={maple}
@@ -55,6 +57,9 @@ const ProjectList = () => {
             title="Tapntable"
             description={
               <span>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>Restaurant Point of Sale</strong>
+                </Typography>
                 A web-based restaurant point-of-sale system (POS) creating an
                 application for servers, bartenders, and managers to run
                 restaurant operations including orders, timeclock, and
@@ -84,6 +89,9 @@ const ProjectList = () => {
             title="TuttiTracks"
             description={
               <span>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>Spotify Playlist Creation Tool</strong>
+                </Typography>
                 A web app leveraging the Spotify API to search for and save song
                 tracks and audio information including tempo, time signature,
                 and key. A user can create and edit playlists that may be
@@ -113,6 +121,9 @@ const ProjectList = () => {
             title="Jobly"
             description={
               <span>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>Job Listing Web App</strong>
+                </Typography>
                 A web app for searching, exploring and applying for listed jobs
                 on a job posting site.
                 <br />
@@ -143,6 +154,9 @@ const ProjectList = () => {
             title="Casting Agency"
             description={
               <span>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>Casting Agency Management App</strong>
+                </Typography>
                 A web API to manage movies and actor assignments for a casting
                 agency
                 <br />
@@ -167,6 +181,9 @@ const ProjectList = () => {
             title="Connect 4"
             description={
               <span>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  <strong>Classic Game</strong>
+                </Typography>
                 A simple vanilla Javascript web app implementing the game
                 Connect 4<br />
               </span>
