@@ -16,7 +16,7 @@ export default function ProjectCard({
   frontend,
   image,
   demo,
-  github
+  github,
 }) {
   return (
     <Card sx={{ maxWidth: 350, marginTop: '1.25em' }}>
@@ -38,7 +38,7 @@ export default function ProjectCard({
           size="small"
           aria-label="App Demo"
         >
-          <Tooltip title="Go to project deployment">
+          <Tooltip title="Open page to project deployment">
             <WebIcon />
           </Tooltip>
         </IconButton>
@@ -48,7 +48,7 @@ export default function ProjectCard({
           size="small"
           aria-label="GitHub repository"
         >
-          <Tooltip title="Go to project repository" enterTouchDelay={0}>
+          <Tooltip title="Open page to project repository" enterTouchDelay={0}>
             <GitHubIcon />
           </Tooltip>
         </IconButton>
