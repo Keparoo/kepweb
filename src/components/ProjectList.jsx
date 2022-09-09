@@ -28,7 +28,7 @@ const ProjectList = () => {
                     Massachusetts Platform for Legislative Engagement
                   </strong>
                 </Typography>
-                A project initiative currently under development by:{' '}
+                A project initiative currently under development by{' '}
                 <strong>Code for Boston</strong>, a <em>Code for America</em>{' '}
                 brigade and grassroots organization.
                 <br />
