@@ -26,7 +26,6 @@ export default function ProjectCard({
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {description}
-          <br />
           {backend} <br />
           {frontend}
         </Typography>
