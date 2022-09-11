@@ -25,12 +25,12 @@ const About = () => {
             </Typography>
             <Typography variant="body1">
               Client training and tech support are essential to me. I excel at
-              patiently working with clients until they can confidently use
+              patiently working with clients until they confidently use
               technology to further their business needs.
             </Typography>
             <Typography variant="body1">
-              My recent focus has been on backend development skills allowing me
-              to create a more dynamic web experience for clients.
+              My recent focus has been furthering my backend development skills
+              allowing me to create a more dynamic web experience for clients.
             </Typography>
 
             <Typography variant="body1">
