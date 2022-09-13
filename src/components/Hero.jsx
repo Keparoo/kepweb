@@ -18,7 +18,7 @@ const Hero = () => {
         <Grid item md={8} sm={12}>
           <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
             <br />
-            I'm a full stack web developer living in Cape Cod, Massachusetts.
+            I'm a full stack web developer from Massachusetts.
           </Typography>
         </Grid>
       </Grid>
