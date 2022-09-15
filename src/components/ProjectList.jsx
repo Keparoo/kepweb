@@ -44,9 +44,9 @@ const ProjectList = () => {
                 Bootstrap
                 <br />
                 <br />
-                <strong>Note: </strong>This web app is currently beta testing
-                and readying for a late fall limited roll out and a January 1.0
-                release.
+                <strong>Note: </strong>This web app is currently alpha testing
+                and readying for a late fall limited beta roll out and a January
+                1.0 release.
               </span>
             }
             image={maple}
