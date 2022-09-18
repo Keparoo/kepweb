@@ -102,8 +102,8 @@ const ProjectList = () => {
                 may be uploaded to the user's Spotify account.
                 <br />
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
-                RESTful API, SQLAlchemy ORM, Oauth authorization, and unittest
-                test suite.
+                RESTful API, SQLAlchemy ORM, Oauth authorization, and a test
+                suite using unittest.
                 <br />
                 <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.{' '}
                 <br />
@@ -166,7 +166,8 @@ const ProjectList = () => {
                 <br />
                 <strong>Backend</strong>: PostgreSQL database with a RESTful API
                 using Python and Flask, role-based access control authorization
-                utilizing Auth0, test suite, and deployed to Heroku. <br />
+                utilizing Auth0, test suite, and currently deployed to Heroku.{' '}
+                <br />
                 <br />
                 <strong>Note:</strong>The deployment link is below but this is
                 an API <em>only</em> that upon login, returns a JWT with the
