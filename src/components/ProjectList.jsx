@@ -97,8 +97,8 @@ const ProjectList = () => {
                 </Typography>
                 A web app leveraging the Spotify API to search for and save song
                 tracks and audio information including tempo, time signature,
-                and key. A user can create and edit playlists that may be
-                uploaded to the user's Spotify account.
+                and key. A user can create, edit, and listen to playlists that
+                may be uploaded to the user's Spotify account.
                 <br />
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
                 RESTful API, SQLAlchemy ORM, Oauth authorization, and unittest
