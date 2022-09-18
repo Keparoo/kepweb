@@ -71,14 +71,15 @@ const ProjectList = () => {
                 <strong>Backend:</strong> PostgreSQL database with a RESTful API
                 using Node.js, Express, and a Jest test suite
                 <br />
-                <strong>Frontend:</strong> Single-page React-Redux user
-                interface managing orders, checks, payments, end-of-day
-                reconciliation, sales reports, timeclock, and database
-                management.
+                <strong>Frontend:</strong> Single-page app using React, Redux,
+                and Axios to implement a user interface for managing orders,
+                checks, payments, end-of-day reconciliation, sales reports,
+                timeclock, and database management.
                 <br />
                 <br />
                 <strong>Note: </strong>The deployed site will allow a user to
-                log in with a demo-pin: 12345 to try out the app.
+                log in with a demo-pin: 12345 to try out the app authorizing a
+                subset of features.
               </span>
             }
             image={tapntable}
