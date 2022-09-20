@@ -38,7 +38,7 @@ const ProjectList = () => {
                 stories, and opinions on the legislation that shapes their
                 lives.
                 <br />
-                <strong>Backend:</strong> Firebase with React-Hooks
+                <strong>Backend:</strong> Firebase with React-Firebase-Hooks
                 <br />
                 <strong>Frontend:</strong> React, TypeScript, Next.js, and
                 Bootstrap
