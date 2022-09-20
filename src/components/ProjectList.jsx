@@ -164,9 +164,10 @@ const ProjectList = () => {
                 A web API to manage movies and actor assignments for a casting
                 agency.
                 <br />
-                <strong>Backend</strong>: PostgreSQL database with a RESTful API
-                using Python and Flask, role-based access control authorization
-                utilizing Auth0, test suite, and currently deployed to Heroku.
+                <strong>Backend</strong>: A PostgreSQL database with a RESTful
+                API using Python and Flask, role-based access control
+                authorization utilizing Auth0, test suite, and currently
+                deployed to Heroku.
                 <br />
                 <br />
                 <strong>Note:</strong>The deployment link is below but this is
