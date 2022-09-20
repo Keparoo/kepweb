@@ -68,10 +68,10 @@ const ProjectList = () => {
                 restaurant operations including orders, timeclock, and
                 inventory.
                 <br />
-                <strong>Backend:</strong> PostgreSQL database with a RESTful API
-                using Node.js, Express, and a Jest test suite
+                <strong>Backend:</strong> A PostgreSQL database with a RESTful
+                API using Node.js, Express, and a Jest test suite.
                 <br />
-                <strong>Frontend:</strong> Single-page app using React, Redux,
+                <strong>Frontend:</strong> A single-page app using React, Redux,
                 and Axios to implement a user interface for managing orders,
                 checks, payments, end-of-day reconciliation, sales reports,
                 timeclock, and database management.
@@ -105,7 +105,7 @@ const ProjectList = () => {
                 RESTful API, SQLAlchemy ORM, Oauth authorization, and a test
                 suite using unittest.
                 <br />
-                <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.{' '}
+                <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.
                 <br />
                 <br />
                 <strong>Note:</strong> In order to use the app, if the user is
@@ -131,8 +131,8 @@ const ProjectList = () => {
                 A web app for searching, exploring and applying for listed jobs
                 on a job posting site.
                 <br />
-                <strong>Backend</strong>: PostgreSQL database with a RESTful API
-                using Node.js and Express with a comprehensive test suite
+                <strong>Backend</strong>: A PostgreSQL database with a RESTful
+                API using Node.js and Express with a comprehensive test suite
                 written in Jest. The app implements role based authorization
                 using JWTs, manages data validation with json schema, and is
                 currently deployed to Heroku. <br />
@@ -144,7 +144,7 @@ const ProjectList = () => {
                 <br />
                 <strong>Note: </strong>The deployed site will allow a user to
                 log in with username: 'testuser' and password 'password' for
-                demonstration purposes.
+                demonstration purposes with limited permissions.
               </span>
             }
             image={jobly}
@@ -162,11 +162,11 @@ const ProjectList = () => {
                   <strong>Casting Agency Management App</strong>
                 </Typography>
                 A web API to manage movies and actor assignments for a casting
-                agency
+                agency.
                 <br />
                 <strong>Backend</strong>: PostgreSQL database with a RESTful API
                 using Python and Flask, role-based access control authorization
-                utilizing Auth0, test suite, and currently deployed to Heroku.{' '}
+                utilizing Auth0, test suite, and currently deployed to Heroku.
                 <br />
                 <br />
                 <strong>Note:</strong>The deployment link is below but this is
