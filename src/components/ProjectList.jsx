@@ -102,8 +102,8 @@ const ProjectList = () => {
                 may be uploaded to the user's Spotify account.
                 <br />
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
-                RESTful API, SQLAlchemy ORM, Oauth authorization, and a test
-                suite using unittest.
+                RESTful API, SQLAlchemy ORM, Oauth authorization, interface to
+                the Spotify API, and a test suite using unittest.
                 <br />
                 <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.
                 <br />
