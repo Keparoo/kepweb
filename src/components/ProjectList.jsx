@@ -105,7 +105,7 @@ const ProjectList = () => {
                 RESTful API, SQLAlchemy ORM, Oauth authorization, interface to
                 the Spotify API, and a test suite using unittest.
                 <br />
-                <strong>Frontend</strong>: Python, Flask, and Jinja2 templates.
+                <strong>Frontend</strong>: Python, Flask, and Jinja2.
                 <br />
                 <br />
                 <strong>Note:</strong> In order to use the app, if the user is
