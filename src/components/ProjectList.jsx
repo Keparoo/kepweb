@@ -173,7 +173,7 @@ const ProjectList = () => {
                 <strong>Note:</strong>The deployment link is below but this is
                 an API <em>only</em> that upon login, returns a JWT with the
                 appropriate role-based auth to the screen to access the API.
-                Currently there is no interactive front-end written.
+                Currently there is no interactive front-end.
               </span>
             }
             image={castingAgency}
