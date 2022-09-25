@@ -191,7 +191,8 @@ const ProjectList = () => {
                   <strong>Classic Game</strong>
                 </Typography>
                 A simple vanilla Javascript web app implementing the game
-                Connect 4<br />
+                Connect 4 deployed to Vercel.
+                <br />
               </span>
             }
             image={connect4}
