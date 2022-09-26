@@ -63,9 +63,9 @@ const About = () => {
             </Typography>
 
             <Typography variant="body1">
-              <strong>Development</strong>: Linux, Unix, Git, GitHub, ZenHub,
-              Agile workflow, Data Structures, Algorithms, Deployment, Android,
-              VS Code, Vite, Heroku, Vercel, Digital Ocean, Surge
+              <strong>Development</strong>: Linux, Unix, Git, GitHub, VS Code,
+              PyCharm, ZenHub, Agile workflow, Data Structures, Algorithms,
+              Deployment, Android, Vite, Heroku, Vercel, Digital Ocean, Surge
               <br />
             </Typography>
 
