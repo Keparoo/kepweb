@@ -18,9 +18,9 @@ const About = () => {
               and SQL developer with graphic design skills who loves to capture
               the personality and zeitgeist of a client in the websites and
               printed materials that represent them. Over the past decade, I
-              have created websites, restaurant menus, signage, brand
-              identities, and social media campaigns for businesses on Cape Cod
-              to establish for them more vital branding, greater community
+              have created websites, social media campaigns, brand identities,
+              restaurant menus, and signage for businesses on Cape Cod to
+              establish for them more vital branding, greater community
               recognition, and increased customer volume.
             </Typography>
             <Typography variant="body1">
