@@ -19,9 +19,9 @@ const About = () => {
               the personality and zeitgeist of a client in the websites and
               printed materials that represent them. Over the past decade, I
               have created websites, social media campaigns, brand identities,
-              restaurant menus, and signage for businesses on Cape Cod to
-              establish for them more vital branding, greater community
-              recognition, and increased customer volume.
+              restaurant menus, advertisements, and signage for businesses on
+              Cape Cod to establish for them more vital branding, greater
+              community recognition, and increased customer volume.
             </Typography>
             <Typography variant="body1">
               Client training and tech support are essential to me. I excel at
