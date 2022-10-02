@@ -66,7 +66,7 @@ const About = () => {
               <strong>Development</strong>: Linux, Unix, Git, GitHub, VS Code,
               PyCharm, ZenHub, <br />
               Agile workflow, Data Structures, Algorithms, Deployment, Windows,
-              Mac, Android, Vite, Heroku, Vercel, Digital Ocean, Surge
+              Mac, Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
               <br />
             </Typography>
 
