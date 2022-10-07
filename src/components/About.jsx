@@ -6,11 +6,13 @@ const About = () => {
     <Box sx={{ paddingTop: '3.75em', paddingBottom: '4.5em' }} id="about">
       <Grid container>
         <Grid item md={6}>
-          <Typography variant="h2">About Me</Typography>
+          <Typography variant="h2" className="sectionHeading">
+            About Me
+          </Typography>
         </Grid>
         <Grid item md={6}>
           <Stack spacing={2} sx={{ marginTop: '1.5em' }}>
-            <Typography variant="h4" component="h3">
+            <Typography variant="h4" className="subheading" component="h3">
               Hi, I'm Kep
             </Typography>
             <Typography variant="body1" gutterBottom>
@@ -46,7 +48,7 @@ const About = () => {
               Every day I play the piano, further my French &amp; German
               language skills, and practice mindfulness &amp; meditation.
             </Typography>
-            <Typography variant="h6" component="h4">
+            <Typography variant="h6" className="subheading" component="h4">
               Skills:
             </Typography>
 

@@ -15,7 +15,7 @@ const Contact = () => {
     <Box id="contact" sx={{ paddingBottom: '4.5em', paddingTop: '3.75em' }}>
       <Grid container spacing={2}>
         <Grid item md={6} sm={12}>
-          <Typography variant="h2">
+          <Typography variant="h2" className="sectionHeading">
             Work with me <br />
           </Typography>
         </Grid>

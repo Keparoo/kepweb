@@ -6,14 +6,25 @@
   --clr-accent-original: hsl(182, 100%, 72%);
 
   /* insert neutrals here */
+  --clr-text: hsl(229, 15%, 45%);
+  --clr-heading: black;
 }
 
 .App {
   background-color: var(--clr-bg-original);
+  color: var(--clr-text);
 }
 
 .heading {
   color: var(--clr-primary-original);
+}
+
+.sectionHeading {
+  color: var(--clr-heading);
+}
+
+.subheading {
+  color: var(--clr-heading);
 }
 
 /* Add primary and accent color variations */
