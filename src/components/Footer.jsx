@@ -10,7 +10,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import { Tooltip, Typography } from '@mui/material';
 
 export default function Footer() {
-  const [ value, setValue ] = useState(0);
+  const [value, setValue] = useState(0);
 
   return (
     <Box sx={{ width: '100%', marginTop: '2em' }}>
@@ -20,7 +20,7 @@ export default function Footer() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-        sx={{ bgcolor: '#e0e0e0' }}
+        sx={{ bgcolor: '#e1e8ef' }}
       >
         <BottomNavigationAction
           component="a"
