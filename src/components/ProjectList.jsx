@@ -26,6 +26,7 @@ const ProjectList = () => {
         <Grid item md={6} lg={4}>
           <ProjectCard
             title="MAPLE"
+            variant="div"
             description={
               <span>
                 <Typography variant="subtitle2" align="center" gutterBottom>

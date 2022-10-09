@@ -62,7 +62,6 @@ const Navbar = () => {
           </IconButton>
 
           <Typography
-            variant="h6"
             noWrap
             component="a"
             href="/"
@@ -71,6 +70,7 @@ const Navbar = () => {
               display: { md: 'flex' },
               fontFamily: 'asap',
               fontWeight: 700,
+              fontSize: '1.25rem',
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',

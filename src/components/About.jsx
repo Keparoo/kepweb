@@ -48,32 +48,32 @@ const About = () => {
               Every day I play the piano, further my French &amp; German
               language skills, and practice mindfulness &amp; meditation.
             </Typography>
-            <Typography variant="h6" className="subheading" component="h4">
+            <Typography className="subheading" component="h4">
               Skills:
             </Typography>
 
             <Typography variant="body1">
-              <strong className="subheading">Frontend</strong>: HTML5, CSS3,
+              <span className="subheading">Frontend</span>: HTML5, CSS3,
               JavaScript ES6, TypeScript, AJAX, Flask, React, Redux, Next.js,
               Bootstrap, Material UI, Tailwind
             </Typography>
 
             <Typography variant="body1">
-              <strong className="subheading">Backend</strong>: Python, PHP,
-              Node.js, Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth, Jest,
-              Vitest, Supertest, PyTest
+              <span className="subheading">Backend</span>: Python, PHP, Node.js,
+              Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest,
+              Supertest, PyTest
             </Typography>
 
             <Typography variant="body1">
-              <strong className="subheading">Development</strong>: Linux, Unix,
-              Git, GitHub, VS Code, PyCharm, ZenHub, <br />
+              <span className="subheading">Development</span>: Linux, Unix, Git,
+              GitHub, VS Code, PyCharm, ZenHub, <br />
               Agile workflow, Data Structures, Algorithms, Deployment, Windows,
               Mac, Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
               <br />
             </Typography>
 
             <Typography variant="body1">
-              <strong className="subheading">Design</strong>: Figma, Typography,
+              <span className="subheading">Design</span>: Figma, Typography,
               Affinity Design Suite, Adobe Creative Suite
             </Typography>
 
