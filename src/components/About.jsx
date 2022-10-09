@@ -53,28 +53,28 @@ const About = () => {
             </Typography>
 
             <Typography variant="body1">
-              <strong>Frontend</strong>: HTML5, CSS3, JavaScript ES6,
-              TypeScript, AJAX, Flask, React, Redux, Next.js, Bootstrap,
-              Material UI, Tailwind
+              <strong className="subheading">Frontend</strong>: HTML5, CSS3,
+              JavaScript ES6, TypeScript, AJAX, Flask, React, Redux, Next.js,
+              Bootstrap, Material UI, Tailwind
             </Typography>
 
             <Typography variant="body1">
-              <strong>Backend</strong>: Python, PHP, Node.js, Express, Axios,
-              SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest, Supertest,
-              PyTest
+              <strong className="subheading">Backend</strong>: Python, PHP,
+              Node.js, Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth, Jest,
+              Vitest, Supertest, PyTest
             </Typography>
 
             <Typography variant="body1">
-              <strong>Development</strong>: Linux, Unix, Git, GitHub, VS Code,
-              PyCharm, ZenHub, <br />
+              <strong className="subheading">Development</strong>: Linux, Unix,
+              Git, GitHub, VS Code, PyCharm, ZenHub, <br />
               Agile workflow, Data Structures, Algorithms, Deployment, Windows,
               Mac, Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
               <br />
             </Typography>
 
             <Typography variant="body1">
-              <strong>Design</strong>: Figma, Typography, Affinity Design Suite,
-              Adobe Creative Suite
+              <strong className="subheading">Design</strong>: Figma, Typography,
+              Affinity Design Suite, Adobe Creative Suite
             </Typography>
 
             <Typography variant="body1">
