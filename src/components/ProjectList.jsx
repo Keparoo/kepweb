@@ -47,7 +47,7 @@ const ProjectList = () => {
                 <strong>Backend:</strong> Firebase with React-Firebase-Hooks
                 <br />
                 <strong>Frontend:</strong> React, TypeScript, Javascript,
-                Next.js, and Bootstrap
+                Next.js, Storybook, and Bootstrap
                 <br />
                 <br />
                 <strong>Note: </strong>Currently, this web app is user testing

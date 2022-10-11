@@ -54,8 +54,8 @@ const About = () => {
 
             <Typography variant="body1">
               <span className="subheading">Frontend</span>: HTML5, CSS3,
-              JavaScript ES6, TypeScript, AJAX, Flask, React, Redux, Next.js,
-              Bootstrap, Material UI, Tailwind
+              JavaScript ES6, TypeScript, AJAX, Flask, React, Storybook, Redux,
+              Next.js, Bootstrap, Material UI, Tailwind
             </Typography>
 
             <Typography variant="body1">
