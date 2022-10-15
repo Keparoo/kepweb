@@ -81,7 +81,7 @@ const About = () => {
               This website was created with <strong>React v18</strong> in a Vite
               environment
               <br />
-              using <strong>Material UI</strong> components.
+              using <strong>Material UI</strong> design components.
             </Typography>
           </Stack>
         </Grid>
