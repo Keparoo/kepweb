@@ -9,6 +9,7 @@
 
   --clr-primary-400: hsl(228, 39%, 23%);
 
+  /* Accent colors */
   --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
   --clr-accent-300: hsl(12, 88%, 75%);
