@@ -136,5 +136,10 @@ select {
   font-weight: bold;
 }
 
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
 /* Create typography variables */
 /* Create spacing variables */

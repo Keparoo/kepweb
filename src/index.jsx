@@ -9,8 +9,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: { main: '#525e97' },
-    secondary: { main: '#6ff9ff' }
-  }
+    secondary: { main: '#6ff9ff' },
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
