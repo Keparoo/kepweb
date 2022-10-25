@@ -4,7 +4,7 @@ import { Link, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
-import resume from '../static/kep-kaeppeler-resume.pdf';
+import resume from '../static/kep-kaeppeler-resume.10.1.pdf';
 
 const Resume = () => {
   return (
