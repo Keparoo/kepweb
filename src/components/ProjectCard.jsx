@@ -24,7 +24,7 @@ export default function ProjectCard({
 
       <CardMedia component="img" height="220" image={image} alt={title} />
       <CardContent>
-        <Typography variant="body2" component="div" color="text.secondary">
+        <Typography variant="body2" component="article" color="text.secondary">
           {description}
           {backend} <br />
           {frontend}
