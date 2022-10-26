@@ -60,7 +60,11 @@ const About = () => {
 
             <Typography variant="body1">
               <span className="subheading">Backend</span>: Python, PHP, Node.js,
-              Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth, Jest, Vitest,
+              Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth
+            </Typography>
+
+            <Typography variant="body1">
+              <span className="subheading">Testing</span>: Jest, Vitest,
               Supertest, PyTest
             </Typography>
 
