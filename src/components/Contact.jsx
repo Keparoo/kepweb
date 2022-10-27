@@ -27,6 +27,7 @@ const Contact = () => {
                 <EmailIcon />
                 <Tooltip title="Send me an email" enterTouchDelay={0}>
                   <Link
+                    className="link"
                     href="mailto:kep@kepweb.dev"
                     target="_blank"
                     underline="hover"
@@ -42,6 +43,7 @@ const Contact = () => {
                 <LinkedInIcon />
                 <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
                   <Link
+                    className="link"
                     href="https://www.linkedin.com/in/kep-kaeppeler"
                     target="_blank"
                     underline="hover"
@@ -57,6 +59,7 @@ const Contact = () => {
                 <GitHubIcon />
                 <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
                   <Link
+                    className="link"
                     href="https://github.com/Keparoo"
                     target="_blank"
                     underline="hover"
@@ -72,6 +75,7 @@ const Contact = () => {
                 <TwitterIcon />
                 <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
                   <Link
+                    className="link"
                     href="https://twitter.com/KepKaeppeler"
                     target="_blank"
                     underline="hover"
@@ -86,6 +90,7 @@ const Contact = () => {
               <Stack direction="row" spacing={1}>
                 <ArticleIcon />
                 <Link
+                  className="link"
                   href={resume}
                   target="_blank"
                   underline="hover"
@@ -99,6 +104,7 @@ const Contact = () => {
               <Stack direction="row" spacing={1}>
                 <PrintIcon />
                 <Link
+                  className="link"
                   href={resume}
                   target="_blank"
                   underline="hover"

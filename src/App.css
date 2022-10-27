@@ -136,5 +136,10 @@ select {
   font-weight: bold;
 }
 
+.link:hover {
+  color: var(--clr-primary-400);
+  font-size: 17px;
+}
+
 /* Create typography variables */
 /* Create spacing variables */
