@@ -137,7 +137,8 @@ select {
 }
 
 .link:hover {
-  color: var(--clr-primary-400);
+  color: var(--clr-neutral-900);
+  /* text-decoration: none !important; */
   font-size: 17px;
 }
 
