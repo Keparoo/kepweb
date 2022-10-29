@@ -142,5 +142,21 @@ select {
   font-size: 17px;
 }
 
+#hero {
+  position: relative;
+}
+
+#hero:after {
+  content: '';
+  display: inline-block;
+  /* vertical-align: middle; */
+  display: absolute;
+  transform: translateX(18em);
+  width: 500px;
+  height: 500px;
+  background: url('./static/pixeltrue-web-development-1.svg');
+  background-size: cover;
+}
+
 /* Create typography variables */
 /* Create spacing variables */
