@@ -8,7 +8,6 @@ const Hero = () => {
   return (
     <section>
       <Box
-        id="hero"
         className="sectionHeading"
         sx={{ paddingTop: '12.75em', paddingBottom: '5.25em' }}
       >
@@ -23,10 +22,12 @@ const Hero = () => {
           </Grid>
 
           <Grid item md={8} sm={12}>
-            <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
-              <br />
-              I'm a full stack web developer from Massachusetts.
-            </Typography>
+            <div id="hero">
+              <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
+                <br />
+                I'm a full stack web developer from Massachusetts.
+              </Typography>
+            </div>
           </Grid>
         </Grid>
       </Box>

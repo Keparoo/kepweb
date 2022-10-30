@@ -151,7 +151,7 @@ select {
   display: inline-block;
   /* vertical-align: middle; */
   display: absolute;
-  transform: translateX(18em);
+  transform: translateY(-3em);
   width: 500px;
   height: 500px;
   background: url('./static/pixeltrue-web-development-1.svg');
