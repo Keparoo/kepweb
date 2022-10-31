@@ -144,15 +144,13 @@ select {
 
 #computer-image {
   position: relative;
-  /* outline: 1px solid black; */
 }
 
 #computer-image:after {
   content: '';
   display: block;
-  /* vertical-align: middle; */
   display: absolute;
-  transform: translateX(1.75em) translateY(-3em);
+  transform: translateX(2.45em) translateY(-2.9em);
   width: 500px;
   height: 500px;
   background: url('./static/pixeltrue-web-development-1.svg');
