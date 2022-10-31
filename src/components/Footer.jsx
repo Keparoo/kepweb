@@ -24,7 +24,7 @@ export default function Footer() {
       >
         <BottomNavigationAction
           component="a"
-          href="/"
+          href="#hero"
           icon={
             <Tooltip title="Go Home" enterTouchDelay={0}>
               <HomeIcon />

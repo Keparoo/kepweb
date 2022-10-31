@@ -52,7 +52,7 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton
-            href="/"
+            href="#hero"
             size="large"
             edge="start"
             color="inherit"
@@ -64,7 +64,7 @@ const Navbar = () => {
           <Typography
             noWrap
             component="a"
-            href="/"
+            href=""
             sx={{
               mr: 2,
               display: { md: 'flex' },

@@ -15,12 +15,7 @@ const ProjectList = () => {
   return (
     <section>
       <Box sx={{ flexGrow: 1, paddingBottom: '4.5em' }}>
-        <Typography
-          variant="h2"
-          id="projects"
-          className="sectionHeading"
-          sx={{ paddingTop: '1.5em' }}
-        >
+        <Typography variant="h2" id="projects" className="sectionHeading">
           Projects
         </Typography>
         <Grid

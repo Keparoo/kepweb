@@ -6,11 +6,8 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section>
-      <Box
-        className="sectionHeading"
-        sx={{ paddingTop: '12.75em', paddingBottom: '5.25em' }}
-      >
+    <section id="hero" className="sectionHeading">
+      <Box sx={{ paddingTop: '12.75em' }}>
         <Grid container spacing={2}>
           <Grid item md={4} sm={12}>
             <Typography
@@ -22,12 +19,14 @@ const Hero = () => {
           </Grid>
 
           <Grid item md={8} sm={12}>
-            <div id="hero">
-              <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
-                <br />
-                I'm a full stack web developer from Massachusetts.
-              </Typography>
-            </div>
+            <Typography
+              id="computer-image"
+              variant="p"
+              sx={{ fontSize: '2.25rem' }}
+            >
+              <br />
+              I'm a full stack web developer from Massachusetts.
+            </Typography>
           </Grid>
         </Grid>
       </Box>

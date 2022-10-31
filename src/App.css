@@ -142,16 +142,17 @@ select {
   font-size: 17px;
 }
 
-#hero {
+#computer-image {
   position: relative;
+  /* outline: 1px solid black; */
 }
 
-#hero:after {
+#computer-image:after {
   content: '';
-  display: inline-block;
+  display: block;
   /* vertical-align: middle; */
   display: absolute;
-  transform: translateY(-3em);
+  transform: translateX(1.75em) translateY(-3em);
   width: 500px;
   height: 500px;
   background: url('./static/pixeltrue-web-development-1.svg');
