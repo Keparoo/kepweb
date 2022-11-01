@@ -51,7 +51,8 @@ const About = () => {
                 Every day I play the piano, further my French &amp; German
                 language skills, and practice mindfulness &amp; meditation.
               </Typography>
-              <Typography className="subheading" component="h4">
+              <br />
+              <Typography className="subheading" component="h4" variant="h4">
                 Skills:
               </Typography>
 

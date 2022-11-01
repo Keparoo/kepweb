@@ -17,7 +17,11 @@ const Hero = () => {
             >
               Kep
             </Typography>
-            <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
+            <Typography
+              className="hero-subhead"
+              variant="p"
+              sx={{ fontSize: '2.25rem' }}
+            >
               <br />
               I'm a full-stack web developer with a passion for challenges.
             </Typography>

@@ -17,7 +17,7 @@
   --clr-accent-100: hsl(13, 100%, 96%);
 
   /* insert neutrals here */
-  --clr-text: hsl(229, 15%, 45%);
+  --clr-text: hsl(229, 15%, 32%);
   --clr-heading: black;
   --clr-neutral-900: hsl(232, 12%, 13%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -135,6 +135,10 @@ select {
 
 .sectionHeading {
   color: var(--clr-heading);
+}
+
+.hero-subhead {
+  color: var(--clr-primary-original);
 }
 
 .subheading {
