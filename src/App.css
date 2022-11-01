@@ -4,6 +4,7 @@
   /* --clr-bg-original: hsl(229, 10%, 46%); */
   --clr-bg: hsl(192, 9%, 89%); /* e0e4e5 */
 
+  /* primary: {main: */
   --clr-primary-original: hsl(230, 30%, 46%);
   --clr-accent-original: hsl(182, 100%, 72%);
 
@@ -125,6 +126,11 @@ select {
 
 .heading {
   color: var(--clr-primary-original);
+}
+
+.navbar-link:hover {
+  color: var(--clr-primary-original);
+  background: var(--clr-accent-original) !important;
 }
 
 .sectionHeading {

@@ -19,7 +19,7 @@ const Hero = () => {
             </Typography>
             <Typography variant="p" sx={{ fontSize: '2.25rem' }}>
               <br />
-              I'm a full-stack web developer from Massachusetts.
+              I'm a full-stack web developer with a passion for challenges.
             </Typography>
           </Grid>
 

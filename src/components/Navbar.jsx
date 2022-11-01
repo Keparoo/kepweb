@@ -64,7 +64,7 @@ const Navbar = () => {
           <Typography
             noWrap
             component="a"
-            href=""
+            href="#hero"
             sx={{
               mr: 2,
               display: { md: 'flex' },
@@ -84,7 +84,7 @@ const Navbar = () => {
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="headings of website"
+              aria-label="website navigation"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -134,6 +134,7 @@ const Navbar = () => {
             >
               {navLinks.map((link) => (
                 <Button
+                  className="navbar-link"
                   key={link.name}
                   color="inherit"
                   href={link.href}
