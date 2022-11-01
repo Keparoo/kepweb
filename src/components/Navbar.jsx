@@ -36,20 +36,20 @@ const Navbar = () => {
       target: false,
     },
     {
-      name: 'Contact',
-      href: '#contact',
-      target: false,
-    },
-    {
       name: 'Resume',
       href: resume,
       target: true,
+    },
+    {
+      name: 'Contact',
+      href: '#contact',
+      target: false,
     },
   ];
 
   return (
     <AppBar position="fixed">
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <IconButton
             href="#hero"

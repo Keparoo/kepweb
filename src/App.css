@@ -142,20 +142,5 @@ select {
   font-size: 17px;
 }
 
-#computer-image {
-  position: relative;
-}
-
-#computer-image:after {
-  content: '';
-  display: block;
-  display: absolute;
-  transform: translateX(2.45em) translateY(-2.9em);
-  width: 500px;
-  height: 500px;
-  background: url('./static/pixeltrue-web-development-1.svg');
-  background-size: cover;
-}
-
 /* Create typography variables */
 /* Create spacing variables */
