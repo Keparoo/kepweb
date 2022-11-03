@@ -26,24 +26,34 @@ const Navbar = () => {
 
   const navLinks = [
     {
+      name: 'Home',
+      href: '#hero',
+      target: false,
+      variant: 'text',
+    },
+    {
       name: 'About',
       href: '#about',
       target: false,
+      variant: 'text',
     },
     {
       name: 'Projects',
       href: '#projects',
       target: false,
+      variant: 'text',
     },
     {
       name: 'Resume',
       href: resume,
       target: true,
+      variant: 'text',
     },
     {
       name: 'Contact',
       href: '#contact',
       target: false,
+      variant: 'outlined',
     },
   ];
 
@@ -115,6 +125,7 @@ const Navbar = () => {
                 <MenuItem key={link.name} onClick={handleCloseNavMenu}>
                   <Button
                     color="inherit"
+                    variant={link.variant}
                     href={link.href}
                     target={link.target ? '_blank' : ''}
                   >
@@ -136,6 +147,7 @@ const Navbar = () => {
                 <Button
                   className="navbar-link"
                   key={link.name}
+                  variant={link.variant}
                   color="inherit"
                   href={link.href}
                   target={link.target ? '_blank' : ''}

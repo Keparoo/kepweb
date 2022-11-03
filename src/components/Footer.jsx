@@ -68,7 +68,7 @@ export default function Footer() {
           aria-label="GitHub repository"
         />
       </BottomNavigation>
-      <Typography align="center" paddingBottom={2}>
+      <Typography align="center" paddingTop={4} paddingBottom={4}>
         &copy; 2022 Kepweb.dev
       </Typography>
     </Box>

@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
 import Typography from '@mui/material/Typography';
-import { CardHeader, IconButton, Tooltip } from '@mui/material';
+import { Button, CardHeader, IconButton, Tooltip } from '@mui/material';
 
 export default function ProjectCard({
   title,
@@ -31,26 +31,30 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions>
-        <IconButton
-          href={demo}
-          target="_blank"
-          size="small"
-          aria-label="App Demo"
-        >
-          <Tooltip title="Open page to project deployment">
-            <WebIcon />
-          </Tooltip>
-        </IconButton>
-        <IconButton
-          href={github}
-          target="_blank"
-          size="small"
-          aria-label="GitHub repository"
-        >
-          <Tooltip title="Open page to project repository" enterTouchDelay={0}>
-            <GitHubIcon />
-          </Tooltip>
-        </IconButton>
+        <Tooltip title="Open page to project deployment">
+          <Button
+            variant="contained"
+            href={demo}
+            target="_blank"
+            size="small"
+            aria-label="App Demo"
+            startIcon={<WebIcon />}
+          >
+            Demo
+          </Button>
+        </Tooltip>
+        <Tooltip title="Open page to project repository" enterTouchDelay={0}>
+          <Button
+            variant="outlined"
+            href={github}
+            target="_blank"
+            size="small"
+            aria-label="GitHub repository"
+            startIcon={<GitHubIcon />}
+          >
+            Github
+          </Button>
+        </Tooltip>
       </CardActions>
     </Card>
   );

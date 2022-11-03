@@ -6,6 +6,7 @@
 
   /* primary: {main: */
   --clr-primary-original: hsl(230, 30%, 46%);
+  --clr-primary-original: #525e98;
   --clr-accent-original: hsl(182, 100%, 72%);
 
   --clr-primary-400: hsl(228, 39%, 23%);
@@ -128,9 +129,14 @@ select {
   color: var(--clr-primary-original);
 }
 
-.navbar-link:hover {
+.navbar-link:hover,
+.navbar-link:active {
   color: var(--clr-primary-original);
   background: var(--clr-accent-original) !important;
+}
+
+.navbar-link:active {
+  background: yellow !important;
 }
 
 .sectionHeading {
@@ -146,10 +152,16 @@ select {
   font-weight: bold;
 }
 
-.link:hover {
-  color: var(--clr-neutral-900);
-  /* text-decoration: none !important; */
-  font-size: 17px;
+.link {
+  text-transform: none !important;
+  font-size: 16px !important;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: none !important;
+  color: var(--clr-primary-original) !important;
+  background: var(--clr-accent-original) !important;
 }
 
 /* Create typography variables */

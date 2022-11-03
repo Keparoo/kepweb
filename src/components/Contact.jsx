@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { Box, Grid, Link, Stack, Tooltip, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Grid,
+  Link,
+  Stack,
+  Tooltip,
+  Typography,
+} from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -24,9 +32,9 @@ const Contact = () => {
           <Grid item md={6} sm={12} sx={{ marginTop: '1.25em' }}>
             <Stack spacing={1}>
               <Stack direction="row" spacing={1}>
-                <EmailIcon />
+                <EmailIcon sx={{ marginTop: '7px' }} />
                 <Tooltip title="Send me an email" enterTouchDelay={0}>
-                  <Link
+                  <Button
                     className="link"
                     href="mailto:kep@kepweb.dev"
                     target="_blank"
@@ -35,14 +43,14 @@ const Contact = () => {
                     color="inherit"
                   >
                     Kep@kepweb.dev
-                  </Link>
+                  </Button>
                 </Tooltip>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <LinkedInIcon />
+                <LinkedInIcon sx={{ marginTop: '7px' }} />
                 <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
-                  <Link
+                  <Button
                     className="link"
                     href="https://www.linkedin.com/in/kep-kaeppeler"
                     target="_blank"
@@ -51,14 +59,14 @@ const Contact = () => {
                     color="inherit"
                   >
                     LinkedIn.com/in/kep-kaeppeler
-                  </Link>
+                  </Button>
                 </Tooltip>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <GitHubIcon />
+                <GitHubIcon sx={{ marginTop: '7px' }} />
                 <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
-                  <Link
+                  <Button
                     className="link"
                     href="https://github.com/Keparoo"
                     target="_blank"
@@ -67,14 +75,14 @@ const Contact = () => {
                     color="inherit"
                   >
                     Github.com/Keparoo
-                  </Link>
+                  </Button>
                 </Tooltip>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <TwitterIcon />
+                <TwitterIcon sx={{ marginTop: '7px' }} />
                 <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
-                  <Link
+                  <Button
                     className="link"
                     href="https://twitter.com/KepKaeppeler"
                     target="_blank"
@@ -83,13 +91,13 @@ const Contact = () => {
                     color="inherit"
                   >
                     Twitter.com/KepKaeppeler
-                  </Link>
+                  </Button>
                 </Tooltip>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <ArticleIcon />
-                <Link
+                <ArticleIcon sx={{ marginTop: '7px' }} />
+                <Button
                   className="link"
                   href={resume}
                   target="_blank"
@@ -98,12 +106,12 @@ const Contact = () => {
                   color="inherit"
                 >
                   Download resume
-                </Link>
+                </Button>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <PrintIcon />
-                <Link
+                <PrintIcon sx={{ marginTop: '7px' }} />
+                <Button
                   className="link"
                   href={resume}
                   target="_blank"
@@ -111,7 +119,7 @@ const Contact = () => {
                   color="inherit"
                 >
                   Print resume
-                </Link>
+                </Button>
               </Stack>
             </Stack>
           </Grid>
