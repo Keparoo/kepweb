@@ -8,6 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
 import { Tooltip, Typography } from '@mui/material';
+import { Container } from '@mui/system';
 
 export default function Footer() {
   const [value, setValue] = useState(0);

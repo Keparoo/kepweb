@@ -6,13 +6,14 @@ import { Button, Stack, TextField, Tooltip } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 
 const ContactForm = () => {
-  const [form, setForm] = React.useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  /* https://formsubmit.co form submission service.
+  /*****************************************************************
+  https://formsubmit.co form submission service.
   
   See .env for associated email address and random code associated with it
 
-  */
+  ******************************************************************/
 
   const sendMessage = (email, message) => {
     const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
@@ -95,7 +96,12 @@ const ContactForm = () => {
           justifyContent="space-between"
           alignItems="flex-end"
         >
-          <Button type="submit" onClick={handleSubmit} variant="contained">
+          <Button
+            type="submit"
+            onClick={handleSubmit}
+            variant="contained"
+            sx={{ marginTop: '1em' }}
+          >
             Submit
           </Button>
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'right' }}>

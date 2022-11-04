@@ -1,22 +1,7 @@
 import React from 'react';
 
-import {
-  Box,
-  Button,
-  Grid,
-  Link,
-  Stack,
-  Tooltip,
-  Typography,
-} from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import ArticleIcon from '@mui/icons-material/Article';
-import PrintIcon from '@mui/icons-material/Print';
+import { Box, Grid, Stack, Typography } from '@mui/material';
 
-import resume from '../static/kep-kaeppeler-resume.10.1.pdf';
 import ContactForm from './ContactForm';
 
 const Contact = () => {
