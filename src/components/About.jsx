@@ -1,5 +1,14 @@
 import React from 'react';
-import { Box, Grid, Stack, Typography } from '@mui/material';
+import { Box, Button, Grid, Stack, Tooltip, Typography } from '@mui/material';
+
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import ArticleIcon from '@mui/icons-material/Article';
+import PrintIcon from '@mui/icons-material/Print';
+
+import resume from '../static/kep-kaeppeler-resume.10.1.pdf';
 
 const About = () => {
   return (
@@ -92,6 +101,107 @@ const About = () => {
                 <br />
                 using <strong>Material UI</strong> components.
               </Typography>
+              <br />
+
+              <Typography className="subheading" component="h4" variant="h4">
+                Links:
+              </Typography>
+
+              <Stack spacing={1}>
+                <Stack direction="row" spacing={1}>
+                  <EmailIcon sx={{ marginTop: '7px' }} />
+                  <Tooltip
+                    title="Send me an email from your browser"
+                    enterTouchDelay={0}
+                  >
+                    <Button
+                      className="link"
+                      href="mailto:kep@kepweb.dev"
+                      target="_blank"
+                      underline="hover"
+                      rel="noopener"
+                      color="inherit"
+                    >
+                      Kep@kepweb.dev
+                    </Button>
+                  </Tooltip>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <LinkedInIcon sx={{ marginTop: '7px' }} />
+                  <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
+                    <Button
+                      className="link"
+                      href="https://www.linkedin.com/in/kep-kaeppeler"
+                      target="_blank"
+                      underline="hover"
+                      rel="noopener"
+                      color="inherit"
+                    >
+                      LinkedIn.com/in/kep-kaeppeler
+                    </Button>
+                  </Tooltip>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <GitHubIcon sx={{ marginTop: '7px' }} />
+                  <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
+                    <Button
+                      className="link"
+                      href="https://github.com/Keparoo"
+                      target="_blank"
+                      underline="hover"
+                      rel="noopener"
+                      color="inherit"
+                    >
+                      Github.com/Keparoo
+                    </Button>
+                  </Tooltip>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <TwitterIcon sx={{ marginTop: '7px' }} />
+                  <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
+                    <Button
+                      className="link"
+                      href="https://twitter.com/KepKaeppeler"
+                      target="_blank"
+                      underline="hover"
+                      rel="noopener"
+                      color="inherit"
+                    >
+                      Twitter.com/KepKaeppeler
+                    </Button>
+                  </Tooltip>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <ArticleIcon sx={{ marginTop: '7px' }} />
+                  <Button
+                    className="link"
+                    href={resume}
+                    target="_blank"
+                    underline="hover"
+                    download="kep-kaeppeler-resume"
+                    color="inherit"
+                  >
+                    Download resume
+                  </Button>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <PrintIcon sx={{ marginTop: '7px' }} />
+                  <Button
+                    className="link"
+                    href={resume}
+                    target="_blank"
+                    underline="hover"
+                    color="inherit"
+                  >
+                    Print resume
+                  </Button>
+                </Stack>
+              </Stack>
             </Stack>
           </Grid>
         </Grid>
