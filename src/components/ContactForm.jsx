@@ -107,7 +107,7 @@ const ContactForm = () => {
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'right' }}>
             <EmailIcon sx={{ marginTop: '7px' }} />
             <Tooltip
-              title="Send me an email from your browser"
+              title="Send me an email from your browser instead of using above form"
               enterTouchDelay={0}
             >
               <Button
