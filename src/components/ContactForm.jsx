@@ -7,6 +7,11 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const ContactForm = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [formError, setFormError] = useState({
+    nameErr: '',
+    emailErr: '',
+    messageErr: '',
+  });
 
   /*****************************************************************
   https://formsubmit.co form submission service.
@@ -47,10 +52,81 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (form.name === '' || form.email === '' || form.message === '') {
+      isValid('name', form.name);
+      isValid('email', form.email);
+      isValid('message', form.message);
+      return;
+    }
+
+    isValid('name', form.name);
+    isValid('email', form.email);
+    isValid('message', form.message);
+    console.log('Tried to submit, less than 3 blank', formError);
+
+    // if (
+    //   formError.nameErr !== '' ||
+    //   formError.emailErr !== '' ||
+    //   formError.messageErr !== ''
+    // )
+    //   return;
+
     console.log('Form results', form);
     setForm({ name: '', email: '', message: '' });
     const message = `name: ${form.name}\nmessage:\n${form.message}`;
     sendMessage(form.email, message);
+  };
+
+  const isValid = (fieldName, value) => {
+    if (fieldName === 'name') {
+      if (value.length > 0) {
+        setFormError((formError) => ({ ...formError, nameErr: '' }));
+        console.log('name', formError);
+        // return true;
+      } else {
+        setFormError((formError) => ({
+          ...formError,
+          nameErr: 'Please enter a name',
+        }));
+        console.log('name', formError);
+        // return false;
+      }
+    }
+
+    if (fieldName === 'email') {
+      if (
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          value
+        )
+      ) {
+        setFormError((formError) => ({ ...formError, emailErr: '' }));
+        console.log('email', formError);
+      } else {
+        setFormError((formError) => ({
+          ...formError,
+          emailErr: 'Please enter a valid email address',
+        }));
+        console.log('email', formError);
+        // return false;
+      }
+    }
+
+    if (fieldName === 'message') {
+      if (value.length > 0 && value.length < 10000) {
+        setFormError((formError) => ({ ...formError, messageErr: '' }));
+        console.log('message', formError);
+        // return true;
+      } else {
+        setFormError((formError) => ({
+          ...formError,
+          messageErr:
+            'Please enter a message must be between 1 and 10,000 chars',
+        }));
+        console.log('message', formError);
+        // return false;
+      }
+    }
   };
 
   return (
@@ -65,17 +141,24 @@ const ContactForm = () => {
           fullWidth
           value={form.name}
           onChange={handleChange}
+          error={formError.nameErr !== ''}
+          onBlur={() => isValid('name', form.name)}
+          helperText={formError.nameErr}
           sx={{ marginBottom: '1rem' }}
         />
         <TextField
           id="email"
           name="email"
+          type="email"
           label="Email"
           variant="outlined"
           required
           fullWidth
           value={form.email}
           onChange={handleChange}
+          error={formError.emailErr !== ''}
+          onBlur={() => isValid('email', form.email)}
+          helperText={formError.emailErr}
           sx={{ marginBottom: '1rem' }}
         />
         <TextField
@@ -89,6 +172,9 @@ const ContactForm = () => {
           rows={10}
           value={form.message}
           onChange={handleChange}
+          error={formError.messageErr !== ''}
+          onBlur={() => isValid('message', form.message)}
+          helperText={formError.messageErr}
           sx={{ marginBottom: '1rem' }}
         />
         <Stack
