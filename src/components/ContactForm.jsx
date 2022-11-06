@@ -11,9 +11,13 @@ import EmailIcon from '@mui/icons-material/Email';
 /*****************************************************************
  * Send email using https://formsubmit.co form submission service.
  * See .env for associated email address and random code associated with it
+ *
+ * const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
  *****************************************************************/
+console.log(import.meta.env.VITE_EMAIL_ID);
+
 const sendMessage = (email, message) => {
-  const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
+  const URL = 'https://formsubmit.co/ajax/03b7e0675dcd19872c5789211aade4a5';
 
   fetch(URL, {
     method: 'POST',
