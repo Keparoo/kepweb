@@ -2,6 +2,13 @@
 
 This is the repository for Kep Kaeppeler's web development portfolio site.
 
+## Resume
+
+When resume is updated, update links in the following components:
+
+- Navbar
+- About
+
 ## Development
 
 The site is built using React 18 with design elements from Material UI
@@ -19,7 +26,6 @@ The nextjs branch is a second version of the website refactored to use Next.js. 
 
 ## Under Construction
 
-- Create email web form component
 - Create page for each project
 - Create more project screenshots
 - Include website design portfolio
@@ -27,7 +33,6 @@ The nextjs branch is a second version of the website refactored to use Next.js. 
 - Link to WebToSmart
 - Redesign CSS color palette
 - Create custom components
-- Redeploy
 
 ---
 
