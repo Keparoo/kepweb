@@ -1,146 +1,74 @@
 import React, { useState } from 'react';
 
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+
 import { Box } from '@mui/system';
 import { Button, Stack, TextField, Tooltip } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 
-const ContactForm = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [formError, setFormError] = useState({
-    nameErr: '',
-    emailErr: '',
-    messageErr: '',
-  });
-  const [nameError, setNameError] = useState('');
+/*****************************************************************
+ * Send email using https://formsubmit.co form submission service.
+ * See .env for associated email address and random code associated with it
+ *****************************************************************/
+const sendMessage = (email, message) => {
+  const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
 
-  /*****************************************************************
-   * Send email using https://formsubmit.co form submission service.
-   * See .env for associated email address and random code associated with it
-   *****************************************************************/
-
-  const sendMessage = (email, message) => {
-    const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
-
-    fetch(URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        email: email,
-        message: message,
-      }),
+  fetch(URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify({
+      email: email,
+      message: message,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.debug(data);
+      console.debug('Message Successfully Sent');
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.debug(data);
-        console.debug('Message Successfully Sent');
-      })
-      .catch((error) => {
-        console.debug(error);
-        console.debug('Unable to send message');
-      });
-  };
+    .catch((error) => {
+      console.debug(error);
+      console.debug('Unable to send message');
+    });
+};
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setForm((f) => ({ ...f, [name]: value }));
-    validateName();
-    checkError();
-  };
+/* Form Validation Schema */
 
-  const isValid = (fieldName, value) => {
-    if (fieldName === 'name') {
-      if (value.length > 0) {
-        setFormError((formError) => ({ ...formError, nameErr: '' }));
-        console.log('name', formError);
-        // return true;
-      } else {
-        setNameError('Please enter a name');
-        setFormError((formError) => ({
-          ...formError,
-          nameErr: 'Please enter a name',
-        }));
-        console.log('name', formError);
-        // return false;
-      }
-    }
+const validationSchema = Yup.object({
+  name: Yup.string('Please enter your name')
+    .trim()
+    .min(1)
+    .max(40, '40 character maximum')
+    .required('Name is required'),
+  email: Yup.string('Please enter your email address')
+    .trim()
+    .email()
+    .required('Email address is required'),
+  message: Yup.string('Please enter your message')
+    .min(1)
+    .max(10000, '10,000 character limit')
+    .required('Message is required'),
+});
 
-    if (fieldName === 'email') {
-      if (
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          value
-        )
-      ) {
-        setFormError((formError) => ({ ...formError, emailErr: '' }));
-        console.log('email', formError);
-      } else {
-        setFormError((formError) => ({
-          ...formError,
-          emailErr: 'Please enter a valid email address',
-        }));
-        console.log('email', formError);
-        // return false;
-      }
-    }
-
-    if (fieldName === 'message') {
-      if (value.length > 0 && value.length < 10000) {
-        setFormError((formError) => ({ ...formError, messageErr: '' }));
-        console.log('message', formError);
-        // return true;
-      } else {
-        setFormError((formError) => ({
-          ...formError,
-          messageErr:
-            'Please enter a message must be between 1 and 10,000 chars',
-        }));
-        console.log('message', formError);
-        // return false;
-      }
-    }
-  };
-
-  const checkError = () => {
-    return (
-      isValid('name', form.name) &&
-      isValid('email', form.email) &&
-      isValid('message', form.message)
-    );
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    if (form.name === '' || form.email === '' || form.message === '') {
-      // isValid('name', form.name);
-      // isValid('email', form.email);
-      // isValid('message', form.message);
-      checkError();
-      return;
-    }
-
-    // isValid('name', form.name);
-    // isValid('email', form.email);
-    // isValid('message', form.message);
-    checkError();
-    console.log('Tried to submit, less than 3 blank', formError);
-
-    console.log('Form results', form);
-    setForm({ name: '', email: '', message: '' });
-    const message = `name: ${form.name}\nmessage:\n${form.message}`;
-    sendMessage(form.email, message);
-  };
-
-  const validateName = () => {
-    if (form.name !== '') {
-      setNameError('');
-      console.log('Name Error fixed');
-      return true;
-    } else return false;
-  };
+const ContactForm = () => {
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+    validationSchema: validationSchema,
+    onSubmit: async (values, { resetForm }) => {
+      const message = `name: ${values.name}\nmessage:\n${values.message}`;
+      sendMessage(values.email, message);
+      resetForm({});
+    },
+  });
 
   return (
     <section>
@@ -152,11 +80,11 @@ const ContactForm = () => {
           variant="outlined"
           required
           fullWidth
-          value={form.name}
-          onChange={handleChange}
-          error={nameError !== ''}
-          onBlur={() => isValid('name', form.name)}
-          helperText={nameError}
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.name && Boolean(formik.errors.name)}
+          helperText={formik.touched.name && formik.errors.name}
           sx={{ marginBottom: '1rem' }}
         />
         <TextField
@@ -167,11 +95,11 @@ const ContactForm = () => {
           variant="outlined"
           required
           fullWidth
-          value={form.email}
-          onChange={handleChange}
-          error={formError.emailErr !== ''}
-          onBlur={() => isValid('email', form.email)}
-          helperText={formError.emailErr}
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.email && Boolean(formik.errors.email)}
+          helperText={formik.touched.email && formik.errors.email}
           sx={{ marginBottom: '1rem' }}
         />
         <TextField
@@ -183,11 +111,11 @@ const ContactForm = () => {
           fullWidth
           multiline
           rows={10}
-          value={form.message}
-          onChange={handleChange}
-          error={formError.messageErr !== ''}
-          onBlur={() => isValid('message', form.message)}
-          helperText={formError.messageErr}
+          value={formik.values.message}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.message && Boolean(formik.errors.message)}
+          helperText={formik.touched.message && formik.errors.message}
           sx={{ marginBottom: '1rem' }}
         />
         <Stack
@@ -197,7 +125,10 @@ const ContactForm = () => {
         >
           <Button
             type="submit"
-            onClick={handleSubmit}
+            onClick={(e) => {
+              e.preventDefault();
+              formik.handleSubmit(e);
+            }}
             variant="contained"
             sx={{ marginTop: '1em' }}
           >

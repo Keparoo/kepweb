@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
-
 import { Box } from '@mui/system';
 import { Button, Stack, TextField, Tooltip } from '@mui/material';
 
@@ -16,21 +13,6 @@ const ContactForm = () => {
     messageErr: '',
   });
   const [nameError, setNameError] = useState('');
-
-  const validationSchema = Yup.object({
-    name: Yup.string('Enter your name')
-      .trim()
-      .min(1)
-      .max(40, '40 character maximum')
-      .required('Name is required'),
-    email: Yup.string('Enter your email address')
-      .trim()
-      .required('Email address is required'),
-    message: Yum.string('Enter your message to send')
-      .min(1)
-      .max(10000, '10,000 character limit')
-      .required('message is required'),
-  });
 
   /*****************************************************************
    * Send email using https://formsubmit.co form submission service.
@@ -69,13 +51,95 @@ const ContactForm = () => {
     checkError();
   };
 
+  const isValid = (fieldName, value) => {
+    if (fieldName === 'name') {
+      if (value.length > 0) {
+        setFormError((formError) => ({ ...formError, nameErr: '' }));
+        console.log('name', formError);
+        // return true;
+      } else {
+        setNameError('Please enter a name');
+        setFormError((formError) => ({
+          ...formError,
+          nameErr: 'Please enter a name',
+        }));
+        console.log('name', formError);
+        // return false;
+      }
+    }
+
+    if (fieldName === 'email') {
+      if (
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          value
+        )
+      ) {
+        setFormError((formError) => ({ ...formError, emailErr: '' }));
+        console.log('email', formError);
+      } else {
+        setFormError((formError) => ({
+          ...formError,
+          emailErr: 'Please enter a valid email address',
+        }));
+        console.log('email', formError);
+        // return false;
+      }
+    }
+
+    if (fieldName === 'message') {
+      if (value.length > 0 && value.length < 10000) {
+        setFormError((formError) => ({ ...formError, messageErr: '' }));
+        console.log('message', formError);
+        // return true;
+      } else {
+        setFormError((formError) => ({
+          ...formError,
+          messageErr:
+            'Please enter a message must be between 1 and 10,000 chars',
+        }));
+        console.log('message', formError);
+        // return false;
+      }
+    }
+  };
+
+  const checkError = () => {
+    return (
+      isValid('name', form.name) &&
+      isValid('email', form.email) &&
+      isValid('message', form.message)
+    );
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Form results', form);
 
+    if (form.name === '' || form.email === '' || form.message === '') {
+      // isValid('name', form.name);
+      // isValid('email', form.email);
+      // isValid('message', form.message);
+      checkError();
+      return;
+    }
+
+    // isValid('name', form.name);
+    // isValid('email', form.email);
+    // isValid('message', form.message);
+    checkError();
+    console.log('Tried to submit, less than 3 blank', formError);
+
+    console.log('Form results', form);
     setForm({ name: '', email: '', message: '' });
     const message = `name: ${form.name}\nmessage:\n${form.message}`;
     sendMessage(form.email, message);
+  };
+
+  const validateName = () => {
+    if (form.name !== '') {
+      setNameError('');
+      console.log('Name Error fixed');
+      return true;
+    } else return false;
   };
 
   return (
