@@ -13,9 +13,8 @@ import EmailIcon from '@mui/icons-material/Email';
  * See .env for associated email address and random code associated with it
  *
  * const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
+ * Eliminated the use of the .env
  *****************************************************************/
-console.log(import.meta.env.VITE_EMAIL_ID);
-
 const sendMessage = (email, message) => {
   const URL = 'https://formsubmit.co/ajax/03b7e0675dcd19872c5789211aade4a5';
 
