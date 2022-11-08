@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 import { Box } from '@mui/system';
-import { Button, Stack, TextField, Tooltip } from '@mui/material';
+import { Alert, Button, Stack, TextField, Tooltip } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 
@@ -59,6 +59,8 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm = () => {
+  const [messageSent, setMessageSent] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -156,6 +158,9 @@ const ContactForm = () => {
             </Tooltip>
           </Stack>
         </Stack>
+        {messageSent && (
+          <Alert severity="success">Message Sent Successfully!</Alert>
+        )}
       </Box>
     </section>
   );
