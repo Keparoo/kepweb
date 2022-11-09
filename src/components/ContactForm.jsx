@@ -4,7 +4,14 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 import { Box } from '@mui/system';
-import { Alert, Button, Stack, TextField, Tooltip } from '@mui/material';
+import {
+  Alert,
+  Button,
+  Snackbar,
+  Stack,
+  TextField,
+  Tooltip,
+} from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 
@@ -15,10 +22,12 @@ import EmailIcon from '@mui/icons-material/Email';
  * const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
  * Eliminated the use of the .env
  *****************************************************************/
-const sendMessage = (email, message) => {
+const sendMessage = async (email, message) => {
   const URL = 'https://formsubmit.co/ajax/03b7e0675dcd19872c5789211aade4a5';
 
-  fetch(URL, {
+  let results;
+
+  await fetch(URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -33,11 +42,15 @@ const sendMessage = (email, message) => {
     .then((data) => {
       console.debug(data);
       console.debug('Message Successfully Sent');
+      results = data;
     })
     .catch((error) => {
       console.debug(error);
       console.debug('Unable to send message');
+      results = error;
     });
+
+  return results;
 };
 
 /* Form Validation Schema */
@@ -60,6 +73,16 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const [messageSent, setMessageSent] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+    setMessageSent(false);
+  };
 
   const formik = useFormik({
     initialValues: {
@@ -70,7 +93,13 @@ const ContactForm = () => {
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
       const message = `name: ${values.name}\nmessage:\n${values.message}`;
-      sendMessage(values.email, message);
+      const results = await sendMessage(values.email, message);
+      if (results.success) {
+        setMessageSent(true);
+        console.log('Message sent: ', results.success);
+      } else {
+        console.log('Message not sent');
+      }
       resetForm({});
     },
   });
@@ -158,9 +187,19 @@ const ContactForm = () => {
             </Tooltip>
           </Stack>
         </Stack>
-        {messageSent && (
-          <Alert severity="success">Message Sent Successfully!</Alert>
-        )}
+        <Snackbar
+          open={messageSent}
+          autoHideDuration={6000}
+          onClose={handleClose}
+        >
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: '100%' }}
+          >
+            Message sent!
+          </Alert>
+        </Snackbar>
       </Box>
     </section>
   );
