@@ -4,8 +4,11 @@ import MuiAlert from '@mui/material/Alert';
 
 /*******************************
  *
- * Possible severity values:
- *    success, info, warning, error
+ * toastState = boolean (True for open)
+ * closeToast = function: changes toastState to false
+ * duration = integer: ms until toast automatically closes
+ * severity = string: possible values are success, info, warning, error
+ *    severity sets toast color to green/blue/yellow/red
  *
  */
 
@@ -14,7 +17,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 export default function Toast({
-  toastState,
+  open,
   closeToast,
   duration,
   message,
@@ -30,11 +33,7 @@ export default function Toast({
   };
 
   return (
-    <Snackbar
-      open={toastState}
-      autoHideDuration={duration}
-      onClose={handleClose}
-    >
+    <Snackbar open={open} autoHideDuration={duration} onClose={handleClose}>
       <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>
         {message}
       </Alert>

@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 import { Box } from '@mui/system';
-import { Button, Stack, TextField, Tooltip } from '@mui/material';
+import { Button, Stack, TextField, Tooltip, Typography } from '@mui/material';
 
 import Toast from './Toast';
 
@@ -17,6 +17,7 @@ import EmailIcon from '@mui/icons-material/Email';
  * const URL = 'https://formsubmit.co/ajax/' + import.meta.env.VITE_EMAIL_ID;
  * Eliminated the use of the .env
  *****************************************************************/
+
 const sendMessage = async (email, message) => {
   const URL = 'https://formsubmit.co/ajax/03b7e0675dcd19872c5789211aade4a5';
 
@@ -35,20 +36,18 @@ const sendMessage = async (email, message) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.debug(data);
-      console.debug('Message Successfully Sent');
+      console.debug('Fetch successful', data);
       results = data;
     })
     .catch((error) => {
-      console.debug(error);
-      console.debug('Unable to send message');
+      console.debug('Fetch unsuccessful', error);
       results = error;
     });
 
   return results;
 };
 
-/* Form Validation Schema */
+/*****  Form Validation Schema *************/
 
 const validationSchema = Yup.object({
   name: Yup.string('Please enter your name')
@@ -58,23 +57,24 @@ const validationSchema = Yup.object({
     .required('Name is required'),
   email: Yup.string('Please enter your email address')
     .trim()
-    .email()
+    .email('Please enter a valid email address')
     .required('Email address is required'),
   message: Yup.string('Please enter your message')
+    .trim()
     .min(1)
-    .max(10000, '10,000 character limit')
+    .max(2000, '2,000 character limit')
     .required('Message is required'),
 });
 
 const ContactForm = () => {
   const [toast, setToast] = useState({
-    toastState: false,
-    severity: null,
+    open: false,
+    severity: 'info',
     message: '',
   });
 
   const closeToast = () => {
-    setToast({ ...toast, toastState: false });
+    setToast({ ...toast, open: false });
   };
 
   const formik = useFormik({
@@ -89,19 +89,19 @@ const ContactForm = () => {
       const results = await sendMessage(values.email, message);
       if (results.success) {
         setToast({
-          toastState: true,
+          open: true,
           severity: 'success',
           message: 'Message sent!',
         });
-        console.log('Message sent: ', results.success);
+        console.log('Message sent: ', results.message);
         resetForm({});
       } else {
         setToast({
-          toastState: true,
+          open: true,
           severity: 'error',
           message: 'Unable to send message.',
         });
-        console.log('Message not sent');
+        console.log('Message not sent', results);
       }
     },
   });
@@ -112,7 +112,7 @@ const ContactForm = () => {
         <TextField
           id="name"
           name="name"
-          label="Name"
+          label="Your name"
           variant="outlined"
           required
           fullWidth
@@ -127,7 +127,7 @@ const ContactForm = () => {
           id="email"
           name="email"
           type="email"
-          label="Email"
+          label=" Your email"
           variant="outlined"
           required
           fullWidth
@@ -154,6 +154,7 @@ const ContactForm = () => {
           helperText={formik.touched.message && formik.errors.message}
           sx={{ marginBottom: '1rem' }}
         />
+
         <Stack
           direction="row"
           justifyContent="space-between"
@@ -167,9 +168,15 @@ const ContactForm = () => {
             }}
             variant="contained"
             sx={{ marginTop: '1em' }}
+            disabled={
+              formik.errors.name !== undefined ||
+              formik.errors.email !== undefined ||
+              formik.errors.message !== undefined
+            }
           >
             Submit
           </Button>
+
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'right' }}>
             <EmailIcon sx={{ marginTop: '7px' }} />
             <Tooltip
@@ -189,8 +196,9 @@ const ContactForm = () => {
             </Tooltip>
           </Stack>
         </Stack>
+
         <Toast
-          toastState={toast.toastState}
+          open={toast.open}
           closeToast={closeToast}
           duration={6000}
           message={toast.message}
