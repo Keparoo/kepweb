@@ -66,6 +66,8 @@ const validationSchema = Yup.object({
     .required('Message is required'),
 });
 
+/********* Contact Form Component *************************/
+
 const ContactForm = () => {
   const [toast, setToast] = useState({
     open: false,

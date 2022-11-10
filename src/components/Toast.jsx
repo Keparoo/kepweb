@@ -2,7 +2,7 @@ import React from 'react';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 
-/*******************************
+/*********************************************************************
  *
  * toastState = boolean (True for open)
  * closeToast = function: changes toastState to false
@@ -10,7 +10,7 @@ import MuiAlert from '@mui/material/Alert';
  * severity = string: possible values are success, info, warning, error
  *    severity sets toast color to green/blue/yellow/red
  *
- */
+ **********************************************************************/
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
