@@ -13,6 +13,8 @@ import {
   Tooltip,
 } from '@mui/material';
 
+import Toast from './Toast';
+
 import EmailIcon from '@mui/icons-material/Email';
 
 /*****************************************************************
@@ -73,19 +75,19 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const [messageSent, setMessageSent] = useState(false);
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   /* Toast handlers
   Extract to component 
   */
-  const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
+  // const handleClose = (event, reason) => {
+  //   if (reason === 'clickaway') {
+  //     return;
+  //   }
 
-    setOpen(false);
-    setMessageSent(false);
-  };
+  //   setOpen(false);
+  //   setMessageSent(false);
+  // };
 
   const formik = useFormik({
     initialValues: {
@@ -190,19 +192,13 @@ const ContactForm = () => {
             </Tooltip>
           </Stack>
         </Stack>
-        <Snackbar
-          open={messageSent}
-          autoHideDuration={6000}
-          onClose={handleClose}
-        >
-          <Alert
-            onClose={handleClose}
-            severity="success"
-            sx={{ width: '100%' }}
-          >
-            Message sent!
-          </Alert>
-        </Snackbar>
+        <Toast
+          toastState={messageSent}
+          setToastState={setMessageSent}
+          duration={6000}
+          message="Toast sent"
+          severity="success"
+        />
       </Box>
     </section>
   );
