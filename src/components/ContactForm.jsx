@@ -4,14 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 import { Box } from '@mui/system';
-import {
-  Alert,
-  Button,
-  Snackbar,
-  Stack,
-  TextField,
-  Tooltip,
-} from '@mui/material';
+import { Button, Stack, TextField, Tooltip } from '@mui/material';
 
 import Toast from './Toast';
 
@@ -74,20 +67,15 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm = () => {
-  const [messageSent, setMessageSent] = useState(false);
-  // const [open, setOpen] = useState(false);
+  const [toast, setToast] = useState({
+    toastState: false,
+    severity: null,
+    message: '',
+  });
 
-  /* Toast handlers
-  Extract to component 
-  */
-  // const handleClose = (event, reason) => {
-  //   if (reason === 'clickaway') {
-  //     return;
-  //   }
-
-  //   setOpen(false);
-  //   setMessageSent(false);
-  // };
+  const closeToast = () => {
+    setToast({ ...toast, toastState: false });
+  };
 
   const formik = useFormik({
     initialValues: {
@@ -100,12 +88,21 @@ const ContactForm = () => {
       const message = `name: ${values.name}\nmessage:\n${values.message}`;
       const results = await sendMessage(values.email, message);
       if (results.success) {
-        setMessageSent(true);
+        setToast({
+          toastState: true,
+          severity: 'success',
+          message: 'Message sent!',
+        });
         console.log('Message sent: ', results.success);
+        resetForm({});
       } else {
+        setToast({
+          toastState: true,
+          severity: 'error',
+          message: 'Unable to send message.',
+        });
         console.log('Message not sent');
       }
-      resetForm({});
     },
   });
 
@@ -193,11 +190,11 @@ const ContactForm = () => {
           </Stack>
         </Stack>
         <Toast
-          toastState={messageSent}
-          setToastState={setMessageSent}
+          toastState={toast.toastState}
+          closeToast={closeToast}
           duration={6000}
-          message="Toast sent"
-          severity="success"
+          message={toast.message}
+          severity={toast.severity}
         />
       </Box>
     </section>
