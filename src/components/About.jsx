@@ -185,7 +185,7 @@ const About = () => {
                     download="kep-kaeppeler-resume"
                     color="inherit"
                   >
-                    Download resume
+                    Download my resume
                   </Button>
                 </Stack>
 
@@ -198,7 +198,7 @@ const About = () => {
                     underline="hover"
                     color="inherit"
                   >
-                    Print resume
+                    View or print my resume
                   </Button>
                 </Stack>
               </Stack>

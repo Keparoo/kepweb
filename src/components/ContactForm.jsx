@@ -144,6 +144,7 @@ const ContactForm = () => {
           id="message"
           name="message"
           label="Message"
+          placeholder="Message is limited to 2000 characters"
           variant="outlined"
           required
           fullWidth
