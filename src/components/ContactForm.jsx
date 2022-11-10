@@ -75,6 +75,9 @@ const ContactForm = () => {
   const [messageSent, setMessageSent] = useState(false);
   const [open, setOpen] = useState(false);
 
+  /* Toast handlers
+  Extract to component 
+  */
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
