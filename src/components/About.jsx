@@ -169,7 +169,7 @@ const About = () => {
                       href="https://fosstodon.org/@Kep"
                       target="_blank"
                       underline="hover"
-                      rel="me"
+                      rel="me noopener"
                       color="inherit"
                     >
                       @Kep@fosstodon.org

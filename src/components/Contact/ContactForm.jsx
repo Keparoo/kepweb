@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { Box } from '@mui/system';
 import { Button, Stack, TextField, Tooltip, Typography } from '@mui/material';
 
-import Toast from './Toast';
+import Toast from '../Toast';
 
 import EmailIcon from '@mui/icons-material/Email';
 
