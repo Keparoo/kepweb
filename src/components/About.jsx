@@ -7,6 +7,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
+import MastodonIcon from '../static/mastodon.svg';
+import IconMastodon from './IconMastodon';
 
 import resume from '../static/kep-kaeppeler-resume.11.1.pdf';
 
@@ -155,6 +157,22 @@ const About = () => {
                       color="inherit"
                     >
                       Github.com/Keparoo
+                    </Button>
+                  </Tooltip>
+                </Stack>
+
+                <Stack direction="row" spacing={1}>
+                  <IconMastodon style={{ marginTop: '12px' }} />
+                  <Tooltip title="Open Mastodon Page" enterTouchDelay={0}>
+                    <Button
+                      className="link"
+                      href="https://fosstodon.org/@Kep"
+                      target="_blank"
+                      underline="hover"
+                      rel="me"
+                      color="inherit"
+                    >
+                      @Kep@fosstodon.org
                     </Button>
                   </Tooltip>
                 </Stack>
