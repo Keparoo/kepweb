@@ -106,15 +106,23 @@ const About = () => {
               </Typography>
               <br />
 
-              <Typography className="subheading" component="h4" variant="h4">
+              <Typography
+                className="subheading fediverse"
+                component="h4"
+                variant="h4"
+              >
                 I've joined the Fediverse!
               </Typography>
-              <Typography variant="body1">
+
+              <Typography variant="body1" className="fedi-body">
                 Come join me and the many others that have joined the{' '}
                 <a className="link" href="https://fedi.tips/" target="_blank">
                   Fediverse{' '}
                 </a>
-                in addition to (or in place of) Twitter. Check out{' '}
+                in addition to <span className="italic">or in place of—</span>
+                Twitter.
+                <br />
+                Check out{' '}
                 <a
                   className="link"
                   href="https://joinmastodon.org/"
@@ -122,7 +130,9 @@ const About = () => {
                 >
                   Mastodon
                 </a>{' '}
-                and find me on the Fosstodon instance:{' '}
+                and find me on the Fosstodon instance. I'm currently building
+                connections here (connect with me!) and more likely to be
+                engaging and posting actively here than on Twitter.{' '}
                 <a
                   className="link"
                   href="https://fosstodon.org/@Kep"
