@@ -63,6 +63,7 @@ const About = () => {
                 language skills, and practice mindfulness &amp; meditation.
               </Typography>
               <br />
+
               <Typography className="subheading" component="h4" variant="h4">
                 Skills:
               </Typography>
@@ -102,6 +103,33 @@ const About = () => {
                 Vite environment
                 <br />
                 using <strong>Material UI</strong> components.
+              </Typography>
+              <br />
+
+              <Typography className="subheading" component="h4" variant="h4">
+                I've joined the Fediverse!
+              </Typography>
+              <Typography variant="body1">
+                Come join me and the many others that have joined the{' '}
+                <a className="link" href="https://fedi.tips/" target="_blank">
+                  Fediverse{' '}
+                </a>
+                in addition to (or in place of) Twitter. Check out{' '}
+                <a
+                  className="link"
+                  href="https://joinmastodon.org/"
+                  target="_blank"
+                >
+                  Mastodon
+                </a>{' '}
+                and find me on the Fosstodon instance:{' '}
+                <a
+                  className="link"
+                  href="https://fosstodon.org/@Kep"
+                  target="_blank"
+                >
+                  @Kep@fosstodon.org
+                </a>
               </Typography>
               <br />
 
@@ -166,10 +194,10 @@ const About = () => {
                   <Tooltip title="Open Mastodon Page" enterTouchDelay={0}>
                     <Button
                       className="link"
+                      rel="me noopener"
                       href="https://fosstodon.org/@Kep"
                       target="_blank"
                       underline="hover"
-                      rel="me noopener"
                       color="inherit"
                     >
                       @Kep@fosstodon.org

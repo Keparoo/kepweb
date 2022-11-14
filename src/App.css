@@ -155,6 +155,8 @@ select {
 .link {
   text-transform: none !important;
   font-size: 16px !important;
+  text-decoration: none;
+  color: var(--clr-accent-400);
 }
 
 .link:hover,
@@ -162,6 +164,10 @@ select {
   text-decoration: none !important;
   color: var(--clr-primary-original) !important;
   background: var(--clr-accent-original) !important;
+}
+
+.footer-link:hover {
+  color: var(--clr-primary-original);
 }
 
 /* Create typography variables */

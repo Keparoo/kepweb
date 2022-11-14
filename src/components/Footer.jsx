@@ -8,33 +8,25 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
 import { Tooltip, Typography } from '@mui/material';
-import { Container } from '@mui/system';
 
 export default function Footer() {
-  const [value, setValue] = useState(0);
-
   return (
     <Box sx={{ width: '100%', marginTop: '2em' }}>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-        sx={{ bgcolor: '#e1e8ef' }}
-      >
+      <BottomNavigation showLabels sx={{ bgcolor: '#e1e8ef' }}>
         <BottomNavigationAction
+          className="footer-link"
           component="a"
           href="#hero"
           icon={
             <Tooltip title="Go Home" enterTouchDelay={0}>
-              <HomeIcon />
+              <HomeIcon size={30} />
             </Tooltip>
           }
           aria-label="Home"
         />
 
         <BottomNavigationAction
+          className="footer-link"
           component="a"
           href="#about"
           icon={
@@ -45,6 +37,7 @@ export default function Footer() {
           aria-label="About me"
         />
         <BottomNavigationAction
+          className="footer-link"
           component="a"
           href="https://www.linkedin.com/in/kep-kaeppeler/"
           target="_blank"
@@ -57,6 +50,7 @@ export default function Footer() {
           aria-label="LinkedIn profile"
         />
         <BottomNavigationAction
+          className="footer-link"
           component="a"
           href="https://github.com/Keparoo"
           target="_blank"
