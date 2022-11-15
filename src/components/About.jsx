@@ -135,6 +135,7 @@ const About = () => {
                 engaging and posting actively here than on Twitter.{' '}
                 <a
                   className="link"
+                  rel="me noopener"
                   href="https://fosstodon.org/@Kep"
                   target="_blank"
                 >
