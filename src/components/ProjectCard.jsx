@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
 import Typography from '@mui/material/Typography';
-import { Button, CardHeader, IconButton, Tooltip } from '@mui/material';
+import { Button, CardHeader, Tooltip } from '@mui/material';
 
 export default function ProjectCard({
   title,
@@ -18,6 +18,12 @@ export default function ProjectCard({
   demo,
   github,
 }) {
+  const [isClosed, setIsClosed] = useState(true);
+
+  const toggleCard = (e) => {
+    setIsClosed((isClosed) => !isClosed);
+  };
+
   return (
     <Card sx={{ maxWidth: 350, marginTop: '1.25em' }}>
       <CardHeader title={title} />
@@ -25,11 +31,35 @@ export default function ProjectCard({
       <CardMedia component="img" height="220" image={image} alt={title} />
       <CardContent>
         <Typography variant="body2" component="article" color="text.secondary">
-          {description}
-          {backend} <br />
-          {frontend}
+          <span className={isClosed ? 'card_preview-text' : ''}>
+            {description}
+            {backend} <br />
+            {frontend}
+          </span>
         </Typography>
+        {isClosed ? (
+          <Button
+            variant="outlined"
+            size="small"
+            aria-label="Continue reading"
+            sx={{ float: 'right' }}
+            onClick={toggleCard}
+          >
+            Continue Reading
+          </Button>
+        ) : (
+          <Button
+            variant="outlined"
+            size="small"
+            aria-label="Continue reading"
+            sx={{ float: 'right' }}
+            onClick={toggleCard}
+          >
+            Close
+          </Button>
+        )}
       </CardContent>
+      <br />
       <CardActions>
         <Tooltip title="Open page to project deployment">
           <Button

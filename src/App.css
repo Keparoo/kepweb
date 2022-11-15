@@ -159,6 +159,13 @@ select {
   color: var(--clr-accent-400);
 }
 
+.card_preview-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .fediverse {
   position: relative;
   z-index: 1;
