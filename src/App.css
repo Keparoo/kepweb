@@ -166,7 +166,22 @@ select {
   overflow: hidden;
 }
 
-.fediverse {
+.aboutFedi::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 70%;
+  background-image: url(/src/static/fediverse_logo.svg);
+  width: 1000px;
+  height: 1000px;
+  opacity: 15%;
+  background-repeat: no-repeat;
+  transform: translateX(-3em) translateY(-8em) scale(-70%) rotate(40deg);
+}
+
+.fediverse,
+.aboutFedi {
   position: relative;
   z-index: 1;
 }
@@ -184,6 +199,7 @@ select {
   background-image: url(/src/static/fediverse_logo.svg);
   width: 725px;
   height: 725px;
+  background-repeat: no-repeat;
   transform: translateX(-14.5em) translateY(-8em) scale(-50%);
 }
 

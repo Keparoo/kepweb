@@ -24,10 +24,14 @@ const About = () => {
           </Grid>
           <Grid item md={6}>
             <Stack spacing={2} sx={{ marginTop: '1.5em' }}>
-              <Typography variant="h4" className="subheading" component="h3">
+              <Typography
+                variant="h4"
+                className="subheading aboutFedi"
+                component="h3"
+              >
                 Hi, I'm Kep
               </Typography>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="body1" gutterBottom className="fedi-body">
                 I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask,
                 and SQL developer with graphic design skills who loves to
                 capture the personality and zeitgeist of a client in the
