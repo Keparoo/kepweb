@@ -14,6 +14,7 @@ export default function ProjectCard({
   description,
   backend,
   frontend,
+  note,
   image,
   demo,
   github,
@@ -30,19 +31,39 @@ export default function ProjectCard({
 
       <CardMedia component="img" height="220" image={image} alt={title} />
       <CardContent>
-        <Typography variant="body2" component="article" color="text.secondary">
-          <span className={isClosed ? 'card_preview-text' : ''}>
+        <div
+          variant="body2"
+          component="article"
+          color="text.secondary"
+          className={isClosed ? 'card_preview-text' : ''}
+        >
+          <Typography variant="body2" component="p">
             {description}
-            {backend} <br />
+          </Typography>
+          <Typography
+            variant="body2"
+            component="p"
+            sx={{ paddingTop: '.25rem' }}
+          >
+            {backend}
+          </Typography>
+          <Typography
+            variant="body2"
+            component="p"
+            sx={{ paddingTop: '.25rem' }}
+          >
             {frontend}
-          </span>
-        </Typography>
+          </Typography>
+          <Typography variant="body2" component="p" sx={{ paddingTop: '1rem' }}>
+            {note}
+          </Typography>
+        </div>
         {isClosed ? (
           <Button
             variant="outlined"
             size="small"
             aria-label="Continue reading"
-            sx={{ float: 'right' }}
+            sx={{ float: 'right', marginTop: '.75rem' }}
             onClick={toggleCard}
           >
             Continue Reading
@@ -52,15 +73,14 @@ export default function ProjectCard({
             variant="outlined"
             size="small"
             aria-label="Continue reading"
-            sx={{ float: 'right' }}
+            sx={{ float: 'right', marginTop: '.75rem' }}
             onClick={toggleCard}
           >
             Close
           </Button>
         )}
       </CardContent>
-      <br />
-      <CardActions>
+      <CardActions sx={{ marginTop: '3rem' }}>
         <Tooltip title="Open page to project deployment">
           <Button
             variant="contained"

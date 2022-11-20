@@ -29,7 +29,7 @@ const ProjectList = () => {
               title="MAPLE"
               variant="div"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>
                       Massachusetts Platform for Legislative Engagement
@@ -38,23 +38,30 @@ const ProjectList = () => {
                   A project initiative currently under development by{' '}
                   <strong>Code for Boston</strong>, a <em>Code for America</em>{' '}
                   brigade and grassroots organization.
-                  <br />
-                  I work with a team of volunteer designers and developers on
-                  this project which endeavors to produce a digital public space
-                  wherein Massachusetts constituents can share their expertise,
-                  stories, and opinions on the legislation that shapes their
-                  lives.
-                  <br />
+                  <br />I work with a team of volunteer designers and developers
+                  on this project which endeavors to produce a digital public
+                  space wherein Massachusetts constituents can share their
+                  expertise, stories, and opinions on the legislation that
+                  shapes their lives.
+                </div>
+              }
+              backend={
+                <p>
                   <strong>Backend:</strong> Firebase with React-Firebase-Hooks
-                  <br />
+                </p>
+              }
+              frontend={
+                <p>
                   <strong>Frontend:</strong> React, TypeScript, Javascript,
                   Next.js, Storybook, and Bootstrap
-                  <br />
-                  <br />
+                </p>
+              }
+              note={
+                <p>
                   <strong>Note: </strong>Currently, this web app is user testing
                   and preparing for a late fall limited-feature beta rollout and
                   a January 1.0 release.
-                </span>
+                </p>
               }
               image={maple}
               demo="https://mapletestimony.org/"
@@ -66,7 +73,7 @@ const ProjectList = () => {
             <ProjectCard
               title="Tapntable"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>Restaurant Point of Sale</strong>
                   </Typography>
@@ -74,16 +81,24 @@ const ProjectList = () => {
                   application for servers, bartenders, and managers to run
                   restaurant operations including orders, timeclock, and
                   inventory.
-                  <br />
+                </div>
+              }
+              backend={
+                <p>
                   <strong>Backend:</strong> A PostgreSQL database with a RESTful
                   API using Node.js, Express, and a Jest test suite.
-                  <br />
+                </p>
+              }
+              frontend={
+                <p>
                   <strong>Frontend:</strong> A single-page app using React,
                   Redux, and Axios to implement a user interface for managing
                   orders, checks, payments, end-of-day reconciliation, sales
                   reports, timeclock, and database management.
-                  <br />
-                  <br />
+                </p>
+              }
+              note={
+                <span>
                   <strong>Note: </strong>The deployed site will allow a user to
                   log in with a demo-pin: 12345 to try out the app authorizing a
                   subset of features.
@@ -99,7 +114,7 @@ const ProjectList = () => {
             <ProjectCard
               title="TuttiTracks"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>Spotify Playlist Creation Tool</strong>
                   </Typography>
@@ -107,14 +122,22 @@ const ProjectList = () => {
                   song tracks and audio information including tempo, time
                   signature, and key. A user can create, edit, and listen to
                   playlists that may be uploaded to the user's Spotify account.
-                  <br />
+                </div>
+              }
+              backend={
+                <p>
                   <strong>Backend</strong>: Python with a PostgreSQL database, a
                   RESTful API, SQLAlchemy ORM, Oauth authorization, interface to
                   the Spotify API, and a test suite using unittest.
-                  <br />
+                </p>
+              }
+              frontend={
+                <p>
                   <strong>Frontend</strong>: Python, Flask, and Jinja2.
-                  <br />
-                  <br />
+                </p>
+              }
+              note={
+                <span>
                   <strong>Note:</strong> In order to use the app, if the user is
                   not currently logged into their Spotify account they will be
                   directed to login or signup using OAuth. A user may then
@@ -131,24 +154,33 @@ const ProjectList = () => {
             <ProjectCard
               title="Jobly"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>Job Listing Web App</strong>
                   </Typography>
                   A web app for searching, exploring and applying for listed
                   jobs on a job posting site.
-                  <br />
+                </div>
+              }
+              backend={
+                <p>
                   <strong>Backend</strong>: A PostgreSQL database with a RESTful
                   API using Node.js and Express with a comprehensive test suite
                   written in Jest. The app implements role based authorization
                   using JWTs, manages data validation with json schema, and is
-                  currently deployed to Heroku. <br />
+                  currently deployed to Heroku.
+                </p>
+              }
+              frontend={
+                <p>
                   <strong>Frontend:</strong> A Single-page React app using
                   React-Router for routing and protecting routes based on JWT
                   permissions, and local storage to manage user persistence. It
                   is currently deployed using Surge.
-                  <br />
-                  <br />
+                </p>
+              }
+              note={
+                <span>
                   <strong>Note: </strong>The deployed site will allow a user to
                   log in with username: 'testuser' and password 'password' for
                   demonstration purposes with limited permissions.
@@ -164,23 +196,28 @@ const ProjectList = () => {
             <ProjectCard
               title="Casting Agency"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>Casting Agency Management App</strong>
                   </Typography>
                   A web API to manage movies and actor assignments for a casting
                   agency.
-                  <br />
+                </div>
+              }
+              backend={
+                <p>
                   <strong>Backend</strong>: A PostgreSQL database with a RESTful
                   API using Python and Flask, role-based access control
                   authorization utilizing Auth0, test suite, and currently
                   deployed to Heroku.
-                  <br />
-                  <br />
-                  <strong>Note:</strong>The deployment link is below but this is
-                  an API <em>only</em> that upon login, returns a JWT with the
-                  appropriate role-based auth to the screen to access the API.
-                  Currently there is no interactive front-end.
+                </p>
+              }
+              note={
+                <span>
+                  <strong>Note:</strong> The deployment link is below but this
+                  is an API <em>only</em> that upon login, returns a JWT with
+                  the appropriate role-based auth to the screen to access the
+                  API. Currently there is no interactive front-end.
                 </span>
               }
               image={castingAgency}
@@ -193,7 +230,7 @@ const ProjectList = () => {
             <ProjectCard
               title="Connect 4"
               description={
-                <span>
+                <div>
                   <Typography variant="subtitle2" align="center" gutterBottom>
                     <strong>Classic Game</strong>
                   </Typography>
@@ -202,7 +239,7 @@ const ProjectList = () => {
                   This project was created using only HTML5, and CSS3 without
                   the use of any frameworks or libraries.
                   <br />
-                </span>
+                </div>
               }
               image={connect4}
               demo="https://connect4-keparoo.vercel.app/"
