@@ -160,13 +160,6 @@ select {
   color: var(--clr-accent-400);
 }
 
-.card_preview-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 .aboutFedi::before {
   content: '';
   position: absolute;

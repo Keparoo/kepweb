@@ -26,6 +26,13 @@
   color: var(--clr-text);
 }
 
+.previewText {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .backend,
 .frontend {
   padding-top: 0.25rem;

@@ -29,7 +29,7 @@ export default function ProjectCard({
       <img src={image} className={styles.image} alt={title} />
 
       <article className={styles.content}>
-        <div className={isClosed ? 'card_preview-text' : ''}>
+        <div className={isClosed ? `${styles.previewText}` : ''}>
           <p>{description}</p>
           <p className={styles.backend}>{backend}</p>
           <p className={styles.frontend}>{frontend}</p>

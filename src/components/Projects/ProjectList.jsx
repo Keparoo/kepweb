@@ -1,13 +1,13 @@
 import React from 'react';
 
-import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectCard from './ProjectCard';
 
-import maple from '../static/maple-700x440.jpg';
-import tapntable from '../static/tapntable-700x440.jpg';
-import tuttitracks from '../static/tuttitracks-700x440.jpg';
-import castingAgency from '../static/castingAgency-700x440.jpg';
-import jobly from '../static/jobly-700x440.jpg';
-import connect4 from '../static/connect-4-700x440.jpg';
+import maple from '../../static/maple-700x440.jpg';
+import tapntable from '../../static/tapntable-700x440.jpg';
+import tuttitracks from '../../static/tuttitracks-700x440.jpg';
+import castingAgency from '../../static/castingAgency-700x440.jpg';
+import jobly from '../../static/jobly-700x440.jpg';
+import connect4 from '../../static/connect-4-700x440.jpg';
 
 import { Box, Grid, Typography } from '@mui/material';
 
