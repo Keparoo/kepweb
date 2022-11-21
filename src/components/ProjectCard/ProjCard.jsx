@@ -59,7 +59,7 @@ export default function ProjCard({
         )}
       </article>
 
-      <nav className={styles.links} aria-label="Card Project Navigation">
+      <nav className={styles.nav} aria-label="Card Project Navigation">
         <Tooltip title="Open page to project deployment">
           <Button
             variant="contained"

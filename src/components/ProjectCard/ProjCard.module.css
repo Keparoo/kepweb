@@ -33,10 +33,10 @@
 
 .toggleButton {
   float: right;
-  margin-top: 3em;
+  margin-top: 0.75rem !important;
 }
 
-.links {
+.nav {
   margin-top: 3rem;
   padding: 8px;
 }

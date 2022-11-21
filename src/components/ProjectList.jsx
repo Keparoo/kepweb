@@ -235,12 +235,15 @@ const ProjectList = () => {
                     <strong>Classic Game</strong>
                   </Typography>
                   A simple vanilla Javascript web app implementing the game
-                  Connect 4 that has been deployed to Vercel.
-                  <br /> <br />
-                  This project was created using only HTML5, and CSS3 without
-                  the use of any frameworks or libraries.
-                  <br />
+                  Connect 4 deployed to Vercel.
                 </div>
+              }
+              frontend={
+                <p>
+                  <strong>Frontend: </strong>This project was created using only
+                  HTML5, and CSS3 without the use of any frameworks or
+                  libraries.
+                </p>
               }
               image={connect4}
               demo="https://connect4-keparoo.vercel.app/"
