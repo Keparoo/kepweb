@@ -31,7 +31,7 @@ export default function ProjectCard({
 
       <CardMedia component="img" height="220" image={image} alt={title} />
       <CardContent>
-        <div
+        <Typography
           variant="body2"
           component="article"
           color="text.secondary"
@@ -57,7 +57,7 @@ export default function ProjectCard({
           <Typography variant="body2" component="p" sx={{ paddingTop: '1rem' }}>
             {note}
           </Typography>
-        </div>
+        </Typography>
         {isClosed ? (
           <Button
             variant="outlined"

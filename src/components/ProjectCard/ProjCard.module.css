@@ -1,0 +1,42 @@
+.card {
+  max-width: 350px;
+  margin-top: 1.25rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px var(--clr-neutral-200);
+}
+
+.title {
+  font-size: 24px;
+  padding: 16px;
+  color: black;
+}
+
+.image {
+  height: 220px;
+}
+
+.content {
+  padding: 16px;
+  font-size: 14px;
+  color: var(--clr-text);
+}
+
+.backend,
+.frontend {
+  padding-top: 0.25rem;
+}
+
+.note {
+  padding-top: 1rem;
+}
+
+.toggleButton {
+  float: right;
+  margin-top: 3em;
+}
+
+.links {
+  margin-top: 3rem;
+  padding: 8px;
+}

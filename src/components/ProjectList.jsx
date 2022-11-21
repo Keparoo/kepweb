@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectCard from './ProjectCard';
+import ProjCard from './ProjectCard/ProjCard';
 
 import maple from '../static/maple-700x440.jpg';
 import tapntable from '../static/tapntable-700x440.jpg';
@@ -25,7 +25,7 @@ const ProjectList = () => {
           spacing={4}
         >
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="MAPLE"
               variant="div"
               description={
@@ -70,7 +70,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="Tapntable"
               description={
                 <div>
@@ -111,7 +111,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="TuttiTracks"
               description={
                 <div>
@@ -151,7 +151,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="Jobly"
               description={
                 <div>
@@ -193,7 +193,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="Casting Agency"
               description={
                 <div>
@@ -227,7 +227,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjectCard
+            <ProjCard
               title="Connect 4"
               description={
                 <div>
@@ -235,7 +235,8 @@ const ProjectList = () => {
                     <strong>Classic Game</strong>
                   </Typography>
                   A simple vanilla Javascript web app implementing the game
-                  Connect 4 deployed to Vercel. <br /> <br />
+                  Connect 4 that has been deployed to Vercel.
+                  <br /> <br />
                   This project was created using only HTML5, and CSS3 without
                   the use of any frameworks or libraries.
                   <br />
