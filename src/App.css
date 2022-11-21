@@ -18,9 +18,10 @@
   --clr-accent-100: hsl(13, 100%, 96%);
 
   /* insert neutrals here */
-  --clr-text: hsl(229, 15%, 32%);
+  --clr-text: hsl(228, 15%, 32%);
   --clr-heading: black;
-  --clr-neutral-900: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(233, 12%, 13%);
+  --clr-neutral-200: hsl(230, 43%, 76%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 }
 
@@ -173,11 +174,12 @@ select {
   inset: 0;
   opacity: 70%;
   background-image: url(/src/static/fediverse_logo.svg);
-  width: 1000px;
-  height: 1000px;
+  /* border: 2px solid red; */
+  width: 715px;
+  height: 690px;
   opacity: 15%;
   background-repeat: no-repeat;
-  transform: translateX(-3em) translateY(-8em) scale(-70%) rotate(40deg);
+  transform: translateX(-4em) translateY(-1em) scale(-70%) rotate(-5deg);
 }
 
 .fediverse,
@@ -211,6 +213,15 @@ select {
     width: 725px;
     height: 725px;
     transform: translateX(-4em) translateY(-7em) scale(-50%);
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutFedi::before {
+    transform: translateX(-6em) translateY(-1em) scale(-40%) rotate(-5deg);
+  }
+  .fediverse::before {
+    transform: translateX(-6em) translateY(-7em) scale(-30%);
   }
 }
 

@@ -18,9 +18,11 @@ const About = () => {
       <Box sx={{ paddingTop: '3.75em', paddingBottom: '4.5em' }} id="about">
         <Grid container>
           <Grid item md={6}>
-            <Typography variant="h2" className="sectionHeading">
-              About Me
-            </Typography>
+            <div className="fedi-wrapper">
+              <Typography variant="h2" className="sectionHeading">
+                About Me
+              </Typography>
+            </div>
           </Grid>
           <Grid item md={6}>
             <Stack spacing={2} sx={{ marginTop: '1.5em' }}>
