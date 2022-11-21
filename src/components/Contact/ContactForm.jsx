@@ -10,6 +10,8 @@ import Toast from '../Toast';
 
 import EmailIcon from '@mui/icons-material/Email';
 
+import styles from './Contact.module.css';
+
 /*****************************************************************
  * Send email using https://formsubmit.co form submission service.
  * See .env for associated email address and random code associated with it
@@ -123,7 +125,7 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           error={formik.touched.name && Boolean(formik.errors.name)}
           helperText={formik.touched.name && formik.errors.name}
-          sx={{ marginBottom: '1rem' }}
+          className={styles.textField}
         />
         <TextField
           id="email"
@@ -138,7 +140,7 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           error={formik.touched.email && Boolean(formik.errors.email)}
           helperText={formik.touched.email && formik.errors.email}
-          sx={{ marginBottom: '1rem' }}
+          className={styles.textField}
         />
         <TextField
           id="message"
@@ -155,7 +157,7 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           error={formik.touched.message && Boolean(formik.errors.message)}
           helperText={formik.touched.message && formik.errors.message}
-          sx={{ marginBottom: '1rem' }}
+          className={styles.textField}
         />
 
         <Stack
@@ -170,7 +172,7 @@ const ContactForm = () => {
               formik.handleSubmit(e);
             }}
             variant="contained"
-            sx={{ marginTop: '1em' }}
+            className={styles.submitButton}
             disabled={
               formik.errors.name !== undefined ||
               formik.errors.email !== undefined ||
@@ -181,7 +183,7 @@ const ContactForm = () => {
           </Button>
 
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'right' }}>
-            <EmailIcon sx={{ marginTop: '7px' }} />
+            <EmailIcon className={styles.emailIcon} />
             <Tooltip
               title="Send me an email from your browser instead of using above form"
               enterTouchDelay={0}
