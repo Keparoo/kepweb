@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjCard from './ProjectCard/ProjCard';
+import ProjectCard from './ProjectCard/ProjectCard';
 
 import maple from '../static/maple-700x440.jpg';
 import tapntable from '../static/tapntable-700x440.jpg';
@@ -25,7 +25,7 @@ const ProjectList = () => {
           spacing={4}
         >
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="MAPLE"
               variant="div"
               description={
@@ -70,7 +70,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="Tapntable"
               description={
                 <div>
@@ -111,7 +111,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="TuttiTracks"
               description={
                 <div>
@@ -151,7 +151,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="Jobly"
               description={
                 <div>
@@ -193,7 +193,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="Casting Agency"
               description={
                 <div>
@@ -227,7 +227,7 @@ const ProjectList = () => {
           </Grid>
 
           <Grid item md={6} lg={4}>
-            <ProjCard
+            <ProjectCard
               title="Connect 4"
               description={
                 <div>

@@ -4,9 +4,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
 import { Button, Tooltip } from '@mui/material';
 
-import styles from './ProjCard.module.css';
+import styles from './ProjectCard.module.css';
 
-export default function ProjCard({
+export default function ProjectCard({
   title,
   description,
   backend,
