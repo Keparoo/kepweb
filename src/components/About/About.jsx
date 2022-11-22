@@ -7,10 +7,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
-import MastodonIcon from '../static/mastodon.svg';
-import IconMastodon from './IconMastodon';
+// import MastodonIcon from '/src/static/mastodon.svg';
+import IconMastodon from '../IconMastodon';
 
-import resume from '../static/kep-kaeppeler-resume.11.1.pdf';
+import resume from '/src/static/kep-kaeppeler-resume.11.1.pdf';
+
+import styles from './About.module.css';
 
 const About = () => {
   return (
@@ -18,7 +20,7 @@ const About = () => {
       <Box sx={{ paddingTop: '3.75em', paddingBottom: '4.5em' }} id="about">
         <Grid container>
           <Grid item md={6}>
-            <div className="fedi-wrapper">
+            <div className={styles.fediWrapper}>
               <Typography variant="h2" className="sectionHeading">
                 About Me
               </Typography>
@@ -28,12 +30,16 @@ const About = () => {
             <Stack spacing={2} sx={{ marginTop: '1.5em' }}>
               <Typography
                 variant="h4"
-                className="subheading aboutFedi"
+                className={`subheading ${styles.aboutFedi}`}
                 component="h3"
               >
                 Hi, I'm Kep
               </Typography>
-              <Typography variant="body1" gutterBottom className="fedi-body">
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={styles.fediBody}
+              >
                 I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask,
                 and SQL developer with graphic design skills who loves to
                 capture the personality and zeitgeist of a client in the
@@ -113,14 +119,14 @@ const About = () => {
               <br />
 
               <Typography
-                className="subheading fediverse"
+                className={`subheading ${styles.fediverse}`}
                 component="h4"
                 variant="h4"
               >
                 I've joined the Fediverse!
               </Typography>
 
-              <Typography variant="body1" className="fedi-body">
+              <Typography variant="body1" className={styles.fediBody}>
                 Come join me and the many others that have joined the{' '}
                 <a className="link" href="https://fedi.tips/" target="_blank">
                   Fediverse{' '}

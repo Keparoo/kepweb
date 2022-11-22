@@ -1,0 +1,57 @@
+.aboutFedi::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 70%;
+  background-image: url(/src/static/fediverse_logo.svg);
+  /* border: 2px solid red; */
+  width: 715px;
+  height: 690px;
+  opacity: 15%;
+  background-repeat: no-repeat;
+  transform: translateX(-4em) translateY(-1em) scale(-70%) rotate(-5deg);
+}
+
+.fediverse,
+.aboutFedi {
+  position: relative;
+  z-index: 1;
+}
+
+.fediBody {
+  z-index: 1;
+}
+
+.fediverse::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 70%;
+  background-image: url(/src/static/fediverse_logo.svg);
+  width: 725px;
+  height: 725px;
+  background-repeat: no-repeat;
+  transform: translateX(-14.5em) translateY(-8em) scale(-50%);
+}
+
+@media (max-width: 900px) {
+  .fediverse::before {
+    z-index: 0;
+    inset: 0;
+    opacity: 20%;
+    width: 725px;
+    height: 725px;
+    transform: translateX(-4em) translateY(-7em) scale(-50%);
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutFedi::before {
+    transform: translateX(-6em) translateY(-1em) scale(-40%) rotate(-5deg);
+  }
+  .fediverse::before {
+    transform: translateX(-6em) translateY(-7em) scale(-30%);
+  }
+}
