@@ -141,6 +141,8 @@ select {
 }
 
 .sectionHeading {
+  font-size: 60px;
+  font-weight: 300;
   color: var(--clr-heading);
 }
 
