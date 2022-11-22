@@ -23,14 +23,14 @@ export default function ProjectCard({
   };
 
   return (
-    <div className={styles.card}>
-      <p className={styles.title}>{title}</p>
+    <article className={styles.card}>
+      <header className={styles.title}>{title}</header>
 
       <img src={image} className={styles.image} alt={title} />
 
-      <article className={styles.content}>
+      <section className={styles.content}>
         <div className={isClosed ? `${styles.previewText}` : ''}>
-          <p>{description}</p>
+          <div>{description}</div>
           <p className={styles.backend}>{backend}</p>
           <p className={styles.frontend}>{frontend}</p>
           <p className={styles.note}>{note}</p>
@@ -57,7 +57,7 @@ export default function ProjectCard({
             Close
           </Button>
         )}
-      </article>
+      </section>
 
       <nav className={styles.nav} aria-label="Card Project Navigation">
         <Tooltip title="Open page to project deployment">
@@ -86,6 +86,6 @@ export default function ProjectCard({
           </Button>
         </Tooltip>
       </nav>
-    </div>
+    </article>
   );
 }

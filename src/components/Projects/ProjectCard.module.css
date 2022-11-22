@@ -17,6 +17,12 @@
   color: black;
 }
 
+.descriptionTitle {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+
 .image {
   height: 220px;
 }
