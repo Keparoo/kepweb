@@ -208,7 +208,7 @@ const About = () => {
 
                 <Stack direction="row" spacing={1}>
                   <IconMastodon style={{ marginTop: '12px' }} />
-                  <Tooltip title="Open Mastodon Page" enterTouchDelay={0}>
+                  <Tooltip title="Open my Mastodon Page" enterTouchDelay={0}>
                     <Button
                       className="link"
                       rel="me noopener"
