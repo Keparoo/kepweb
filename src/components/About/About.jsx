@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Grid, Stack, Tooltip } from '@mui/material';
+import { Button, Grid, Tooltip } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -16,7 +16,7 @@ import styles from './About.module.css';
 
 const Bio = () => {
   return (
-    <section className={styles.bio}>
+    <section className={styles.bio} aria-label="Kep's biography">
       <h3 className={`${styles.subheading} ${styles.aboutFedi}`}>
         Hi, I'm Kep
       </h3>
@@ -58,7 +58,7 @@ const Bio = () => {
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
+    <section className={styles.skills} aria-label="List of skills">
       <h3 className={styles.subheading}>Skills:</h3>
 
       <p className={styles.body}>
@@ -102,7 +102,7 @@ const Skills = () => {
 
 const Fediverse = () => {
   return (
-    <section className={styles.fediverse}>
+    <section className={styles.fediverse} aria-label="Mastodon links and info">
       <h3 className={`${styles.subheading} ${styles.fediHeading}`}>
         I've joined the Fediverse!
       </h3>
@@ -137,12 +137,15 @@ const Fediverse = () => {
 
 const Links = () => {
   return (
-    <section className={styles.links}>
+    <section
+      className={styles.links}
+      aria-label="Social media and resume links"
+    >
       <h3 className={styles.subheading}>Links:</h3>
 
-      <Stack spacing={1}>
-        <Stack direction="row" spacing={1}>
-          <EmailIcon sx={{ marginTop: '7px' }} />
+      <div>
+        <p>
+          <EmailIcon className={styles.link} />
           <Tooltip
             title="Send me an email from your browser"
             enterTouchDelay={0}
@@ -154,14 +157,15 @@ const Links = () => {
               underline="hover"
               rel="noopener"
               color="inherit"
+              sx={{}}
             >
               Kep@kepweb.dev
             </Button>
           </Tooltip>
-        </Stack>
+        </p>
 
-        <Stack direction="row" spacing={1}>
-          <LinkedInIcon sx={{ marginTop: '7px' }} />
+        <p>
+          <LinkedInIcon className={styles.link} />
           <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
             <Button
               className="link"
@@ -174,10 +178,10 @@ const Links = () => {
               LinkedIn.com/in/kep-kaeppeler
             </Button>
           </Tooltip>
-        </Stack>
+        </p>
 
-        <Stack direction="row" spacing={1}>
-          <GitHubIcon sx={{ marginTop: '7px' }} />
+        <p>
+          <GitHubIcon className={styles.link} />
           <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
             <Button
               className="link"
@@ -190,10 +194,12 @@ const Links = () => {
               Github.com/Keparoo
             </Button>
           </Tooltip>
-        </Stack>
+        </p>
 
-        <Stack direction="row" spacing={1}>
-          <IconMastodon style={{ marginTop: '12px' }} />
+        <div>
+          <span className={styles.link}>
+            <IconMastodon />
+          </span>
           <Tooltip title="Open my Mastodon Page" enterTouchDelay={0}>
             <Button
               className="link"
@@ -206,10 +212,10 @@ const Links = () => {
               @Kep@fosstodon.org
             </Button>
           </Tooltip>
-        </Stack>
+        </div>
 
-        <Stack direction="row" spacing={1}>
-          <TwitterIcon sx={{ marginTop: '7px' }} />
+        <p>
+          <TwitterIcon className={styles.link} />
           <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
             <Button
               className="link"
@@ -222,10 +228,10 @@ const Links = () => {
               Twitter.com/KepKaeppeler
             </Button>
           </Tooltip>
-        </Stack>
+        </p>
 
-        <Stack direction="row" spacing={1}>
-          <ArticleIcon sx={{ marginTop: '7px' }} />
+        <p>
+          <ArticleIcon className={styles.link} />
           <Button
             className="link"
             href={resume}
@@ -236,10 +242,10 @@ const Links = () => {
           >
             Download my resume
           </Button>
-        </Stack>
+        </p>
 
-        <Stack direction="row" spacing={1}>
-          <PrintIcon sx={{ marginTop: '7px' }} />
+        <p>
+          <PrintIcon className={styles.link} />
           <Button
             className="link"
             href={resume}
@@ -249,31 +255,29 @@ const Links = () => {
           >
             View or print my resume
           </Button>
-        </Stack>
-      </Stack>
+        </p>
+      </div>
     </section>
   );
 };
 
 const About = () => {
   return (
-    <section>
-      <Box sx={{ paddingTop: '3.75em', paddingBottom: '4.5em' }} id="about">
-        <Grid container>
-          <Grid item md={6}>
-            <h2 className="sectionHeading">About Me</h2>
-          </Grid>
-
-          <Grid item md={6}>
-            <Stack spacing={2} sx={{ marginTop: '1.5em' }}>
-              <Bio />
-              <Skills />
-              <Fediverse />
-              <Links />
-            </Stack>
-          </Grid>
+    <section id="about" className={styles.about}>
+      <Grid container>
+        <Grid item md={6}>
+          <h2 className="sectionHeading">About Me</h2>
         </Grid>
-      </Box>
+
+        <Grid item md={6}>
+          <section className={styles.aboutContent}>
+            <Bio />
+            <Skills />
+            <Fediverse />
+            <Links />
+          </section>
+        </Grid>
+      </Grid>
     </section>
   );
 };

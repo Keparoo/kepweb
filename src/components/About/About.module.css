@@ -1,3 +1,12 @@
+.about {
+  padding-top: 3.75rem;
+  padding-bottom: 4.5rem;
+}
+
+.aboutContent {
+  margin-top: 1rem;
+}
+
 .subheading {
   font-size: 34px;
   color: black;
@@ -6,7 +15,7 @@
 .bio,
 .skills,
 .fediverse {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .body {
@@ -69,4 +78,12 @@
   .fediHeading::before {
     transform: translateX(-6em) translateY(-7em) scale(-30%);
   }
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  top: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
 }
