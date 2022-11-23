@@ -107,14 +107,15 @@ const Fediverse = () => {
         I've joined the Fediverse!
       </h3>
 
-      <p className={styles.fediBody}>
+      <p className={`${styles.fediBody} ${styles.body}`}>
         Come join me and the many others that have joined the{' '}
         <a className="link" href="https://fedi.tips/" target="_blank">
           Fediverse{' '}
         </a>
         in addition to <span className="italic">or in place of—</span>
         Twitter.
-        <br />
+      </p>
+      <p className={styles.body}>
         Check out{' '}
         <a className="link" href="https://joinmastodon.org/" target="_blank">
           Mastodon
@@ -129,6 +130,17 @@ const Fediverse = () => {
           target="_blank"
         >
           @Kep@fosstodon.org
+        </a>
+      </p>
+      <p>
+        To find your Twitter follows on Mastodon, try{' '}
+        <a
+          className="link"
+          rel="noopener"
+          href="https://debirdify.pruvisto.org/"
+          target="_blank"
+        >
+          Debirdify
         </a>
       </p>
     </section>
