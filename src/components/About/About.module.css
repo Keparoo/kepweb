@@ -3,6 +3,12 @@
   color: black;
 }
 
+.bio,
+.skills,
+.fediverse {
+  padding-bottom: 2rem;
+}
+
 .body {
   padding-bottom: 0.5rem;
 }
@@ -22,7 +28,7 @@
   transform: translateX(-4em) translateY(-1em) scale(-70%) rotate(-5deg);
 }
 
-.fediverse,
+.fediHeading,
 .aboutFedi {
   position: relative;
   z-index: 1;
@@ -32,7 +38,7 @@
   z-index: 1;
 }
 
-.fediverse::before {
+.fediHeading::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -46,7 +52,7 @@
 }
 
 @media (max-width: 900px) {
-  .fediverse::before {
+  .fediHeading::before {
     z-index: 0;
     inset: 0;
     opacity: 20%;
@@ -60,7 +66,7 @@
   .aboutFedi::before {
     transform: translateX(-6em) translateY(-1em) scale(-40%) rotate(-5deg);
   }
-  .fediverse::before {
+  .fediHeading::before {
     transform: translateX(-6em) translateY(-7em) scale(-30%);
   }
 }
