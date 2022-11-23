@@ -80,7 +80,7 @@ export default function ProjectCard({
             size="small"
             aria-label="GitHub repository"
             startIcon={<GitHubIcon />}
-            sx={{ marginLeft: '8px' }}
+            sx={{ marginLeft: '16px' }}
           >
             Github
           </Button>
