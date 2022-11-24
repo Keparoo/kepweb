@@ -61,3 +61,24 @@
   padding-bottom: 1rem !important;
   padding: 8px;
 }
+
+.projects {
+  padding-bottom: 4.5em;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
