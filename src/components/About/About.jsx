@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Grid, Tooltip } from '@mui/material';
+import { Button, Tooltip } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -82,7 +82,6 @@ const Skills = () => {
         GitHub, VS Code, PyCharm, ZenHub, <br />
         Agile workflow, Data Structures, Algorithms, Deployment, Windows, Mac,
         Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
-        <br />
       </p>
 
       <p className={styles.body}>
@@ -275,21 +274,19 @@ const Links = () => {
 
 const About = () => {
   return (
-    <section id="about" className={styles.about}>
-      <Grid container>
-        <Grid item md={6}>
-          <h2 className="sectionHeading">About Me</h2>
-        </Grid>
+    <section id="about" className={`${styles.about} ${styles.columns}`}>
+      <div>
+        <h2 className="sectionHeading">About Me</h2>
+      </div>
 
-        <Grid item md={6}>
-          <section className={styles.aboutContent}>
-            <Bio />
-            <Skills />
-            <Fediverse />
-            <Links />
-          </section>
-        </Grid>
-      </Grid>
+      <div>
+        <section className={styles.aboutContent}>
+          <Bio />
+          <Skills />
+          <Fediverse />
+          <Links />
+        </section>
+      </div>
     </section>
   );
 };
