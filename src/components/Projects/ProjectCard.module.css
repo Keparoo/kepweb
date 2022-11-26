@@ -75,6 +75,7 @@
 
 @media (max-width: 1200px) {
   .columns {
+    /* width: 900px; */
     grid-template-columns: 1fr 1fr;
   }
 }
