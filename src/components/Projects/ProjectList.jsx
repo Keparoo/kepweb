@@ -24,7 +24,7 @@ const ProjectList = () => {
           <ProjectCard
             title="MAPLE"
             description={
-              <React.Fragment>
+              <>
                 <p className={styles.descriptionTitle}>
                   <strong>
                     Massachusetts Platform for Legislative Engagement
@@ -38,25 +38,25 @@ const ProjectList = () => {
                 space wherein Massachusetts constituents can share their
                 expertise, stories, and opinions on the legislation that shapes
                 their lives.
-              </React.Fragment>
+              </>
             }
             backend={
-              <React.Fragment>
+              <>
                 <strong>Backend:</strong> Firebase with React-Firebase-Hooks
-              </React.Fragment>
+              </>
             }
             frontend={
-              <React.Fragment>
+              <>
                 <strong>Frontend:</strong> React, TypeScript, Javascript,
                 Next.js, Storybook, and Bootstrap
-              </React.Fragment>
+              </>
             }
             note={
-              <React.Fragment>
+              <>
                 <strong>Note: </strong>Currently, this web app is user testing
                 and preparing for a late fall limited-feature beta rollout and a
                 January 1.0 release.
-              </React.Fragment>
+              </>
             }
             image={maple}
             demo="https://mapletestimony.org/"
@@ -79,25 +79,25 @@ const ProjectList = () => {
               </div>
             }
             backend={
-              <React.Fragment>
+              <>
                 <strong>Backend:</strong> A PostgreSQL database with a RESTful
                 API using Node.js, Express, and a Jest test suite.
-              </React.Fragment>
+              </>
             }
             frontend={
-              <React.Fragment>
+              <>
                 <strong>Frontend:</strong> A single-page app using React, Redux,
                 and Axios to implement a user interface for managing orders,
                 checks, payments, end-of-day reconciliation, sales reports,
                 timeclock, and database management.
-              </React.Fragment>
+              </>
             }
             note={
-              <React.Fragment>
+              <>
                 <strong>Note: </strong>The deployed site will allow a user to
                 log in with a demo-pin: 12345 to try out the app authorizing a
                 subset of features.
-              </React.Fragment>
+              </>
             }
             image={tapntable}
             demo="https://tapntable.surge.sh/"
@@ -120,24 +120,24 @@ const ProjectList = () => {
               </div>
             }
             backend={
-              <React.Fragment>
+              <>
                 <strong>Backend</strong>: Python with a PostgreSQL database, a
                 RESTful API, SQLAlchemy ORM, Oauth authorization, interface to
                 the Spotify API, and a test suite using unittest.
-              </React.Fragment>
+              </>
             }
             frontend={
-              <React.Fragment>
+              <>
                 <strong>Frontend</strong>: Python, Flask, and Jinja2.
-              </React.Fragment>
+              </>
             }
             note={
-              <React.Fragment>
+              <>
                 <strong>Note:</strong> In order to use the app, if the user is
                 not currently logged into their Spotify account they will be
                 directed to login or signup using OAuth. A user may then create
                 a Tuttitracks account to create and manage playlists.
-              </React.Fragment>
+              </>
             }
             image={tuttitracks}
             demo="https://spotiflavor.herokuapp.com/"
@@ -158,28 +158,28 @@ const ProjectList = () => {
               </div>
             }
             backend={
-              <React.Fragment>
+              <>
                 <strong>Backend</strong>: A PostgreSQL database with a RESTful
                 API using Node.js and Express with a comprehensive test suite
                 written in Jest. The app implements role based authorization
                 using JWTs, manages data validation with json schema, and is
                 currently deployed to Heroku.
-              </React.Fragment>
+              </>
             }
             frontend={
-              <React.Fragment>
+              <>
                 <strong>Frontend:</strong> A Single-page React app using
                 React-Router for routing and protecting routes based on JWT
                 permissions, and local storage to manage user persistence. It is
                 currently deployed using Surge.
-              </React.Fragment>
+              </>
             }
             note={
-              <React.Fragment>
+              <>
                 <strong>Note: </strong>The deployed site will allow a user to
                 log in with username: 'testuser' and password 'password' for
                 demonstration purposes with limited permissions.
-              </React.Fragment>
+              </>
             }
             image={jobly}
             demo="https://hot-soap.surge.sh/"
@@ -200,20 +200,20 @@ const ProjectList = () => {
               </div>
             }
             backend={
-              <React.Fragment>
+              <>
                 <strong>Backend</strong>: A PostgreSQL database with a RESTful
                 API using Python and Flask, role-based access control
                 authorization utilizing Auth0, test suite, and currently
                 deployed to Heroku.
-              </React.Fragment>
+              </>
             }
             note={
-              <React.Fragment>
+              <>
                 <strong>Note:</strong> The deployment link is below but this is
                 an API <em>only</em> that upon login, returns a JWT with the
                 appropriate role-based auth to the screen to access the API.
                 Currently there is no interactive front-end.
-              </React.Fragment>
+              </>
             }
             image={castingAgency}
             demo="https://kep-casting-agency.herokuapp.com/"
@@ -234,10 +234,10 @@ const ProjectList = () => {
               </div>
             }
             frontend={
-              <React.Fragment>
+              <>
                 <strong>Frontend: </strong>This project was created using only
                 HTML5, and CSS3 without the use of any frameworks or libraries.
-              </React.Fragment>
+              </>
             }
             image={connect4}
             demo="https://connect4-keparoo.vercel.app/"
