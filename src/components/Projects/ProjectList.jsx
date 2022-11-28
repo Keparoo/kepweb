@@ -9,8 +9,6 @@ import castingAgency from '../../static/castingAgency-700x440.jpg';
 import jobly from '../../static/jobly-700x440.jpg';
 import connect4 from '../../static/connect-4-700x440.jpg';
 
-// import { Box, Grid } from '@mui/material';
-
 import styles from './ProjectCard.module.css';
 
 const ProjectList = () => {
