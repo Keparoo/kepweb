@@ -130,16 +130,6 @@ select {
   color: var(--clr-primary-original);
 }
 
-.navbar-link:hover,
-.navbar-link:active {
-  color: var(--clr-primary-original);
-  background: var(--clr-accent-original) !important;
-}
-
-.navbar-link:active {
-  background: yellow !important;
-}
-
 .sectionHeading {
   font-size: 60px;
   font-weight: 300;

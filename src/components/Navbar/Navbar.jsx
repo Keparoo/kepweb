@@ -11,7 +11,9 @@ import CodeIcon from '@mui/icons-material/Code';
 
 import { Box, Menu, MenuItem, Stack } from '@mui/material';
 
-import resume from '../static/kep-kaeppeler-resume.11.1.pdf';
+import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
+
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -145,7 +147,7 @@ const Navbar = () => {
             >
               {navLinks.map((link) => (
                 <Button
-                  className="navbar-link"
+                  className={styles.navbarLink}
                   key={link.name}
                   variant={link.variant}
                   color="inherit"

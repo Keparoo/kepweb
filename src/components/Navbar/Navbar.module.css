@@ -1,0 +1,9 @@
+.navbarLink:hover,
+.navbarLink:active {
+  color: var(--clr-primary-original);
+  background: var(--clr-accent-original) !important;
+}
+
+.navbarLink:active {
+  background: yellow !important;
+}
