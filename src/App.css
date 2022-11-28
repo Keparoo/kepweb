@@ -170,9 +170,5 @@ select {
   font-weight: 500;
 }
 
-.footer-link:hover {
-  color: var(--clr-primary-original);
-}
-
 /* Create typography variables */
 /* Create spacing variables */
