@@ -146,10 +146,6 @@ select {
   color: var(--clr-heading);
 }
 
-.hero-subhead {
-  color: var(--clr-primary-original);
-}
-
 .subheading {
   color: var(--clr-heading);
   font-weight: bold;
