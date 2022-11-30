@@ -160,5 +160,13 @@ select {
   font-weight: 500;
 }
 
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 /* Create typography variables */
 /* Create spacing variables */

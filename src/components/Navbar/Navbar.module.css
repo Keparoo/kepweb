@@ -1,9 +1,56 @@
+.primaryHeader {
+  background: var(--clr-primary-original);
+  color: white;
+}
+
+.navContainer {
+  max-width: s1200px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.codeIcon {
+  padding-top: 0.2rem;
+  padding-right: 1rem;
+}
+
+.navbarName {
+  font-family: 'asap';
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: inherit;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.primaryNavigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .primaryNavigation {
+    display: none;
+  }
+}
+
 .navbarLink:hover,
 .navbarLink:active {
   color: var(--clr-primary-original);
   background: var(--clr-accent-original) !important;
 }
 
-.navbarLink:active {
-  background: yellow !important;
+.active {
+  color: var(--clr-primary-original);
+  background: var(--clr-accent-original) !important;
 }
