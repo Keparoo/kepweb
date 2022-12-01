@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+// import AppBar from '@mui/material/AppBar';
+// import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 // import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CodeIcon from '@mui/icons-material/Code';
 
-import { Box, Menu, MenuItem } from '@mui/material';
+import { Menu, MenuItem } from '@mui/material';
 
 import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
 
@@ -180,7 +180,7 @@ const Navbar = () => {
         </a>
 
         {/* Nav dropdown for sizes xs-sm */}
-        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+        <div className={styles.dropdown}>
           <IconButton
             size="large"
             aria-label="website navigation"
@@ -223,7 +223,7 @@ const Navbar = () => {
               </MenuItem>
             ))}
           </Menu>
-        </Box>
+        </div>
 
         {/* Nav bar for sizes md-xl */}
         <nav>

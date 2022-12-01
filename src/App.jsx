@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navbar from './components/Navbar/Navbar';
+import NewNav from './components/NewNav/NewNav';
 import Hero from './components/Hero/Hero';
 import ProjectList from './components/Projects/ProjectList';
 import About from './components/About/About';
@@ -19,7 +19,7 @@ import { Container } from '@mui/material';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NewNav />
 
       <main>
         <Container>
