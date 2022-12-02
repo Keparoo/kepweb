@@ -3,8 +3,8 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
   align-items: center;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .navbarName {
+  padding-block: 1rem;
   font-family: 'asap';
   font-weight: 700;
   font-size: 1.25rem;
@@ -41,13 +42,16 @@
 }
 
 .primaryNavigation {
-  /* margin-inline-end: 2rem; */
   padding-block: 1rem;
   padding-inline: clamp(2rem, 5vw, 10rem);
   list-style: none;
   display: flex;
   gap: clamp(2rem, 2vw, 3rem);
   background: hsl(230 30% 46% / 0.1);
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; */
 }
 
 @supports (backdrop-filter: blur(1rem)) {
