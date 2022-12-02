@@ -77,6 +77,7 @@ body {
   /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* All elements that don't have a class get default styles */
@@ -167,6 +168,16 @@ select {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 /* Create typography variables */
 /* Create spacing variables */
