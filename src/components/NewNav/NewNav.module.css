@@ -3,13 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: var(--clr-primary-original); */
-  position: fixed;
+  /* position: fixed;
   width: 100%;
   top: 0;
-  right: 0;
+  right: 0; */
 }
 
 /* .navContainer {
@@ -45,10 +42,10 @@
   display: flex;
   gap: clamp(2rem, 2vw, 3rem);
   background: hsl(230 30% 46% / 0.1);
-  /* position: fixed;
-  width: 50%;
+  position: fixed;
+  width: 100%;
   top: 0;
-  right: 0; */
+  left: 40%;
 }
 
 .mobileNavToggle {

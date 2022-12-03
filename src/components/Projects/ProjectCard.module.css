@@ -12,6 +12,13 @@
   box-shadow: var(--clr-primary-original) 0px 0px 40px -10px;
 }
 
+/* Add border to cards when high-contrast forced colors is active */
+@media (forced-colors: active) {
+  .card {
+    border: 2px solid;
+  }
+}
+
 .title {
   font-size: 24px;
   padding: 16px;
