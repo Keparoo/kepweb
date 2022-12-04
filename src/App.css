@@ -1,4 +1,10 @@
 :root {
+  /* Set color-scheme for system defaults to dark, falling back to light
+   <meta name="color-scheme" content="dark light"> in html head will 
+   do the same before the css is loaded.
+  */
+  color-scheme: dark light;
+
   --clr-bg-original: hsl(0, 0%, 88%); /* #e0e0e0 */
   --clr-bg-original: #e1e8ef;
   /* --clr-bg-original: hsl(229, 10%, 46%); */
@@ -23,6 +29,28 @@
   --clr-neutral-900: hsl(233, 12%, 13%);
   --clr-neutral-200: hsl(230, 43%, 76%);
   --clr-neutral-100: hsl(0, 0%, 100%);
+
+  /*
+  Set default (dark mode) color scheme
+  --clr-text: ;
+  --clr-bg: ;
+  --clr-link: ;
+  --clr-main-heading: ;
+  --clr-heading: ;
+  --clr-accent: ;
+  --clr-bg-accent: ;
+
+  */
+}
+
+@media (prefers-color-scheme: light) {
+  /* --clr-text: ;
+  --clr-bg: ;
+  --clr-link: ;
+  --clr-main-heading: ;
+  --clr-heading: ;
+  --clr-accent: ;
+  --clr-bg-accent: ; */
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
@@ -52,7 +80,7 @@ dd {
 * {
   margin: 0;
   padding: 0;
-  font: inherit; /*strips bold and size from h1s, form elements fonts now inherited */
+  font: inherit; /* strips bold and size from h1s & form elements: fonts  inherited */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -77,23 +105,24 @@ body {
   /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
-/* All elements that don't have a class get default styles */
+/* Set links without a class get more readable underlines */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with, added svg */
+/* Make images easier to work with (responsive), added svg & video */
 img,
 picture,
-svg {
-  max-width: 100%;
+svg,
+video {
   display: block;
+  max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons --- Taken care of above with * font:inherit
+/* Inherit fonts for inputs, buttons, textarea & select
+            --- Taken care of above with * font:inherit
 input,
 button,
 textarea,
@@ -121,6 +150,9 @@ select {
 }
 
 /* General Stylings */
+body {
+  overflow-x: hidden;
+}
 
 .App {
   background-color: var(--clr-bg-original);
