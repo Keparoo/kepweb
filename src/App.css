@@ -24,31 +24,39 @@
   --clr-accent-100: hsl(13, 100%, 96%);
 
   /* insert neutrals here */
+
   --clr-text: hsl(228, 15%, 32%);
-  --clr-heading: black;
+  /* --clr-heading: black; */
+
   --clr-neutral-900: hsl(233, 12%, 13%);
+  --clr-neutral-400: hsl(228, 15%, 32%);
   --clr-neutral-200: hsl(230, 43%, 76%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 
-  /*
-  Set default (dark mode) color scheme
-  --clr-text: ;
-  --clr-bg: ;
-  --clr-link: ;
-  --clr-main-heading: ;
-  --clr-heading: ;
-  --clr-accent: ;
-  --clr-bg-accent: ;
-
-  */
+  /*  Set default (light mode) color scheme */
+  --clr-text: var(--clr-neutral-400);
+  --clr-bg: var(--clr-bg-original);
+  --clr-link: var(--clr-accent-400);
+  --clr-icon: var(--clr-neutral-900);
+  --clr-button-text: ;
+  --clr-button-bg: ;
+  --clr-card-bg: var(--clr-neutral-100);
+  --clr-main-heading: var(--clr-neutral-900);
+  --clr-subheading: var(--clr-primary-original);
+  --clr-heading: var(--clr-neutral-900);
+  --clr-accent: var(--clr-accent-400);
+  --clr-bg-accent: var(--clr-accent-original);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   /* --clr-text: ;
   --clr-bg: ;
   --clr-link: ;
+  --clr-button-text: ;
+  --clr-button-bg: ;
   --clr-main-heading: ;
   --clr-heading: ;
+  --clr-subheading: ;
   --clr-accent: ;
   --clr-bg-accent: ; */
 }
@@ -155,12 +163,12 @@ body {
 }
 
 .App {
-  background-color: var(--clr-bg-original);
+  background-color: var(--clr-bg);
   color: var(--clr-text);
 }
 
 .heading {
-  color: var(--clr-primary-original);
+  color: var(--clr-heading);
 }
 
 .sectionHeading {
@@ -178,14 +186,13 @@ body {
   text-transform: none !important;
   font-size: 16px !important;
   text-decoration: none;
-  color: var(--clr-accent-400);
+  color: var(--clr-link);
 }
 
 .link:hover,
 .link:active {
   text-decoration: none !important;
-  color: var(--clr-primary-original) !important;
-  background: var(--clr-accent-original) !important;
+  background: var(--clr-bg-accent) !important;
 }
 
 .italic {

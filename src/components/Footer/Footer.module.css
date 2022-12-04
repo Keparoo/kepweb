@@ -1,6 +1,6 @@
 .footer {
   margin-top: 2em;
-  background: var(--clr-bg-original);
+  background: var(--clr-bg);
   text-align: center;
 }
 
@@ -10,12 +10,11 @@
 }
 
 .footerIcon {
-  color: var(--clr-neutral-900);
+  color: var(--clr-icon);
 }
 
 .footerIcon:hover {
-  color: var(--clr-primary-original);
-  color: var(--clr-accent-400);
+  color: var(--clr-accent);
 }
 
 .copyright {

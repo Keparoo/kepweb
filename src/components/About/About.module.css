@@ -9,7 +9,12 @@
 
 .subheading {
   font-size: 34px;
-  color: black;
+  color: var(--clr-heading);
+}
+
+.bold {
+  font-weight: 700;
+  color: var(--clr-heading);
 }
 
 .bio,

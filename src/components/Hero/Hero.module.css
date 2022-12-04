@@ -6,13 +6,13 @@
 .heroHeader {
   font-family: Asap;
   font-size: 9rem;
-  color: #000000;
+  color: var(--clr-main-heading);
 }
 
 .heroSubhead {
   display: block;
   font-size: 2.25rem;
-  color: var(--clr-primary-original);
+  color: var(--clr-subheading);
 }
 
 .columns {

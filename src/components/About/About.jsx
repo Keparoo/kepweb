@@ -62,38 +62,38 @@ const Skills = () => {
       <h3 className={styles.subheading}>Skills:</h3>
 
       <p className={styles.body}>
-        <span className="subheading">Frontend</span>: HTML5, CSS3, JavaScript
+        <span className={styles.bold}>Frontend</span>: HTML5, CSS3, JavaScript
         ES6, TypeScript, AJAX, Flask, React, Storybook, d3, Redux, Next.js,
         Bootstrap, Material UI, Tailwind
       </p>
 
       <p className={styles.body}>
-        <span className="subheading">Backend</span>: Python, PHP, Node.js,
+        <span className={styles.bold}>Backend</span>: Python, PHP, Node.js,
         Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth
       </p>
 
       <p className={styles.body}>
-        <span className="subheading">Testing</span>: Jest, Vitest, Supertest,
+        <span className={styles.bold}>Testing</span>: Jest, Vitest, Supertest,
         PyTest
       </p>
 
       <p className={styles.body}>
-        <span className="subheading">Development</span>: Linux, Unix, Git,
+        <span className={styles.bold}>Development</span>: Linux, Unix, Git,
         GitHub, VS Code, PyCharm, ZenHub, <br />
         Agile workflow, Data Structures, Algorithms, Deployment, Windows, Mac,
         Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
       </p>
 
       <p className={styles.body}>
-        <span className="subheading">Design</span>: Figma, Typography, Affinity
+        <span className={styles.bold}>Design</span>: Figma, Typography, Affinity
         Design Suite, Adobe Creative Suite
       </p>
 
       <p>
-        This website was created with <strong>React v18</strong> in a Vite
-        environment
+        This website was created with{' '}
+        <span className={styles.bold}>React v18</span> in a Vite environment
         <br />
-        using <strong>Material UI</strong> components.
+        using <span className={styles.bold}>Material UI</span> components.
       </p>
     </section>
   );
