@@ -156,13 +156,13 @@ const Links = () => {
 
       <div>
         <p>
-          <EmailIcon className={styles.link} />
+          <EmailIcon className={styles.icon} />
           <Tooltip
             title="Send me an email from your browser"
             enterTouchDelay={0}
           >
             <Button
-              className="link"
+              className={styles.link}
               href="mailto:kep@kepweb.dev"
               target="_blank"
               underline="hover"
@@ -176,10 +176,10 @@ const Links = () => {
         </p>
 
         <p>
-          <LinkedInIcon className={styles.link} />
+          <LinkedInIcon className={styles.icon} />
           <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
             <Button
-              className="link"
+              className={styles.link}
               href="https://www.linkedin.com/in/kep-kaeppeler"
               target="_blank"
               underline="hover"
@@ -192,10 +192,10 @@ const Links = () => {
         </p>
 
         <p>
-          <GitHubIcon className={styles.link} />
+          <GitHubIcon className={styles.icon} />
           <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
             <Button
-              className="link"
+              className={styles.link}
               href="https://github.com/Keparoo"
               target="_blank"
               underline="hover"
@@ -208,12 +208,11 @@ const Links = () => {
         </p>
 
         <div>
-          <span className={styles.link}>
-            <IconMastodon />
-          </span>
+          <IconMastodon className={styles.icon} />
+
           <Tooltip title="Open my Mastodon Page" enterTouchDelay={0}>
             <Button
-              className="link"
+              className={styles.link}
               rel="me noopener"
               href="https://fosstodon.org/@Kep"
               target="_blank"
@@ -226,10 +225,10 @@ const Links = () => {
         </div>
 
         <p>
-          <TwitterIcon className={styles.link} />
+          <TwitterIcon className={styles.icon} />
           <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
             <Button
-              className="link"
+              className={styles.link}
               href="https://twitter.com/KepKaeppeler"
               target="_blank"
               underline="hover"
@@ -242,9 +241,9 @@ const Links = () => {
         </p>
 
         <p>
-          <ArticleIcon className={styles.link} />
+          <ArticleIcon className={styles.icon} />
           <Button
-            className="link"
+            className={styles.link}
             href={resume}
             target="_blank"
             underline="hover"
@@ -256,9 +255,9 @@ const Links = () => {
         </p>
 
         <p>
-          <PrintIcon className={styles.link} />
+          <PrintIcon className={styles.icon} />
           <Button
-            className="link"
+            className={styles.link}
             href={resume}
             target="_blank"
             underline="hover"

@@ -186,13 +186,12 @@ body {
   text-transform: none !important;
   font-size: 16px !important;
   text-decoration: none;
-  color: var(--clr-link);
+  color: var(--clr-link) !important;
 }
 
 .link:hover,
 .link:active {
-  text-decoration: none !important;
-  background: var(--clr-bg-accent) !important;
+  background: var(--clr-bg-accent);
 }
 
 .italic {
