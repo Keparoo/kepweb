@@ -49,16 +49,20 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  /* --clr-text: ;
-  --clr-bg: ;
-  --clr-link: ;
-  --clr-button-text: ;
-  --clr-button-bg: ;
-  --clr-main-heading: ;
-  --clr-heading: ;
-  --clr-subheading: ;
-  --clr-accent: ;
-  --clr-bg-accent: ; */
+  :root {
+    --clr-text: var(--clr-neutral-100);
+    --clr-bg: var(--clr-primary-original);
+    /* --clr-link: ; */
+    /* --clr-icon:; */
+    /* --clr-button-text: ; */
+    /* --clr-button-bg: ; */
+    --clr-card-bg: var(--clr-neutral-400);
+    --clr-main-heading: var(--clr-neutral-100);
+    --clr-heading: var(--clr-neutral-100);
+    --clr-subheading: var(--clr-neutral-100);
+    /* --clr-accent: ; */
+    /* --clr-bg-accent: ; */
+  }
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */

@@ -1,5 +1,5 @@
 .primaryHeader {
-  color: var(--clr-primary-original);
+  color: var(--clr-text);
   display: flex;
   justify-content: space-between;
   align-items: center;
