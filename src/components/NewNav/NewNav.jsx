@@ -53,7 +53,7 @@ const NewNav = () => {
   ];
 
   return (
-    <header className={styles.primaryHeader}>
+    <div className={styles.primaryHeader}>
       <a href="#hero" className={styles.navbarName}>
         <span className={styles.codeIcon}>
           <CodeIcon />
@@ -92,7 +92,7 @@ const NewNav = () => {
           ))}
         </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 export default NewNav;

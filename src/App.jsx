@@ -17,7 +17,9 @@ import { Container } from '@mui/material';
 function App() {
   return (
     <div className="App">
-      <NewNav />
+      <header>
+        <NewNav />
+      </header>
 
       <main>
         <Container>
