@@ -10,8 +10,8 @@ const Hero = () => {
   return (
     <section id="hero" className={`${styles.hero} ${styles.columns}`}>
       <div>
-        <h1 className={styles.heroHeader}>Kep</h1>
-        <p className={styles.heroSubhead}>
+        <h1 className="primary-heading">Kep</h1>
+        <p className="primary-subheading">
           <br />
           I'm a full-stack web developer with a passion for challenges.
         </p>

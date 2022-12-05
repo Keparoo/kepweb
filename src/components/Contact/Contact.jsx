@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Grid, Stack, Typography } from '@mui/material';
+import { Box, Grid, Stack } from '@mui/material';
 
 import ContactForm from './ContactForm';
 
@@ -10,9 +10,9 @@ const Contact = () => {
       <Box id="contact" sx={{ paddingBottom: '4.5em', paddingTop: '3.75em' }}>
         <Grid container spacing={2}>
           <Grid item md={6} sm={12}>
-            <Typography variant="h2" className="sectionHeading">
+            <h2 className="secondary-heading">
               Contact me <br />
-            </Typography>
+            </h2>
           </Grid>
 
           <Grid item md={6} sm={12} sx={{ marginTop: '1.25em' }}>

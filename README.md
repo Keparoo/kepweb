@@ -4,7 +4,7 @@ This is the repository for Kep Kaeppeler's web development portfolio site.
 
 ## Resume
 
-When resume is updated, update links in the following components:
+To update the resume, update links in the following components:
 
 - Navbar
 - About
@@ -14,6 +14,11 @@ When resume is updated, update links in the following components:
 The site is built using React 18 with design elements from Material UI
 
 This project was originally bootstrapped with create-react-app. It has been refactored and restructured to use Vite as the development server.
+
+The components for this site originally were all Material UI components. It has been refactored and rebuilt from scratch using carefully structured CSS based components.
+
+- The form submission uses https://formsubmit.co to forward email.
+- The formik React and Yup validation libraries.
 
 ## Deployment
 
@@ -29,10 +34,7 @@ The nextjs branch is a second version of the website refactored to use Next.js. 
 - Create page for each project
 - Create more project screenshots
 - Include website design portfolio
-- Optimize Twitter Cards and Open Graph meta tags
 - Link to WebToSmart
-- Redesign CSS color palette
-- Create custom components
 
 ---
 
