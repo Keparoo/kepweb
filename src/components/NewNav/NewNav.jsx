@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Button from '@mui/material/Button';
 import CodeIcon from '@mui/icons-material/Code';
 
 import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
@@ -19,35 +18,35 @@ const NewNav = () => {
       name: 'Home',
       href: '#hero',
       target: false,
-      variant: 'text',
+      variant: 'btn-link',
       active: 'active',
     },
     {
       name: 'About',
       href: '#about',
       target: false,
-      variant: 'text',
+      variant: 'btn-link',
       active: '',
     },
     {
       name: 'Projects',
       href: '#projects',
       target: false,
-      variant: 'text',
+      variant: 'btn-link',
       active: '',
     },
     {
       name: 'Resume',
       href: resume,
       target: true,
-      variant: 'text',
+      variant: 'btn-link',
       active: '',
     },
     {
       name: 'Contact',
       href: '#contact',
       target: false,
-      variant: 'outlined',
+      variant: 'btn-outline',
       active: '',
     },
   ];
@@ -80,16 +79,14 @@ const NewNav = () => {
         >
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Button
-                variant={link.variant}
-                color="inherit"
+              <a
                 href={link.href}
                 target={link.target ? '_blank' : ''}
                 id={link.active}
-                className={`${styles.navbarLink} ${link.active}`}
+                className={`button btn-link ${styles.navbarLink} ${link.active} ${link.variant}`}
               >
                 {link.name}
-              </Button>
+              </a>
             </li>
           ))}
         </ul>

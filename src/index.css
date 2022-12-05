@@ -396,6 +396,12 @@ body {
   padding: 1.25em 2.5em;
 }
 
+.btn-link {
+  background: transparent;
+  color: var(--clr-button-bg);
+  box-shadow: none;
+}
+
 .btn-inverted {
   background-color: var(--clr-button-text);
   color: var(--clr-button-bg);
