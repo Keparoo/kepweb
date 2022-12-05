@@ -14,7 +14,7 @@ import styles from './ProjectCard.module.css';
 const ProjectList = () => {
   return (
     <section className={styles.projects}>
-      <h2 id="projects" className="sectionHeading">
+      <h2 id="projects" className="secondary-heading">
         Projects
       </h2>
       <div className={styles.columns}>

@@ -53,7 +53,7 @@ const NewNav = () => {
   ];
 
   return (
-    <div className={styles.primaryHeader}>
+    <section className={styles.primaryHeader}>
       <a href="#hero" className={styles.navbarName}>
         <span className={styles.codeIcon}>
           <CodeIcon />
@@ -73,6 +73,8 @@ const NewNav = () => {
       <nav>
         <ul
           id="primary-navigation"
+          role="list"
+          aria-label="Primary"
           data-visible={menuOpen}
           className={styles.primaryNavigation}
         >
@@ -92,7 +94,7 @@ const NewNav = () => {
           ))}
         </ul>
       </nav>
-    </div>
+    </section>
   );
 };
 export default NewNav;

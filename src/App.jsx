@@ -7,8 +7,6 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
-import { Container } from '@mui/material';
-
 // Disable right click / long-press
 // document.addEventListener('contextmenu', (event) => {
 //   event.preventDefault();
@@ -21,19 +19,15 @@ function App() {
         <NewNav />
       </header>
 
-      <main>
-        <Container>
-          <Hero />
-          <ProjectList />
-          <About />
-          <Contact />
-        </Container>
+      <main className="container">
+        <Hero />
+        <ProjectList />
+        <About />
+        <Contact />
       </main>
 
-      <footer>
-        <Container>
-          <Footer />
-        </Container>
+      <footer className="container">
+        <Footer />
       </footer>
     </div>
   );

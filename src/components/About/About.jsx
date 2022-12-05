@@ -17,9 +17,7 @@ import styles from './About.module.css';
 const Bio = () => {
   return (
     <section className={styles.bio} aria-label="Kep's biography">
-      <h3 className={`${styles.subheading} ${styles.aboutFedi}`}>
-        Hi, I'm Kep
-      </h3>
+      <h3 className={`fs-700 ${styles.aboutFedi}`}>Hi, I'm Kep</h3>
       <p className={`${styles.body} ${styles.fediBody}`}>
         I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask, and SQL
         developer with graphic design skills who loves to capture the
@@ -59,41 +57,41 @@ const Bio = () => {
 const Skills = () => {
   return (
     <section className={styles.skills} aria-label="List of skills">
-      <h3 className={styles.subheading}>Skills:</h3>
+      <h3 className="fs-700">Skills:</h3>
 
       <p className={styles.body}>
-        <span className={styles.bold}>Frontend</span>: HTML5, CSS3, JavaScript
-        ES6, TypeScript, AJAX, Flask, React, Storybook, d3, Redux, Next.js,
+        <span className="fw-bold">Frontend</span>: HTML5, CSS3, JavaScript ES6,
+        TypeScript, AJAX, Flask, React, Storybook, d3, Redux, Next.js,
         Bootstrap, Material UI, Tailwind
       </p>
 
       <p className={styles.body}>
-        <span className={styles.bold}>Backend</span>: Python, PHP, Node.js,
-        Express, Axios, SQL, PostgreSQL, SQLAlchemy, OAuth
+        <span className="fw-bold">Backend</span>: Python, PHP, Node.js, Express,
+        Axios, SQL, PostgreSQL, SQLAlchemy, OAuth
       </p>
 
       <p className={styles.body}>
-        <span className={styles.bold}>Testing</span>: Jest, Vitest, Supertest,
+        <span className="fw-bold">Testing</span>: Jest, Vitest, Supertest,
         PyTest
       </p>
 
       <p className={styles.body}>
-        <span className={styles.bold}>Development</span>: Linux, Unix, Git,
-        GitHub, VS Code, PyCharm, ZenHub, <br />
+        <span className="fw-bold">Development</span>: Linux, Unix, Git, GitHub,
+        VS Code, PyCharm, ZenHub, <br />
         Agile workflow, Data Structures, Algorithms, Deployment, Windows, Mac,
         Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
       </p>
 
       <p className={styles.body}>
-        <span className={styles.bold}>Design</span>: Figma, Typography, Affinity
+        <span className="fw-bold">Design</span>: Figma, Typography, Affinity
         Design Suite, Adobe Creative Suite
       </p>
 
       <p>
-        This website was created with{' '}
-        <span className={styles.bold}>React v18</span> in a Vite environment
+        This website was created with <span className="fw-bold">React v18</span>{' '}
+        in a Vite environment
         <br />
-        using <span className={styles.bold}>Material UI</span> components.
+        using <span className="fw-bold">Material UI</span> components.
       </p>
     </section>
   );
@@ -102,7 +100,7 @@ const Skills = () => {
 const Fediverse = () => {
   return (
     <section className={styles.fediverse} aria-label="Mastodon links and info">
-      <h3 className={`${styles.subheading} ${styles.fediHeading}`}>
+      <h3 className={`fs-700 ${styles.fediHeading}`}>
         I've joined the Fediverse!
       </h3>
 
@@ -152,7 +150,7 @@ const Links = () => {
       className={styles.links}
       aria-label="Social media and resume links"
     >
-      <h3 className={styles.subheading}>Links:</h3>
+      <h3 className="fs-700">Links:</h3>
 
       <div>
         <p>
@@ -275,7 +273,7 @@ const About = () => {
   return (
     <section id="about" className={`${styles.about} ${styles.columns}`}>
       <div>
-        <h2 className="sectionHeading">About Me</h2>
+        <h2 className="secondary-heading">About Me</h2>
       </div>
 
       <div>
