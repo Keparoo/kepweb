@@ -17,7 +17,9 @@ import styles from './About.module.css';
 const Bio = () => {
   return (
     <section className={styles.bio} aria-label="Kep's biography">
-      <h3 className={`fs-700 ${styles.aboutFedi}`}>Hi, I'm Kep</h3>
+      <h3 className={`secondary-subheading ${styles.aboutFedi}`}>
+        Hi, I'm Kep
+      </h3>
       <p className={`${styles.body} ${styles.fediBody}`}>
         I’m a JavaScript, TypeScript, Node, React, Redux, Python, Flask, and SQL
         developer with graphic design skills who loves to capture the
@@ -57,7 +59,7 @@ const Bio = () => {
 const Skills = () => {
   return (
     <section className={styles.skills} aria-label="List of skills">
-      <h3 className="fs-700">Skills:</h3>
+      <h3 className="secondary-subheading">Skills:</h3>
 
       <p className={styles.body}>
         <span className="fw-bold">Frontend</span>: HTML5, CSS3, JavaScript ES6,
@@ -100,7 +102,7 @@ const Skills = () => {
 const Fediverse = () => {
   return (
     <section className={styles.fediverse} aria-label="Mastodon links and info">
-      <h3 className={`fs-700 ${styles.fediHeading}`}>
+      <h3 className={`secondary-subheading ${styles.fediHeading}`}>
         I've joined the Fediverse!
       </h3>
 
@@ -150,7 +152,7 @@ const Links = () => {
       className={styles.links}
       aria-label="Social media and resume links"
     >
-      <h3 className="fs-700">Links:</h3>
+      <h3 className="secondary-subheading">Links:</h3>
 
       <div>
         <p>

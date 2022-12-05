@@ -44,6 +44,7 @@
   --clr-primary-heading: var(--clr-neutral-900);
   --clr-primary-subheading: var(--clr-primary-original);
   --clr-heading: var(--clr-neutral-900);
+  --clr-secondary-subheading: var(--clr-neutral-900);
   --clr-accent: var(--clr-accent-400);
   --clr-bg-accent: var(--clr-accent-original);
 
@@ -53,8 +54,9 @@
   --ff-body: ;
   --ff-primary-heading: 'Asap';
   --ff-primary-subheading: 'Roboto';
+  --ff-secondary-heading: ;
+  --ff-secondary-subheading: 'Roboto';
   --ff-logo: ;
-  --ff-heading: ;
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -73,6 +75,7 @@
   --fs-primary-heading: var(--fs-900);
   --fs-primary-subheading: var(--fs-700);
   --fs-secondary-heading: var(--fs-800);
+  --fs-secondary-subheading: var(--fs-600);
   --fs-nav: var(--fs-400);
   --fs-button: var(--fs-400);
 
@@ -349,9 +352,10 @@ body {
   color: var(--clr-heading);
 }
 
-.subheading {
-  color: var(--clr-heading);
-  font-weight: bold;
+.secondary-subheading {
+  font-family: var(--ff-secondary-subheading);
+  font-size: var(--fs-secondary-subheading);
+  color: var(--clr-secondary-subheading);
 }
 
 .link {
