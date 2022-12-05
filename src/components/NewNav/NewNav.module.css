@@ -19,7 +19,7 @@
 
 .navbarName {
   padding-block: 1rem;
-  font-family: 'asap';
+  font-family: var(--main-heading);
   font-weight: 700;
   font-size: 1.25rem;
   color: inherit;

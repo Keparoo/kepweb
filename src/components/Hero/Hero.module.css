@@ -4,7 +4,7 @@
 }
 
 .heroHeader {
-  font-family: Asap;
+  font-family: var(--ff-main-heading);
   font-size: 9rem;
   color: var(--clr-main-heading);
 }
