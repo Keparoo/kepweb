@@ -30,6 +30,7 @@
 
   --clr-neutral-900: hsl(233, 12%, 13%);
   --clr-neutral-400: hsl(228, 15%, 32%);
+  --clr-neutral-300: hsl(230, 43%, 65%);
   --clr-neutral-200: hsl(230, 43%, 76%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 
@@ -38,8 +39,8 @@
   --clr-bg: var(--clr-bg-original);
   --clr-link: var(--clr-accent-400);
   --clr-icon: var(--clr-neutral-900);
-  --clr-button-text: ;
-  --clr-button-bg: ;
+  --clr-button-text: var(--clr-neutral-100);
+  --clr-button-bg: var(--clr-primary-original);
   --clr-card-bg: var(--clr-neutral-100);
   --clr-primary-heading: var(--clr-neutral-900);
   --clr-primary-subheading: var(--clr-primary-original);
@@ -373,4 +374,62 @@ body {
 /* Button */
 
 .button {
+  cursor: pointer;
+  text-decoration: none; /* For links styled like a button */
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1em 2em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-button-text);
+  background-color: var(--clr-button-bg);
+  box-shadow: 0 1.125em 1em -1em var(--clr-button-bg);
+}
+
+.btn-small {
+  padding: 0.5em 1.25em;
+  font-weight: var(--fw-semi-bold);
+}
+
+.btn-large {
+  padding: 1.25em 2.5em;
+}
+
+.btn-inverted {
+  background-color: var(--clr-button-text);
+  color: var(--clr-button-bg);
+}
+
+.btn-outline {
+  color: var(--clr-button-bg);
+  background: transparent;
+  outline: 2px solid var(--clr-button-bg);
+  box-shadow: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--clr-neutral-300);
+}
+
+.btn-inverted:hover,
+.btn-inverted:focus-visible {
+  background-color: var(--clr-button-text);
+  color: var(--clr-neutral-300);
+}
+
+.button[disabled] {
+  background-color: lightgray;
+  color: gray;
+  box-shadow: none;
+}
+
+.btn-outline[disabled] {
+  outline: 2px solid darkgray;
+}
+
+.button[disabled]:hover {
+  background-color: lightgray;
+  color: gray;
 }
