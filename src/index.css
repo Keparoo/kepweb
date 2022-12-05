@@ -345,6 +345,7 @@ body {
   font-family: var(--ff-primary-subheading);
   font-size: var(--fs-primary-subheading);
   color: var(--clr-primary-subheading);
+  margin-bottom: 2em;
 }
 
 .secondary-heading {
@@ -378,7 +379,7 @@ body {
   text-decoration: none; /* For links styled like a button */
   border: 0;
   border-radius: 100vmax;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   font-weight: var(--fw-bold);
   font-size: var(--fs-button);
   line-height: 1;
