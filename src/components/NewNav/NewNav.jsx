@@ -66,7 +66,7 @@ const NewNav = () => {
         aria-expanded={menuOpen}
         onClick={handleClick}
       >
-        <span className="sr-only">Menu</span>
+        <span className="visually-hidden">Menu</span>
       </button>
 
       <nav>
