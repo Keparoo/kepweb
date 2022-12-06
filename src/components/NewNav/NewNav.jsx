@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 
 import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
+import Menu from '../../static/menu.svg';
+import Close from '../../static/close.svg';
 
 import styles from './NewNav.module.css';
 
@@ -66,6 +68,18 @@ const NewNav = () => {
         aria-expanded={menuOpen}
         onClick={handleClick}
       >
+        <img
+          className={styles.iconHamburger}
+          src={Menu}
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className={styles.iconClose}
+          src={Close}
+          alt=""
+          aria-hidden="true"
+        />
         <span className="visually-hidden">Menu</span>
       </button>
 

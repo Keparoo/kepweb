@@ -312,6 +312,7 @@ select {
   padding-block: var(size-400);
 }
 
+/* https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/index.html#main-content */
 .visually-hidden {
   position: absolute;
   width: 1px;
