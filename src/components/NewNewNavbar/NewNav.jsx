@@ -68,6 +68,18 @@ const NewNav = () => {
         aria-expanded={menuOpen}
         onClick={handleClick}
       >
+        <img
+          className={styles.iconHamburger}
+          src={Menu}
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className={styles.iconClose}
+          src={Close}
+          alt=""
+          aria-hidden="true"
+        />
         <span className="visually-hidden">Menu</span>
       </button>
 

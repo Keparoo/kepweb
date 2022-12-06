@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NewNav from './components/NewNav/NewNav';
+import NewNav from './components/NewNewNavbar/NewNav';
 import Hero from './components/Hero/Hero';
 import ProjectList from './components/Projects/ProjectList';
 import About from './components/About/About';
