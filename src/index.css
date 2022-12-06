@@ -206,6 +206,19 @@ select {
 
 /* Utility Classes */
 
+/* https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/index.html#main-content */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 .container {
   --max-width: 75rem; /* 1200px */
   --margin: 1rem; /* inline padding when viewport < max-width */
@@ -310,19 +323,6 @@ select {
 
 .padding-block-400 {
   padding-block: var(size-400);
-}
-
-/* https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/index.html#main-content */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
-  border: 0;
 }
 
 /* General Stylings */
