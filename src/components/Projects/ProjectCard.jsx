@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
-import { Button, Tooltip } from '@mui/material';
+import { Tooltip } from '@mui/material';
 
 import styles from './ProjectCard.module.css';
 
@@ -37,53 +37,53 @@ export default function ProjectCard({
         </div>
 
         {isClosed ? (
-          <Button
-            variant="outlined"
-            size="small"
+          <button
             aria-label="Continue reading"
-            className={styles.toggleButton}
+            className={`button btn-outline btn-small ${styles.toggleButton}`}
             onClick={toggleCard}
           >
             Continue Reading
-          </Button>
+          </button>
         ) : (
-          <Button
-            variant="outlined"
-            size="small"
+          <button
             aria-label="Continue reading"
-            className={styles.toggleButton}
+            className={`button btn-outline btn-small ${styles.toggleButton}`}
             onClick={toggleCard}
           >
             Close
-          </Button>
+          </button>
         )}
       </section>
 
       <nav className={styles.nav} aria-label="Card Project Navigation">
         <Tooltip title="Open page to project deployment">
-          <Button
-            variant="contained"
+          <a
+            className="button btn-small"
             href={demo}
             target="_blank"
-            size="small"
             aria-label="App Demo"
-            startIcon={<WebIcon />}
           >
-            Demo
-          </Button>
+            <span className={styles.buttonIcon}>
+              <WebIcon fontSize="small" />
+            </span>{' '}
+            <span className={styles.buttonText}>Demo</span>
+          </a>
         </Tooltip>
+
         <Tooltip title="Open page to project repository" enterTouchDelay={0}>
-          <Button
-            variant="outlined"
-            href={github}
-            target="_blank"
-            size="small"
-            aria-label="GitHub repository"
-            startIcon={<GitHubIcon />}
-            sx={{ marginLeft: '16px' }}
-          >
-            Github
-          </Button>
+          <span className={styles.githubButton}>
+            <a
+              className="button btn-small btn-outline"
+              href={github}
+              target="_blank"
+              aria-label="GitHub repository"
+            >
+              <span className={styles.buttonIcon}>
+                <GitHubIcon fontSize="small" />
+              </span>
+              <span className={styles.buttonText}>Github</span>
+            </a>
+          </span>
         </Tooltip>
       </nav>
     </article>

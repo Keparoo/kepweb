@@ -62,6 +62,19 @@
   margin-top: 0.75rem !important;
 }
 
+.githubButton {
+  margin-left: 1rem;
+}
+
+.buttonIcon {
+  position: relative;
+  top: 4px;
+}
+
+.buttonText {
+  padding-left: 5px;
+}
+
 .nav {
   margin-top: 3rem;
   margin-left: 0.5rem;
