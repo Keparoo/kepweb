@@ -52,6 +52,8 @@
   display: none;
 }
 
+/*  Take out */
+
 @supports (backdrop-filter: blur(1rem)) {
   .primaryNavigation {
     background: hsl(230 30% 46% / 0.1);
