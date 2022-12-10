@@ -6,7 +6,7 @@ import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
 import Menu from '../../static/menu.svg';
 import Close from '../../static/close.svg';
 
-import styles from './NewNav.module.css';
+import styles from './NewNewNav.module.css';
 
 const NewNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);

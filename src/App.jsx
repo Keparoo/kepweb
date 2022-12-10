@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NewNav from './components/NewNewNavbar/NewNav';
+import NewNewNav from './components/NewNewNavbar/NewNewNav';
 import Hero from './components/Hero/Hero';
 import ProjectList from './components/Projects/ProjectList';
 import About from './components/About/About';
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <NewNav />
+        <NewNewNav />
       </header>
 
       <main className="container">
