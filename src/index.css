@@ -375,6 +375,10 @@ body {
   background: var(--clr-bg-accent);
 }
 
+/* .active {
+  background: var(--clr-accent-original) !important;
+} */
+
 /* Button */
 
 .button {

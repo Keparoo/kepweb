@@ -8,7 +8,7 @@ import Close from '../../static/close.svg';
 
 import styles from './NewNewNav.module.css';
 
-const NewNav = () => {
+const NewNewNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = () => {
@@ -54,58 +54,62 @@ const NewNav = () => {
   ];
 
   return (
-    <section className={styles.primaryHeader}>
-      <a href="#hero" className={styles.navbarName}>
-        <span className={styles.codeIcon}>
-          <CodeIcon />
-        </span>
-        Kep Kaeppeler
-      </a>
+    <section className={styles.primaryHeader} data-overlay={menuOpen}>
+      <div className={styles.navWrapper}>
+        <a href="#hero" className={styles.navbarName}>
+          <span className={styles.codeIcon}>
+            <CodeIcon />
+          </span>
+          Kep Kaeppeler
+        </a>
 
-      <button
-        className={styles.mobileNavToggle}
-        aria-controls="primary-navigation"
-        aria-expanded={menuOpen}
-        onClick={handleClick}
-      >
-        <img
-          className={styles.iconHamburger}
-          src={Menu}
-          alt=""
-          aria-hidden="true"
-        />
-        <img
-          className={styles.iconClose}
-          src={Close}
-          alt=""
-          aria-hidden="true"
-        />
-        <span className="visually-hidden">Menu</span>
-      </button>
-
-      <nav>
-        <ul
-          id="primary-navigation"
-          role="list"
-          aria-label="Primary"
-          data-visible={menuOpen}
-          className={styles.primaryNavigation}
+        <button
+          className={styles.mobileNavToggle}
+          aria-controls="primary-navigation"
+          aria-expanded={menuOpen}
+          onClick={handleClick}
         >
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <a
-                href={link.href}
-                target={link.target ? '_blank' : ''}
-                id={link.active}
-                className={`button btn-link ${styles.navbarLink} ${link.active} ${link.variant}`}
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <img
+            className={styles.iconHamburger}
+            src={Menu}
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            className={styles.iconClose}
+            src={Close}
+            alt=""
+            aria-hidden="true"
+          />
+          <span className="visually-hidden">Menu</span>
+        </button>
+
+        <nav
+          className={styles.primaryNavigation}
+          id="primary-navigation"
+          data-visible={menuOpen}
+        >
+          <ul role="list" aria-label="Primary" className={styles.navList}>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  target={link.target ? '_blank' : ''}
+                  className={`button ${link.variant}} ${link.active}`}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <button
+          className={`button ${styles.displayMdInlineFlex} ${styles.displaySmNone}`}
+        >
+          Contact
+        </button>
+      </div>
     </section>
   );
 };
-export default NewNav;
+export default NewNewNav;
