@@ -15,13 +15,17 @@ const NewNewNav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const navClick = () => {
+    setMenuOpen(false);
+  };
+
   const navLinks = [
     {
       name: 'Home',
       href: '#hero',
       target: false,
       variant: 'btn-link',
-      active: 'active',
+      active: 'nav-active-link',
     },
     {
       name: 'About',
@@ -48,7 +52,7 @@ const NewNewNav = () => {
       name: 'Contact',
       href: '#contact',
       target: false,
-      variant: 'btn-outline',
+      variant: '',
       active: '',
     },
   ];
@@ -69,18 +73,6 @@ const NewNewNav = () => {
           aria-expanded={menuOpen}
           onClick={handleClick}
         >
-          <img
-            className={styles.iconHamburger}
-            src={Menu}
-            alt=""
-            aria-hidden="true"
-          />
-          <img
-            className={styles.iconClose}
-            src={Close}
-            alt=""
-            aria-hidden="true"
-          />
           <span className="visually-hidden">Menu</span>
         </button>
 
@@ -95,7 +87,8 @@ const NewNewNav = () => {
                 <a
                   href={link.href}
                   target={link.target ? '_blank' : ''}
-                  className={`button ${link.variant}} ${link.active}`}
+                  className={`button ${link.variant} ${link.active}`}
+                  onClick={navClick}
                 >
                   {link.name}
                 </a>
@@ -103,11 +96,6 @@ const NewNewNav = () => {
             ))}
           </ul>
         </nav>
-        <button
-          className={`button ${styles.displayMdInlineFlex} ${styles.displaySmNone}`}
-        >
-          Contact
-        </button>
       </div>
     </section>
   );
