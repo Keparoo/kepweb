@@ -3,20 +3,25 @@ import React, { useState } from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 
 import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
-import Menu from '../../static/menu.svg';
-import Close from '../../static/close.svg';
 
 import styles from './NewNewNav.module.css';
 
-const NewNewNav = () => {
+import { useScrollPosition } from '../../hooks/useScrollPosition';
+
+const NewNewNav = ({ sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const scrollPosition = useScrollPosition();
+
+  // console.log(scrollPostion);
 
   const handleClick = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const navClick = () => {
+  const navClick = (e) => {
     setMenuOpen(false);
+    e.currentTarget.classList.toggle('nav-active-link');
+    e.currentTarget.setAttribute('data-active', 'true');
   };
 
   const navLinks = [
@@ -25,37 +30,40 @@ const NewNewNav = () => {
       href: '#hero',
       target: false,
       variant: 'btn-link',
-      active: 'nav-active-link',
-    },
-    {
-      name: 'About',
-      href: '#about',
-      target: false,
-      variant: 'btn-link',
-      active: '',
+      active: sections.hero,
     },
     {
       name: 'Projects',
       href: '#projects',
       target: false,
       variant: 'btn-link',
-      active: '',
+      active: sections.projects,
     },
+    {
+      name: 'About',
+      href: '#about',
+      target: false,
+      variant: 'btn-link',
+      active: sections.about,
+    },
+
     {
       name: 'Resume',
       href: resume,
       target: true,
       variant: 'btn-link',
-      active: '',
+      active: false,
     },
     {
       name: 'Contact',
       href: '#contact',
       target: false,
-      variant: '',
-      active: '',
+      variant: 'btn-inverted',
+      active: sections.contact,
     },
   ];
+
+  console.log(sections.projects, sections.about, sections.contact);
 
   return (
     <section className={styles.primaryHeader} data-overlay={menuOpen}>
@@ -87,7 +95,8 @@ const NewNewNav = () => {
                 <a
                   href={link.href}
                   target={link.target ? '_blank' : ''}
-                  className={`button ${link.variant} ${link.active}`}
+                  data-active={link.active}
+                  className={`button ${link.variant}`}
                   onClick={navClick}
                 >
                   {link.name}

@@ -38,9 +38,12 @@
   --clr-text: var(--clr-neutral-400);
   --clr-bg: var(--clr-bg-original);
   --clr-link: var(--clr-accent-400);
+  --clr-link-hover-bg: var(--clr-neutral-300);
+  --clr-link-hover-text: var(--clr-neutral-100);
   --clr-icon: var(--clr-neutral-900);
   --clr-button-text: var(--clr-neutral-100);
   --clr-button-bg: var(--clr-primary-original);
+  --clr-button-hover: var(--clr-neutral-300);
   --clr-card-bg: var(--clr-neutral-100);
   --clr-primary-heading: var(--clr-neutral-900);
   --clr-primary-subheading: var(--clr-primary-original);
@@ -372,12 +375,8 @@ body {
 
 .link:hover,
 .link:active {
-  color: white !important;
-  background: var(--clr-neutral-300);
-}
-
-.nav-active-link {
-  color: white !important;
+  color: var(--clr-link-hover-text) !important;
+  background: var(--clr-link-hover-bg);
 }
 
 /* Button */
@@ -387,7 +386,7 @@ body {
   text-decoration: none; /* For links styled like a button */
   border: 0;
   border-radius: 100vmax;
-  padding: 0.8em 2em;
+  padding: 0.75em 1.5em;
   font-weight: var(--fw-bold);
   font-size: var(--fs-button);
   line-height: 1;
@@ -397,7 +396,7 @@ body {
 }
 
 .btn-small {
-  padding: 0.5em 1.25em;
+  padding: 0.5em 1em;
   font-weight: var(--fw-semi-bold);
 }
 
@@ -425,13 +424,25 @@ body {
 
 .button:hover,
 .button:focus-visible {
-  background-color: var(--clr-neutral-300);
+  background-color: var(--clr-button-hover);
 }
 
 .btn-inverted:hover,
 .btn-inverted:focus-visible {
   background-color: var(--clr-button-text);
-  color: var(--clr-neutral-300);
+  color: var(--clr-button-text);
+}
+
+.btn-link:hover,
+.btn-link:focus-visible {
+  color: var(--clr-button-text);
+  background-color: var(--clr-button-hover) !important;
+}
+
+.btn-link[data-active='true'] {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 4px !important;
 }
 
 .button[disabled] {
