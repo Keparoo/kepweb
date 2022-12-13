@@ -34,13 +34,12 @@ function App() {
       hero: scrollPosition < projectsRef.current.offsetTop - 80,
       projects:
         scrollPosition > projectsRef.current.offsetTop - 80 &&
-        scrollPosition < aboutRef.current.offsetTop,
+        scrollPosition < aboutRef.current.offsetTop - 80,
       about:
-        scrollPosition > aboutRef.current.offsetTop &&
-        scrollPosition < contactRef.current.offsetTop,
-      contact: scrollPosition > contactRef.current.offsetTop,
+        scrollPosition > aboutRef.current.offsetTop - 80 &&
+        scrollPosition < contactRef.current.offsetTop - 500,
+      contact: scrollPosition > contactRef.current.offsetTop - 500,
     });
-    console.log('***', scrollPosition, sections.projects);
   }, [scrollPosition]);
 
   return (

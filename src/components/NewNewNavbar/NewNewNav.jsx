@@ -6,13 +6,8 @@ import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
 
 import styles from './NewNewNav.module.css';
 
-import { useScrollPosition } from '../../hooks/useScrollPosition';
-
 const NewNewNav = ({ sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const scrollPosition = useScrollPosition();
-
-  // console.log(scrollPostion);
 
   const handleClick = () => {
     setMenuOpen(!menuOpen);
@@ -20,8 +15,6 @@ const NewNewNav = ({ sections }) => {
 
   const navClick = (e) => {
     setMenuOpen(false);
-    e.currentTarget.classList.toggle('nav-active-link');
-    e.currentTarget.setAttribute('data-active', 'true');
   };
 
   const navLinks = [
@@ -62,8 +55,6 @@ const NewNewNav = ({ sections }) => {
       active: sections.contact,
     },
   ];
-
-  console.log(sections.projects, sections.about, sections.contact);
 
   return (
     <section className={styles.primaryHeader} data-overlay={menuOpen}>
