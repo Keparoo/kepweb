@@ -372,7 +372,8 @@ body {
 
 .link:hover,
 .link:active {
-  background: var(--clr-bg-accent);
+  color: white !important;
+  background: var(--clr-neutral-300);
 }
 
 .nav-active-link {
@@ -422,7 +423,7 @@ body {
   box-shadow: none;
 }
 
-/* .button:hover,
+.button:hover,
 .button:focus-visible {
   background-color: var(--clr-neutral-300);
 }
@@ -431,7 +432,7 @@ body {
 .btn-inverted:focus-visible {
   background-color: var(--clr-button-text);
   color: var(--clr-neutral-300);
-} */
+}
 
 .button[disabled] {
   background-color: lightgray;
