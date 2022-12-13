@@ -15,22 +15,26 @@ import { useScrollPosition } from './hooks/useScrollPosition';
 // });
 
 function App() {
+  /* Track Y scrolling to determine which section is visible.
+      Return an object with the current section in view as true
+      All other sections as false */
   const heroRef = useRef();
   const projectsRef = useRef();
   const aboutRef = useRef();
   const contactRef = useRef();
 
-  const [sections, setSections] = useState({
+  const [visible, setVisible] = useState({
     hero: true,
     projects: false,
     about: false,
     contact: false,
   });
 
-  const scrollPosition = useScrollPosition() + 80;
+  const scrollOffset = 80;
+  const scrollPosition = useScrollPosition() + scrollOffset;
 
   useEffect(() => {
-    setSections({
+    setVisible({
       hero: scrollPosition < projectsRef.current.offsetTop,
       projects:
         scrollPosition > projectsRef.current.offsetTop &&
@@ -45,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <NewNewNav sections={sections} />
+        <NewNewNav visible={visible} />
       </header>
 
       <main className="container">

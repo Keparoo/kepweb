@@ -6,7 +6,7 @@ import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
 
 import styles from './NewNewNav.module.css';
 
-const NewNewNav = ({ sections }) => {
+const NewNewNav = ({ visible }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = () => {
@@ -23,21 +23,21 @@ const NewNewNav = ({ sections }) => {
       href: '#hero',
       target: false,
       variant: 'btn-link',
-      active: sections.hero,
+      active: visible.hero,
     },
     {
       name: 'Projects',
       href: '#projects',
       target: false,
       variant: 'btn-link',
-      active: sections.projects,
+      active: visible.projects,
     },
     {
       name: 'About',
       href: '#about',
       target: false,
       variant: 'btn-link',
-      active: sections.about,
+      active: visible.about,
     },
 
     {
@@ -52,7 +52,7 @@ const NewNewNav = ({ sections }) => {
       href: '#contact',
       target: false,
       variant: 'btn-inverted',
-      active: sections.contact,
+      active: visible.contact,
     },
   ];
 
