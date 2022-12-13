@@ -27,18 +27,18 @@ function App() {
     contact: false,
   });
 
-  const scrollPosition = useScrollPosition();
+  const scrollPosition = useScrollPosition() + 80;
 
   useEffect(() => {
     setSections({
-      hero: scrollPosition < projectsRef.current.offsetTop - 80,
+      hero: scrollPosition < projectsRef.current.offsetTop,
       projects:
-        scrollPosition > projectsRef.current.offsetTop - 80 &&
-        scrollPosition < aboutRef.current.offsetTop - 80,
+        scrollPosition > projectsRef.current.offsetTop &&
+        scrollPosition < aboutRef.current.offsetTop,
       about:
-        scrollPosition > aboutRef.current.offsetTop - 80 &&
-        scrollPosition < contactRef.current.offsetTop - 500,
-      contact: scrollPosition > contactRef.current.offsetTop - 500,
+        scrollPosition > aboutRef.current.offsetTop &&
+        scrollPosition < contactRef.current.offsetTop,
+      contact: scrollPosition > contactRef.current.offsetTop,
     });
   }, [scrollPosition]);
 

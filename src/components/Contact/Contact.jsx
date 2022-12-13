@@ -15,7 +15,12 @@ const Contact = () => {
             </h2>
           </Grid>
 
-          <Grid item md={6} sm={12} sx={{ marginTop: '1.25em' }}>
+          <Grid
+            item
+            md={6}
+            sm={12}
+            sx={{ marginTop: '5em', marginBottom: '4em' }}
+          >
             <Stack spacing={1}>
               <ContactForm />
             </Stack>
