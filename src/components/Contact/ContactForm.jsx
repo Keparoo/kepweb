@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-import { Box } from '@mui/system';
-import { Stack, TextField, Tooltip } from '@mui/material';
+import { TextField, Tooltip } from '@mui/material';
 
 import Toast from '../Toast';
 
@@ -111,116 +110,113 @@ const ContactForm = () => {
   });
 
   return (
-    <section>
-      <Box component="form" noValidate autoComplete="off">
-        <div className={styles.textFieldSection}>
-          <TextField
-            id="name"
-            name="name"
-            label="Your name"
-            variant="outlined"
-            required
-            fullWidth
-            value={formik.values.name}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            error={formik.touched.name && Boolean(formik.errors.name)}
-            helperText={formik.touched.name && formik.errors.name}
-            className={styles.textField}
-          />
-          <TextField
-            id="email"
-            name="email"
-            type="email"
-            label=" Your email"
-            variant="outlined"
-            required
-            fullWidth
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            error={formik.touched.email && Boolean(formik.errors.email)}
-            helperText={formik.touched.email && formik.errors.email}
-            className={styles.textField}
-          />
-          <TextField
-            id="message"
-            name="message"
-            label="Message"
-            placeholder="Message is limited to 2000 characters"
-            variant="outlined"
-            required
-            fullWidth
-            multiline
-            rows={10}
-            value={formik.values.message}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            error={formik.touched.message && Boolean(formik.errors.message)}
-            helperText={formik.touched.message && formik.errors.message}
-            className={styles.textField}
-          />
-        </div>
-
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="flex-end"
-        >
-          {formik.errors.name !== undefined ||
-          formik.errors.email !== undefined ||
-          formik.errors.message !== undefined ? (
-            <button
-              type="submit"
-              className="button"
-              onClick={(e) => {
-                e.preventDefault();
-                formik.handleSubmit(e);
-              }}
-              disabled
-            >
-              Submit
-            </button>
-          ) : (
-            <button
-              type="submit"
-              className="button"
-              onClick={(e) => {
-                e.preventDefault();
-                formik.handleSubmit(e);
-              }}
-            >
-              Submit
-            </button>
-          )}
-
-          <Stack direction="row" spacing={1} sx={{ justifyContent: 'right' }}>
-            <EmailIcon />
-            <Tooltip
-              title="Send me an email from your browser instead of using above form"
-              enterTouchDelay={0}
-            >
-              <a
-                className="link"
-                href="mailto:kep@kepweb.dev"
-                target="_blank"
-                rel="noopener"
-              >
-                Kep@kepweb.dev
-              </a>
-            </Tooltip>
-          </Stack>
-        </Stack>
-
-        <Toast
-          open={toast.open}
-          closeToast={closeToast}
-          duration={6000}
-          message={toast.message}
-          severity={toast.severity}
+    <form component="form" noValidate autoComplete="off">
+      <div className={styles.textFieldSection}>
+        <TextField
+          id="name"
+          name="name"
+          label="Your name"
+          variant="outlined"
+          required
+          fullWidth
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.name && Boolean(formik.errors.name)}
+          helperText={formik.touched.name && formik.errors.name}
+          className={styles.textField}
         />
-      </Box>
-    </section>
+        <TextField
+          id="email"
+          name="email"
+          type="email"
+          label=" Your email"
+          variant="outlined"
+          required
+          fullWidth
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.email && Boolean(formik.errors.email)}
+          helperText={formik.touched.email && formik.errors.email}
+          className={styles.textField}
+        />
+        <TextField
+          id="message"
+          name="message"
+          label="Message"
+          placeholder="Message is limited to 2000 characters"
+          variant="outlined"
+          required
+          fullWidth
+          multiline
+          rows={10}
+          value={formik.values.message}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.message && Boolean(formik.errors.message)}
+          helperText={formik.touched.message && formik.errors.message}
+          className={styles.textField}
+        />
+      </div>
+
+      <div className={styles.buttons}>
+        {formik.errors.name !== undefined ||
+        formik.errors.email !== undefined ||
+        formik.errors.message !== undefined ? (
+          <button
+            type="submit"
+            className="button"
+            onClick={(e) => {
+              e.preventDefault();
+              formik.handleSubmit(e);
+            }}
+            disabled
+          >
+            Submit
+          </button>
+        ) : (
+          <button
+            type="submit"
+            className="button"
+            onClick={(e) => {
+              e.preventDefault();
+              formik.handleSubmit(e);
+            }}
+          >
+            Submit
+          </button>
+        )}
+
+        <div className={styles.mailLink}>
+          <span className={styles.icon}>
+            <EmailIcon />
+          </span>
+
+          <Tooltip
+            title="Send me an email from your browser instead of using above form"
+            enterTouchDelay={0}
+          >
+            <a
+              className="link"
+              href="mailto:kep@kepweb.dev"
+              target="_blank"
+              rel="noopener"
+            >
+              Kep@kepweb.dev
+            </a>
+          </Tooltip>
+        </div>
+      </div>
+
+      <Toast
+        open={toast.open}
+        closeToast={closeToast}
+        duration={6000}
+        message={toast.message}
+        severity={toast.severity}
+      />
+    </form>
   );
 };
 
