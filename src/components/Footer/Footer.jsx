@@ -10,8 +10,8 @@ import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <section className={styles.footer}>
-      <nav>
+    <div className={`${styles.footer}`}>
+      <nav className="container">
         <ul role="list" aria-label="Footer" className={styles.footerNavigation}>
           <li>
             <a href="#hero" aria-label="Home">
@@ -58,6 +58,6 @@ export default function Footer() {
       </nav>
 
       <p className={styles.copyright}>&copy; 2022 Kepweb.dev</p>
-    </section>
+    </div>
   );
 }

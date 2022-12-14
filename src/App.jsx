@@ -70,7 +70,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="container">
+      <footer>
         <Footer />
       </footer>
     </div>
