@@ -6,7 +6,7 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <section id="hero" className={`${styles.hero} ${styles.columns}`}>
+    <div id="hero" className={`${styles.hero} ${styles.columns}`}>
       <div>
         <h1 className="primary-heading">Kep</h1>
         <p className="primary-subheading">
@@ -21,7 +21,7 @@ const Hero = () => {
       <div>
         <img className="computer-image" src={computerImage} />
       </div>
-    </section>
+    </div>
   );
 };
 

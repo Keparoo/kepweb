@@ -13,7 +13,7 @@ import styles from './ProjectCard.module.css';
 
 const ProjectList = () => {
   return (
-    <section className={styles.projects}>
+    <div className={styles.projects}>
       <h2 id="projects" className="secondary-heading">
         Projects
       </h2>
@@ -243,7 +243,7 @@ const ProjectList = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

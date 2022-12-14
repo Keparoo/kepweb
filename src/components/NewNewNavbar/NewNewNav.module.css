@@ -14,13 +14,13 @@
 */
 
 .primaryHeader {
-  /* padding-top: var(--size-700); */
+  /* max-width: 900px; */
 }
 
 .navWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .navbarName {
@@ -100,6 +100,17 @@
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.25);
   }
 
+  /* .primaryHeader {
+    background: hsl(230 30% 46% / 0.1);
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .primaryHeader {
+      background: hsl(230 30% 46% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  } */
+
   .primaryHeader[data-overlay='true']::before {
     content: '';
     position: fixed;
@@ -116,6 +127,11 @@
   .primaryNavigation[data-visible='true'] {
     display: block;
     /* transform: translateX(0%); */
+  }
+
+  .navbarName {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .mobileNavToggle {
