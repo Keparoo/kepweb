@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Tooltip } from '@mui/material';
+import { Tooltip } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -7,7 +7,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
-// import MastodonIcon from '/src/static/mastodon.svg';
 import IconMastodon from '../IconMastodon';
 
 import resume from '/src/static/kep-kaeppeler-resume.11.1.pdf';
@@ -91,9 +90,17 @@ const Skills = () => {
 
       <p>
         This website was created with <span className="fw-bold">React v18</span>{' '}
-        in a Vite environment
-        <br />
-        using <span className="fw-bold">Material UI</span> components.
+        in a Vite environment using <span className="fw-bold">Material UI</span>{' '}
+        components. I have since redesigned and refactored the site building the
+        React components from scratch with vanilla JavaScript ES6 and CSS5.
+        <br /> See my{' '}
+        <a
+          className="link"
+          href="https://github.com/Keparoo/kepweb"
+          target="_blank"
+        >
+          sourcecode.
+        </a>
       </p>
     </section>
   );
@@ -107,7 +114,7 @@ const Fediverse = () => {
       </h3>
 
       <p className={`${styles.fediBody} ${styles.body}`}>
-        Come join me and the many others that have joined the{' '}
+        Come join me and the many others that have become part of the{' '}
         <a className="link" href="https://fedi.tips/" target="_blank">
           Fediverse{' '}
         </a>
@@ -161,49 +168,42 @@ const Links = () => {
             title="Send me an email from your browser"
             enterTouchDelay={0}
           >
-            <Button
-              className={styles.link}
+            <a
+              className={`button btn-link ${styles.link}`}
               href="mailto:kep@kepweb.dev"
               target="_blank"
-              underline="hover"
               rel="noopener"
-              color="inherit"
-              sx={{}}
             >
               Kep@kepweb.dev
-            </Button>
+            </a>
           </Tooltip>
         </p>
 
         <p>
           <LinkedInIcon className={styles.icon} />
           <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
-            <Button
-              className={styles.link}
+            <a
+              className={`button btn-link ${styles.link}`}
               href="https://www.linkedin.com/in/kep-kaeppeler"
               target="_blank"
-              underline="hover"
               rel="noopener"
-              color="inherit"
             >
               LinkedIn.com/in/kep-kaeppeler
-            </Button>
+            </a>
           </Tooltip>
         </p>
 
         <p>
           <GitHubIcon className={styles.icon} />
           <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
-            <Button
-              className={styles.link}
+            <a
+              className={`button btn-link ${styles.link}`}
               href="https://github.com/Keparoo"
               target="_blank"
-              underline="hover"
               rel="noopener"
-              color="inherit"
             >
               Github.com/Keparoo
-            </Button>
+            </a>
           </Tooltip>
         </p>
 
@@ -211,60 +211,52 @@ const Links = () => {
           <IconMastodon className={styles.icon} />
 
           <Tooltip title="Open my Mastodon Page" enterTouchDelay={0}>
-            <Button
-              className={styles.link}
+            <a
+              className={`button btn-link ${styles.link}`}
               rel="me noopener"
               href="https://fosstodon.org/@Kep"
               target="_blank"
-              underline="hover"
-              color="inherit"
             >
               @Kep@fosstodon.org
-            </Button>
+            </a>
           </Tooltip>
         </div>
 
         <p>
           <TwitterIcon className={styles.icon} />
           <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
-            <Button
-              className={styles.link}
+            <a
+              className={`button btn-link ${styles.link}`}
               href="https://twitter.com/KepKaeppeler"
               target="_blank"
-              underline="hover"
               rel="noopener"
-              color="inherit"
             >
               Twitter.com/KepKaeppeler
-            </Button>
+            </a>
           </Tooltip>
         </p>
 
         <p>
           <ArticleIcon className={styles.icon} />
-          <Button
-            className={styles.link}
+          <a
+            className={`button btn-link ${styles.link}`}
             href={resume}
             target="_blank"
-            underline="hover"
             download="kep-kaeppeler-resume"
-            color="inherit"
           >
             Download my resume
-          </Button>
+          </a>
         </p>
 
         <p>
           <PrintIcon className={styles.icon} />
-          <Button
-            className={styles.link}
+          <a
+            className={`button btn-link ${styles.link}`}
             href={resume}
             target="_blank"
-            underline="hover"
-            color="inherit"
           >
             View or print my resume
-          </Button>
+          </a>
         </p>
       </div>
     </section>

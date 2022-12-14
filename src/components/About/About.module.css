@@ -24,15 +24,7 @@
 }
 
 .link {
-  margin-bottom: 0.75rem;
-  margin-left: 1rem !important;
-  text-transform: none !important;
-  font-size: 16px !important;
-}
-
-.link:hover,
-.link:active {
-  background: var(--clr-bg-accent) !important;
+  display: inline-block;
 }
 
 .columns {
@@ -55,7 +47,6 @@
   inset: 0;
   opacity: 70%;
   background-image: url(/src/static/fediverse_logo.svg);
-  /* border: 2px solid red; */
   width: 715px;
   height: 690px;
   opacity: 15%;
