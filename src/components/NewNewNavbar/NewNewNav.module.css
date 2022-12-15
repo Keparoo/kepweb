@@ -18,9 +18,8 @@
 }
 
 .navWrapper {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  width: 79rem;
+  margin-inline: auto;
 }
 
 .navbarName {
