@@ -81,15 +81,15 @@
   }
 
   .primaryNavigation {
-    /* display: block; */
+    display: block;
     /* position: absolute;
     z-index: 1000;
     inset: 0 0 0 50%; */
-    /* transform: translateX(100%);
-    transition: transform 350ms ease-out; */
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
 
-    display: none;
-    position: fixed;
+    /* display: none;
+    position: fixed; */
     inset: 7rem 0 auto auto;
     max-width: 25rem;
     /* margin-inline: auto; */
@@ -125,7 +125,7 @@
 
   .primaryNavigation[data-visible='true'] {
     display: block;
-    /* transform: translateX(0%); */
+    transform: translateX(0%);
   }
 
   .navbarName {
