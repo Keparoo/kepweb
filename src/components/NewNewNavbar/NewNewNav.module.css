@@ -99,7 +99,7 @@
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.25);
   }
 
-  /* .primaryHeader {
+  .primaryHeader {
     background: hsl(230 30% 46% / 0.1);
   }
 
@@ -108,11 +108,12 @@
       background: hsl(230 30% 46% / 0.1);
       backdrop-filter: blur(1rem);
     }
-  } */
+  }
 
-  .primaryHeader[data-overlay='true']::before {
+  .dataOverlay[data-overlay='true']::before {
     content: '';
     position: fixed;
+    z-index: 0;
     inset: 0;
     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 1));
   }

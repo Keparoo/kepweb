@@ -57,47 +57,49 @@ const NewNewNav = ({ visible }) => {
   ];
 
   return (
-    <section className={styles.primaryHeader} data-overlay={menuOpen}>
-      <div className={styles.navWrapper}>
-        <a href="#hero" className={styles.navbarName}>
-          <span className={styles.codeIcon}>
-            <CodeIcon />
-          </span>
-          Kep Kaeppeler
-        </a>
+    <div className={styles.dataOverlay} data-overlay={menuOpen}>
+      <section className={styles.primaryHeader}>
+        <div className={styles.navWrapper}>
+          <a href="#hero" className={styles.navbarName}>
+            <span className={styles.codeIcon}>
+              <CodeIcon />
+            </span>
+            Kep Kaeppeler
+          </a>
 
-        <button
-          className={styles.mobileNavToggle}
-          aria-controls="primary-navigation"
-          aria-expanded={menuOpen}
-          onClick={handleClick}
-        >
-          <span className="visually-hidden">Menu</span>
-        </button>
+          <button
+            className={styles.mobileNavToggle}
+            aria-controls="primary-navigation"
+            aria-expanded={menuOpen}
+            onClick={handleClick}
+          >
+            <span className="visually-hidden">Menu</span>
+          </button>
 
-        <nav
-          className={styles.primaryNavigation}
-          id="primary-navigation"
-          data-visible={menuOpen}
-        >
-          <ul role="list" aria-label="Primary" className={styles.navList}>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  href={link.href}
-                  target={link.target ? '_blank' : ''}
-                  data-active={link.active}
-                  className={`button ${link.variant}`}
-                  onClick={navClick}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-    </section>
+          <nav
+            className={styles.primaryNavigation}
+            id="primary-navigation"
+            data-visible={menuOpen}
+          >
+            <ul role="list" aria-label="Primary" className={styles.navList}>
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    target={link.target ? '_blank' : ''}
+                    data-active={link.active}
+                    className={`button ${link.variant}`}
+                    onClick={navClick}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
   );
 };
 export default NewNewNav;
