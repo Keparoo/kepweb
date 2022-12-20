@@ -1,10 +1,7 @@
 .primaryHeader {
-  padding-block: 2.25rem;
+  padding-block: 2rem;
   background: hsl(230 30% 46% / 0.1);
   position: fixed;
-  /* display: flex; */
-  /* justify-content: center; */
-  z-index: 1000;
   width: 100vw;
 }
 
@@ -16,9 +13,10 @@
 }
 
 .navWrapper {
-  max-width: 80rem;
+  max-width: 85rem;
   margin-inline: auto;
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarName {
@@ -39,28 +37,19 @@
 }
 
 .primaryNavigation {
-  padding-block: 2.25rem;
   padding-inline: clamp(2rem, 5vw, 10rem);
-  list-style: none;
-  display: flex;
   z-index: 100;
-  gap: clamp(2rem, 2vw, 3rem);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 40%;
+  /* position: fixed; */
+  /* width: 100%; */
+  /* top: 0;
+  left: 40%; */
 }
-
-/* @supports (backdrop-filter: blur(1rem)) {
-  .primaryNavigation {
-    background: hsl(230 30% 46% / 0.1);
-    backdrop-filter: blur(1rem);
-  }
-} */
 
 .navList {
   display: flex;
+  /* gap: clamp(1rem, 2vw, 3rem); */
   text-align: center;
+  list-style: none;
 }
 
 .mobileNavToggle {
@@ -73,8 +62,7 @@
 
 @media (max-width: 900px) {
   .primaryHeader[data-overlay] {
-    position: relative;
-    z-index: 999;
+    position: fixed;
   }
 
   .primaryNavigation {
@@ -88,6 +76,7 @@
     inset: 0 0 0 50%; */
     /* display: none;
     position: fixed; */
+    position: fixed;
     inset: 7rem 0 auto auto;
     max-width: 25rem;
     background: var(--clr-neutral-300);
@@ -98,6 +87,8 @@
 
   .primaryHeader {
     background: hsl(230 30% 46% / 0.1);
+    padding-block: 0;
+    /* position: fixed; */
   }
 
   @supports (backdrop-filter: blur(1rem)) {
@@ -107,12 +98,12 @@
     }
   }
 
-  .primaryHeader[data-overlay='true']::before {
+  /* .primaryHeader[data-overlay='true']::before {
     content: '';
-    position: fixed;
+    position: absolute;
     inset: 0;
     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 1));
-  }
+  } */
 
   .navList {
     display: grid;
