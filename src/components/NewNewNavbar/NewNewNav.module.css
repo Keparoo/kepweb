@@ -13,10 +13,15 @@
 }
 
 .navWrapper {
-  max-width: 85rem;
-  margin-inline: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.codeIcon {
+  margin-left: 2rem;
+  padding-top: 0.4rem;
+  padding-right: 1rem;
 }
 
 .navbarName {
@@ -30,10 +35,8 @@
   align-items: center;
 }
 
-.codeIcon {
-  margin-left: 2rem;
-  padding-top: 0.4rem;
-  padding-right: 1rem;
+.mobileNavToggle {
+  display: none;
 }
 
 .primaryNavigation {
@@ -50,10 +53,6 @@
   /* gap: clamp(1rem, 2vw, 3rem); */
   text-align: center;
   list-style: none;
-}
-
-.mobileNavToggle {
-  display: none;
 }
 
 .displayMdInlineFlex {
@@ -98,9 +97,9 @@
     }
   }
 
-  /* .primaryHeader[data-overlay='true']::before {
+  /* .navWrapper[data-overlay='true']::before {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 1));
   } */
