@@ -97,6 +97,7 @@
     }
   }
 
+  /* Look into overlay problems */
   /* .navWrapper[data-overlay='true']::before {
     content: '';
     position: fixed;
