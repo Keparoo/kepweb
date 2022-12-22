@@ -138,7 +138,7 @@ const Fediverse = () => {
           @Kep@fosstodon.org
         </a>
       </p>
-      <p>
+      <p className={styles.body}>
         To find your Twitter follows on Mastodon, try{' '}
         <a
           className="link"
@@ -148,6 +148,10 @@ const Fediverse = () => {
         >
           Debirdify
         </a>
+      </p>
+      <p>
+        Although my Twitter link is below, due to recent problems on the
+        platform, I am currently not posting or engaging on the platform.
       </p>
     </section>
   );
