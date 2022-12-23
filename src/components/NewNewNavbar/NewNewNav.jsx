@@ -58,7 +58,7 @@ const NewNewNav = ({ visible }) => {
 
   return (
     <section className={styles.primaryHeader}>
-      <div class="container">
+      <div className="container">
         <div className={styles.navWrapper} data-overlay={menuOpen}>
           <a href="#hero" className={styles.navbarName}>
             <span className={styles.codeIcon}>

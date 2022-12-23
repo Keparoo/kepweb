@@ -47,7 +47,7 @@ const Bio = () => {
         the keyboard programming for the <em>Celebrating Sondheim Concert</em>{' '}
         at Avery Fisher Hall, Lincoln Center, New York City.
       </p>
-      <p>
+      <p className={styles.body}>
         Every day I play the piano, further my French &amp; German language
         skills, and practice mindfulness &amp; meditation.
       </p>
@@ -88,7 +88,7 @@ const Skills = () => {
         Design Suite, Adobe Creative Suite
       </p>
 
-      <p>
+      <p className={styles.body}>
         This website was created with <span className="fw-bold">React v18</span>{' '}
         in a Vite environment using <span className="fw-bold">Material UI</span>{' '}
         components. I have since redesigned and refactored the site building the
@@ -149,7 +149,7 @@ const Fediverse = () => {
           Debirdify
         </a>
       </p>
-      <p>
+      <p className={styles.body}>
         Although my Twitter link is below, due to recent problems on the
         platform, I am currently not posting or engaging on the platform.
       </p>
@@ -159,10 +159,7 @@ const Fediverse = () => {
 
 const Links = () => {
   return (
-    <section
-      className={styles.links}
-      aria-label="Social media and resume links"
-    >
+    <section aria-label="Social media and resume links">
       <h3 className="secondary-subheading">Links:</h3>
 
       <div>

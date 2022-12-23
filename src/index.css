@@ -100,10 +100,12 @@
     --clr-bg: var(--clr-primary-original);
     /* --clr-link: ; */
     /* --clr-icon:; */
-    /* --clr-button-text: ; */
-    /* --clr-button-bg: ; */
+    --clr-button-text: var(--clr-primary-original);
+    --clr-button-bg: var(--clr-neutral-100);
     --clr-card-bg: var(--clr-neutral-400);
     --clr-main-heading: var(--clr-neutral-100);
+    --clr-primary-subheading: var(--clr-neutral-100);
+    --clr-secondary-subheading: var(--clr-neutral-100);
     --clr-heading: var(--clr-neutral-100);
     --clr-subheading: var(--clr-neutral-100);
     /* --clr-accent: ; */
@@ -413,6 +415,15 @@ body {
 .btn-inverted {
   background-color: var(--clr-button-text);
   color: var(--clr-button-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-inverted {
+    color: var(--clr-button-bg);
+    background: transparent;
+    outline: 2px solid var(--clr-button-bg);
+    box-shadow: none;
+  }
 }
 
 .btn-outline {
