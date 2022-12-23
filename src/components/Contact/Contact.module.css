@@ -13,6 +13,7 @@
 .form {
   margin-top: 5em;
   margin-bottom: 4em;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
@@ -25,6 +26,7 @@
 
 .textField {
   margin-bottom: 1rem !important;
+  color: white !important;
 }
 
 .textFieldSection {
