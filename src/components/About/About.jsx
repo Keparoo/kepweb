@@ -266,18 +266,20 @@ const Links = () => {
 
 const About = () => {
   return (
-    <section id="about" className={`${styles.about} ${styles.columns}`}>
-      <div>
-        <h2 className="secondary-heading">About Me</h2>
-      </div>
+    <section id="about" className={`${styles.about} padding-block-900`}>
+      <div className={styles.columns}>
+        <div>
+          <h2 className="secondary-heading">About Me</h2>
+        </div>
 
-      <div>
-        <section className={styles.aboutContent}>
-          <Bio />
-          <Skills />
-          <Fediverse />
-          <Links />
-        </section>
+        <div>
+          <section className={styles.aboutContent}>
+            <Bio />
+            <Skills />
+            <Fediverse />
+            <Links />
+          </section>
+        </div>
       </div>
     </section>
   );

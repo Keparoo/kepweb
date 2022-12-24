@@ -91,7 +91,7 @@
   --size-600: 2em;
   --size-700: 3em;
   --size-800: 4rem;
-  --size-900: 5rem;
+  --size-900: 6rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -327,7 +327,11 @@ select {
 }
 
 .padding-block-400 {
-  padding-block: var(size-400);
+  padding-block: var(--size-400);
+}
+
+.padding-block-900 {
+  padding-block: var(--size-900);
 }
 
 /* General Stylings */

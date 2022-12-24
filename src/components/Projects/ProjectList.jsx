@@ -14,7 +14,7 @@ import styles from './ProjectCard.module.css';
 const ProjectList = () => {
   return (
     <div className={styles.projects}>
-      <h2 id="projects" className="secondary-heading">
+      <h2 id="projects" className="secondary-heading padding-block-900">
         Projects
       </h2>
       <div className={styles.columns}>
