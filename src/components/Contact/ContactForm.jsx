@@ -10,6 +10,7 @@ import Toast from '../Toast';
 import EmailIcon from '@mui/icons-material/Email';
 
 import styles from './Contact.module.css';
+import { TextFieldMUI } from './TextFieldMUI';
 
 /*****************************************************************
  * Send email using https://formsubmit.co form submission service.
@@ -112,6 +113,7 @@ const ContactForm = () => {
   return (
     <form component="form" noValidate autoComplete="off">
       <div className={styles.textFieldSection}>
+        <TextFieldMUI />
         <TextField
           id="name"
           name="name"
