@@ -121,6 +121,7 @@ const Fediverse = () => {
         in addition to <span className="italic">or in place of—</span>
         Twitter.
       </p>
+
       <p className={styles.body}>
         Check out{' '}
         <a className="link" href="https://joinmastodon.org/" target="_blank">
@@ -138,6 +139,7 @@ const Fediverse = () => {
           @Kep@fosstodon.org
         </a>
       </p>
+
       <p className={styles.body}>
         To find your Twitter follows on Mastodon, try{' '}
         <a
@@ -146,9 +148,19 @@ const Fediverse = () => {
           href="https://debirdify.pruvisto.org/"
           target="_blank"
         >
-          Debirdify
+          Debirdify{' '}
+        </a>
+        or{' '}
+        <a
+          className="link"
+          rel="noopener"
+          href="https://www.movetodon.org/"
+          target="_blank"
+        >
+          Movetodon.org
         </a>
       </p>
+
       <p className={styles.body}>
         Although my Twitter link is below, due to recent problems on the
         platform, I am currently not posting or engaging on the platform.
