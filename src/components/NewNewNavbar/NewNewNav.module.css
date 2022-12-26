@@ -3,6 +3,7 @@
   background: hsl(230 30% 46% / 0.1);
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
