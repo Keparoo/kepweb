@@ -2,17 +2,17 @@ import React from 'react';
 
 export const TextFieldMUI = () => {
   return (
-    <div class="md-textfield">
+    <div className="md-textfield">
       <input
         type="text"
-        class="md-textfield-input"
+        className="md-textfield-input"
         id="my-input"
         name="my-input"
         required
-        autocomplete="off"
+        autoComplete="off"
       />
-      <label for="my-input">What's your name?</label>
-      <div class="indicator"></div>
+      <label htmlFor="my-input">What's your name?</label>
+      <div className="indicator"></div>
     </div>
   );
 };

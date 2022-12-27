@@ -480,6 +480,7 @@ body {
 .md-textfield {
   display: inline-block;
   height: 60px;
+  height: 80px;
   padding-top: 25px;
   position: relative;
 }
@@ -489,12 +490,13 @@ body {
   -moz-appearance: none;
   -webkit-appearance: none; */
   background: transparent;
-  border: 1px solid black;
+  border: 1px solid grey;
   border-radius: 5px;
   /* border-bottom: 1px solid #9e9e9e; */
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   padding: 4px 0;
+  padding: 12px 0;
   position: relative;
   z-index: 1;
 }
@@ -520,7 +522,7 @@ body {
 }
 
 .md-textfield .md-textfield-input + label + .indicator {
-  border-bottom: 2px solid #3f51b5;
+  /* border-bottom: 2px solid #3f51b5; */
   height: 0;
   position: absolute;
   top: 47px;
