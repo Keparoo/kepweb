@@ -113,8 +113,7 @@ const ContactForm = () => {
   return (
     <form component="form" noValidate autoComplete="off">
       <div className={styles.textFieldSection}>
-        <TextFieldMUI />
-        <TextField
+        <TextFieldMUI
           id="name"
           name="name"
           label="Your name"
