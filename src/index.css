@@ -478,8 +478,9 @@ body {
 /* TextField CSS */
 .md-textfield {
   display: inline-block;
-  /* height: 60px; */
-  padding-top: 25px;
+  height: 70px;
+  padding-top: 8px;
+  /* padding-top: 25px; */
   position: relative;
   width: 100%;
 }
@@ -500,12 +501,12 @@ body {
   border: 1px solid var(--clr-error, #d32f2f);
 }
 
-.md-textfield .md-textfield-input:not([data-error='true']):hover {
+.md-textfield .md-textfield-input:not([data-error='true']):not(:focus):hover {
   outline: 1px solid var(--clr-textField-hover, black);
 }
 
 .md-textfield .md-textfield-input:focus {
-  outline: none;
+  outline: 1px solid var(--clr-textField-outline-focus, #3f51b5);
 }
 
 .md-textfield label {
@@ -514,23 +515,25 @@ body {
   font-size: 16px;
   left: 0;
   position: absolute;
-  top: 29px;
-  top: 44px;
+  top: 26px;
   transition: top 0.1s ease-in 0s;
   z-index: 0;
   padding-left: 14px;
 }
 
+.md-textfield .md-textfield-input:valid + label,
 .md-textfield .md-textfield-input:focus + label {
-  color: var(--clr-textField-label-focus, #3f51b5);
   font-size: 13px;
   background: var(--clr-bg);
   padding-right: 4px;
   padding-left: 4px;
   margin-left: 10px;
   z-index: 1;
-  top: 12px;
-  top: 17px;
+  top: 0px;
+}
+
+.md-textfield .md-textfield-input:focus + label {
+  color: var(--clr-textField-label-focus, #3f51b5);
 }
 
 .md-textfield label[data-error='true'],
