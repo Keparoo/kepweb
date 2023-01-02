@@ -3,23 +3,24 @@ import React from 'react';
 export const TextFieldMUI = ({
   id,
   name,
+  type = 'text',
   label = '',
   value,
   required,
   onChange,
   onBlur,
   error,
-  helperText,
+  helperText = '',
+  className,
 }) => {
   return (
-    <div className="md-textfield">
+    <div className={`md-textfield ${className}`}>
       <input
-        type="text"
+        type={type}
         className="md-textfield-input"
         id={id}
         name={name}
         value={value}
-        placeholder={helperText}
         required
         autoComplete="off"
         onChange={onChange}
@@ -29,6 +30,7 @@ export const TextFieldMUI = ({
       <label htmlFor="my-input" data-error={error}>
         {required ? label + ' *' : label}
       </label>
+      {helperText !== '' && <p className="helperText">{helperText}</p>}
       <div className="indicator"></div>
     </div>
   );

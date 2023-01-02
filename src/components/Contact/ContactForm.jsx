@@ -127,11 +127,11 @@ const ContactForm = () => {
           helperText={formik.touched.name && formik.errors.name}
           className={styles.textField}
         />
-        <TextField
+        <TextFieldMUI
           id="email"
           name="email"
           type="email"
-          label=" Your email"
+          label="Your email"
           variant="outlined"
           required
           fullWidth
