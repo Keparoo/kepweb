@@ -479,15 +479,18 @@ body {
 .md-textfield {
   display: inline-block;
   height: 70px;
-  padding-top: 8px;
-  /* padding-top: 25px; */
   position: relative;
   width: 100%;
+  /* margin-bottom: 12px; */
+}
+
+.md-textfield textarea {
+  height: 600px;
 }
 
 .md-textfield .md-textfield-input {
   background: transparent;
-  border: 1px solid grey;
+  border: 1px solid var(--clr-textField-border, #9e9e9e);
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -497,16 +500,33 @@ body {
   width: 100%;
 }
 
+/* Hide placeholder text until focused */
+.md-textfield .md-textfield-input::placeholder {
+  color: transparent;
+}
+
 .md-textfield .md-textfield-input[data-error='true'] {
   border: 1px solid var(--clr-error, #d32f2f);
 }
 
+/* Hover state when not focused and no error */
 .md-textfield .md-textfield-input:not([data-error='true']):not(:focus):hover {
   outline: 1px solid var(--clr-textField-hover, black);
 }
 
+/* Focus color */
 .md-textfield .md-textfield-input:focus {
-  outline: 1px solid var(--clr-textField-outline-focus, #3f51b5);
+  outline: 1.5px solid var(--clr-textField-outline-focus, #3f51b5);
+}
+
+/* Focused: show placeholder text */
+.md-textfield .md-textfield-input:focus::placeholder {
+  color: var(--clr-textField-label, #9e9e9e);
+}
+
+/* Focus color, error */
+.md-textfield .md-textfield-input[data-error='true']:focus {
+  outline: 1.5px solid var(--clr-error, #d32f2f);
 }
 
 .md-textfield label {
@@ -515,12 +535,13 @@ body {
   font-size: 16px;
   left: 0;
   position: absolute;
-  top: 26px;
+  top: 18px;
   transition: top 0.1s ease-in 0s;
   z-index: 0;
   padding-left: 14px;
 }
 
+/* Label size & position when focused */
 .md-textfield .md-textfield-input:valid + label,
 .md-textfield .md-textfield-input:focus + label {
   font-size: 13px;
@@ -529,13 +550,15 @@ body {
   padding-left: 4px;
   margin-left: 10px;
   z-index: 1;
-  top: 0px;
+  top: -8px;
 }
 
+/* Label focus color, no error */
 .md-textfield .md-textfield-input:focus + label {
   color: var(--clr-textField-label-focus, #3f51b5);
 }
 
+/* Label focus color, error */
 .md-textfield label[data-error='true'],
 .md-textfield .md-textfield-input:focus + label[data-error='true'] {
   color: var(--clr-error, #d32f2f);
@@ -547,4 +570,8 @@ body {
   margin-left: 16px;
   font-size: 12px;
   color: var(--clr-error, #d32f2f);
+}
+
+textarea > helperText {
+  color: blue;
 }

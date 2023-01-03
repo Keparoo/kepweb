@@ -142,7 +142,7 @@ const ContactForm = () => {
           helperText={formik.touched.email && formik.errors.email}
           className={styles.textField}
         />
-        <TextField
+        <TextFieldMUI
           id="message"
           name="message"
           label="Message"
