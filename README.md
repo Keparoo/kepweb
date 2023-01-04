@@ -17,7 +17,7 @@ This project was originally bootstrapped with create-react-app.
 It has been refactored and restructured to use Vite as the development server.
 
 The components for this site originally were all Material UI components.  
-I have since replaced the MaterialUI components with my own React components built from scratch to allow better customization with carefully structured CSS.
+I have since replaced the Material UI components with my own React components built from scratch to allow better customization with carefully structured CSS.
 
 - The form submission uses https://formsubmit.co to forward email.
 - The [Formik](https://formik.org/) library is used to manage the forms.

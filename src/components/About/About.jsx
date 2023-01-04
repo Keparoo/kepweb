@@ -91,8 +91,15 @@ const Skills = () => {
       <p className={styles.body}>
         This website was created with <span className="fw-bold">React v18</span>{' '}
         in a Vite environment using <span className="fw-bold">Material UI</span>{' '}
-        components. I have since redesigned and refactored the site building the
-        React components from scratch with vanilla JavaScript ES6 and CSS5.
+        components. <br />I have since redesigned and refactored the site
+        replacing the Material UI components with my own React components built
+        from scratch with vanilla <strong>JavaScript ES6</strong> and{' '}
+        <strong>CSS5</strong> to allow for greater customization.
+      </p>
+      <p>
+        Recently finished was the TextField/TextArea form components.
+        <br />
+        Currently, I'm working on more accessible Tooltip components.
         <br /> See my{' '}
         <a
           className="link"
