@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-import { TextField, Tooltip } from '@mui/material';
+import { Tooltip } from '@mui/material';
 
+import { TextFieldMUI } from './TextFieldMUI';
 import Toast from '../Toast';
 
 import EmailIcon from '@mui/icons-material/Email';
 
 import styles from './Contact.module.css';
-import { TextFieldMUI } from './TextFieldMUI';
 
 /*****************************************************************
  * Send email using https://formsubmit.co form submission service.

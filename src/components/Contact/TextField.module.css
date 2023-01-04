@@ -1,0 +1,104 @@
+.mdTextfield {
+  display: inline-block;
+  height: 84px;
+  position: relative;
+  width: 100%;
+}
+
+.mdTextArea {
+  height: 295px;
+}
+
+.mdTextfield .mdTextfieldInput {
+  background: transparent;
+  border: 1px solid var(--clr-textField-border, #9e9e9e);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 16.5px 14px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Hide placeholder text until focused */
+.mdTextfield .mdTextfieldInput::placeholder {
+  color: transparent;
+}
+
+.mdTextfield .mdTextfieldInput[data-error='true'] {
+  border: 1px solid var(--clr-error, #d32f2f);
+}
+
+/* Hover state when not focused and no error */
+.mdTextfield .mdTextfieldInput:not([data-error='true']):not(:focus):hover {
+  outline: 1px solid var(--clr-textField-hover, black);
+}
+
+/* Focus color */
+.mdTextfield .mdTextfieldInput:focus {
+  outline: 1.5px solid var(--clr-textField-outline-focus, #3f51b5);
+}
+
+/* Focused: show placeholder text */
+.mdTextfield .mdTextfieldInput:focus::placeholder {
+  color: var(--clr-textField-label, #9e9e9e);
+}
+
+/* Focus color, error */
+.mdTextfield .mdTextfieldInput[data-error='true']:focus {
+  outline: 1.5px solid var(--clr-error, #d32f2f);
+}
+
+.mdTextfield label {
+  color: var(--clr-textField-label, #9e9e9e);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  top: 18px;
+  transition: top 0.1s ease-in 0s;
+  z-index: 0;
+  padding-left: 14px;
+}
+
+/* Label size & position when focused */
+.mdTextfield .mdTextfieldInput:valid + label,
+.mdTextfield .mdTextfieldInput:focus + label {
+  font-size: 13px;
+  background: var(--clr-bg);
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-left: 10px;
+  z-index: 1;
+  top: -8px;
+}
+
+/* Label focus color, no error */
+.mdTextfield .mdTextfieldInput:focus + label {
+  color: var(--clr-textField-label-focus, #3f51b5);
+}
+
+/* Label focus color, error */
+.mdTextfield label[data-error='true'],
+.mdTextfield .mdTextfieldInput:focus + label[data-error='true'] {
+  color: var(--clr-error, #d32f2f);
+}
+
+/* Helper text under a TextField */
+.helperText {
+  text-align: left;
+  margin-top: 3px;
+  margin-left: 16px;
+  font-size: 12px;
+  color: var(--clr-error, #d32f2f);
+}
+
+/* Helper text under a TextArea */
+.helperTextArea {
+  text-align: left;
+  margin-top: -4px;
+  margin-left: 16px;
+  font-size: 12px;
+  color: var(--clr-error, #d32f2f);
+}
