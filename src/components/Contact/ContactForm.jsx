@@ -119,7 +119,6 @@ const ContactForm = () => {
           label="Your name"
           variant="outlined"
           required
-          fullWidth
           value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -134,7 +133,6 @@ const ContactForm = () => {
           label="Your email"
           variant="outlined"
           required
-          fullWidth
           value={formik.values.email}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -149,8 +147,6 @@ const ContactForm = () => {
           placeholder="Message is limited to 2000 characters"
           variant="outlined"
           required
-          fullWidth
-          multiline
           rows={10}
           value={formik.values.message}
           onChange={formik.handleChange}
