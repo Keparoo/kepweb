@@ -234,6 +234,13 @@ select {
   border: 0 !important;
 }
 
+/* Stops animation when window is being resized
+Works in conjuction with the useStopAnimationHook */
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 .container {
   --max-width: 75rem; /* 1200px */
   --margin: 1rem; /* inline padding when viewport < max-width */

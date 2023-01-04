@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 import { useScrollPosition } from './hooks/useScrollPosition';
+import { useStopAnimation } from './hooks/useStopAnimation';
 
 // Disable right click / long-press
 // document.addEventListener('contextmenu', (event) => {
@@ -45,6 +46,8 @@ function App() {
       contact: scrollPosition > contactRef.current.offsetTop,
     });
   }, [scrollPosition]);
+
+  useStopAnimation();
 
   return (
     <div className="App">
