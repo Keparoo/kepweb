@@ -116,6 +116,10 @@
     --clr-subheading: var(--clr-neutral-100);
     /* --clr-accent: ; */
     /* --clr-bg-accent: ; */
+    --clr-textField-label: var(--clr-neutral-100);
+    --clr-textField-hover: var(--clr-neutral-100);
+    --clr-textField-label-focus: var(--clr-neutral-100);
+    --clr-error: var(--clr-accent-400);
   }
 }
 
