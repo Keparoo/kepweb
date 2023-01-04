@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 
 import { Tooltip } from '@mui/material';
 
-import { TextFieldMUI } from './TextFieldMUI';
+import { TextFieldMUI } from '../TextFieldMUI';
 import Toast from '../Toast';
 
 import EmailIcon from '@mui/icons-material/Email';
