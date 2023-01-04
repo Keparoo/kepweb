@@ -13,24 +13,29 @@ To update the resume, update links in the following components:
 
 The site is built using React 18 with design elements from Material UI
 
-This project was originally bootstrapped with create-react-app. It has been refactored and restructured to use Vite as the development server.
+This project was originally bootstrapped with create-react-app.  
+It has been refactored and restructured to use Vite as the development server.
 
-The components for this site originally were all Material UI components. It has been refactored and rebuilt from scratch using carefully structured CSS based components.
+The components for this site originally were all Material UI components.  
+I have since replaced the MaterialUI components with my own React components built from scratch to allow better customization with carefully structured CSS.
 
 - The form submission uses https://formsubmit.co to forward email.
-- The formik React and Yup validation libraries.
+- The [Formik](https://formik.org/) library is used to manage the forms.
+- The [Yup](https://www.npmjs.com/package/yup) library is used for form validation.
 
 ## Deployment
 
 This page is currently deployed to
-[https://kepweb.dev](https://kepweb.dev)
+[https://kepweb.dev](https://kepweb.dev) hosted on Digital Ocean
 
 ## Next.js
 
-The nextjs branch is a second version of the website refactored to use Next.js. It is currently being tested and evaluated.
+The nextjs branch is currently under development and testing to refactor the site using [Next.js](https://nextjs.org/).
 
 ## Under Construction
 
+- Write a Tooltip component
+- Write a Toast component
 - Create page for each project
 - Create more project screenshots
 - Include website design portfolio
