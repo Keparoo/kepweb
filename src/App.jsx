@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-import NewNewNav from './components/NewNewNavbar/NewNewNav';
+import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import ProjectList from './components/Projects/ProjectList';
 import About from './components/About/About';
@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <NewNewNav visible={visible} />
+        <Navbar visible={visible} />
       </header>
 
       <main className="container">
