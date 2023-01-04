@@ -135,12 +135,6 @@ const ProjectList = () => {
                 not currently logged into their Spotify account they will be
                 directed to login or signup using OAuth. A user may then create
                 a Tuttitracks account to create and manage playlists.
-                <br />
-                <br />
-                <strong>
-                  The demo deployment site is being migrated and not currently
-                  live. Thank-you for your patience, the site will be up soon.
-                </strong>
               </>
             }
             image={tuttitracks}
@@ -217,12 +211,6 @@ const ProjectList = () => {
                 an API <em>only</em> that upon login, returns a JWT with the
                 appropriate role-based auth to the screen to access the API.
                 Currently there is no interactive front-end.
-                <br />
-                <br />
-                <strong>
-                  The demo deployment site is being migrated and not currently
-                  live. Thank-you for your patience, the site will be up soon.
-                </strong>
               </>
             }
             image={castingAgency}
