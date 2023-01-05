@@ -57,7 +57,7 @@ export default function Footer() {
         </ul>
       </nav>
 
-      <p className={styles.copyright}>&copy; 2022 Kepweb.dev</p>
+      <p className={styles.copyright}>&copy; 2023 Kepweb.dev</p>
     </div>
   );
 }
