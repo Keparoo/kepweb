@@ -48,6 +48,11 @@
   overflow: hidden;
 }
 
+/* See if this helps Safari line-clamp */
+.previewText > p {
+  margin-bottom: 0;
+}
+
 .backend,
 .frontend {
   padding-top: 0.25rem;
