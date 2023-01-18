@@ -4,7 +4,7 @@ import styles from './Tooltip.module.css';
 
 /* Tooltip Component */
 
-export const Tooltip = ({ title, type, children }) => {
+export const Tooltip = ({ title, type, children, delay }) => {
   let tooltipType = '';
   switch (type) {
     case 'top':
@@ -21,7 +21,11 @@ export const Tooltip = ({ title, type, children }) => {
       break;
   }
   return (
-    <div className={`${tooltipType}`} data-md-tooltip={title}>
+    <div
+      className={`${tooltipType}`}
+      data-md-tooltip={title}
+      data-delay={delay}
+    >
       {children}
     </div>
   );

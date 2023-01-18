@@ -6,13 +6,14 @@
   position: absolute;
   bottom: -35px;
   left: 50%;
-  padding: 8px;
+  padding: 2px 8px;
   transform: translateX(-50%) scale(0);
   transition: transform 0.3s ease-in-out;
+  transition-delay: attr(data-delay);
   transform-origin: top;
-  background: #616161e6;
-  color: white;
-  border-radius: 2px;
+  background: var(--tooltipBackground, #616161e6);
+  color: var(--tooltipColor, white);
+  border-radius: 3px;
   font-size: 12px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
