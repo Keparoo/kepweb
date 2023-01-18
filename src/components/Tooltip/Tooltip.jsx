@@ -2,9 +2,19 @@ import React from 'react';
 
 import styles from './Tooltip.module.css';
 
-/* Tooltip Component */
+/* Tooltip Component
 
-export const Tooltip = ({ title, type, children, delay }) => {
+props:
+title: Tooltip text
+type: (optional) default is bottom display
+      'top', 'right', 'left' will display tooltip on that side
+      'disabled' will set the display to none
+
+To change default colors, set css variables in Tooltip.module.css
+To change hover delay, set css variable in Tooltip.module.css
+*/
+
+export const Tooltip = ({ title, type, children }) => {
   let tooltipType = '';
   switch (type) {
     case 'top':
@@ -21,11 +31,7 @@ export const Tooltip = ({ title, type, children, delay }) => {
       break;
   }
   return (
-    <div
-      className={`${tooltipType}`}
-      data-md-tooltip={title}
-      data-delay={delay}
-    >
+    <div className={`${tooltipType}`} data-md-tooltip={title}>
       {children}
     </div>
   );

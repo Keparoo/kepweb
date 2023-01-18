@@ -16,12 +16,7 @@ export default function Footer() {
         <ul role="list" aria-label="Footer" className={styles.footerNavigation}>
           <li>
             <a href="#hero" aria-label="Home">
-              <Tooltip
-                title="Go Home"
-                type="top"
-                enterTouchDelay={0}
-                delay="10s"
-              >
+              <Tooltip title="Go Home" type="right" enterTouchDelay={0}>
                 <HomeIcon size={30} className={styles.footerIcon} />
               </Tooltip>
             </a>

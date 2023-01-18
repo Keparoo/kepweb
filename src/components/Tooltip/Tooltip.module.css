@@ -1,3 +1,12 @@
+/*
+Optional CSS variables to set here or globally
+
+--tooltipColor: tooltip text color
+--tooltipBackground: tooltip background color
+--tooltipDelay: delay on hover before tooltip shows
+
+*/
+
 [data-md-tooltip] {
   position: relative;
 }
@@ -9,10 +18,11 @@
   padding: 2px 8px;
   transform: translateX(-50%) scale(0);
   transition: transform 0.3s ease-in-out;
-  transition-delay: attr(data-delay);
+  transition-delay: var(--tooltipDelay, 0s);
   transform-origin: top;
   background: var(--tooltipBackground, #616161e6);
   color: var(--tooltipColor, white);
+  color: attr(data-delay);
   border-radius: 3px;
   font-size: 12px;
   font-family: Roboto, sans-serif;
