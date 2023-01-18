@@ -1,10 +1,11 @@
 import React from 'react';
+import { Tooltip } from '../Tooltip/Tooltip';
 
 import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
-import { Tooltip } from '@mui/material';
+import { Tooltip as MUITooltip } from '@mui/material';
 
 import styles from './Footer.module.css';
 
@@ -23,9 +24,9 @@ export default function Footer() {
 
           <li>
             <a href="#about" aria-label="About me">
-              <Tooltip title="Go to About Me" enterTouchDelay={0}>
+              <MUITooltip title="Go to About Me" enterTouchDelay={0}>
                 <InfoIcon size={30} className={styles.footerIcon} />
-              </Tooltip>
+              </MUITooltip>
             </a>
           </li>
 

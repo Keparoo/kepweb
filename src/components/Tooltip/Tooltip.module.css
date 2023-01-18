@@ -20,3 +20,36 @@
 [data-md-tooltip]:hover:before {
   transform: translateX(-50%) scale(1);
 }
+
+[data-md-tooltip].mdTooltipRight:before {
+  left: auto;
+  right: -10px;
+  bottom: auto;
+  top: 50%;
+  transform: translate(100%, -50%) scale(0);
+  transform-origin: left center;
+}
+[data-md-tooltip].mdTooltipRight:hover:before {
+  transform: translate(100%, -50%) scale(1);
+}
+[data-md-tooltip].mdTooltipLeft:before {
+  left: -15px;
+  right: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translate(-100%, -50%) scale(0);
+  transform-origin: right center;
+}
+[data-md-tooltip].mdTooltipLeft:hover:before {
+  transform: translate(-100%, -50%) scale(1);
+}
+.mdTooltipTop:before {
+  top: -35px;
+  bottom: auto;
+  transform: translateX(-50%) scale(0);
+  transform-origin: bottom center;
+}
+
+[data-md-tooltip].mdTooltipDisabled:before {
+  display: none;
+}
