@@ -5,7 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InfoIcon from '@mui/icons-material/Info';
-import { Tooltip as MUITooltip } from '@mui/material';
+// import { Tooltip as MUITooltip } from '@mui/material';
 
 import styles from './Footer.module.css';
 
@@ -16,7 +16,7 @@ export default function Footer() {
         <ul role="list" aria-label="Footer" className={styles.footerNavigation}>
           <li>
             <a href="#hero" aria-label="Home">
-              <Tooltip title="Go Home" type="right" enterTouchDelay={0}>
+              <Tooltip title="Go Home">
                 <HomeIcon size={30} className={styles.footerIcon} />
               </Tooltip>
             </a>
@@ -24,9 +24,9 @@ export default function Footer() {
 
           <li>
             <a href="#about" aria-label="About me">
-              <MUITooltip title="Go to About Me" enterTouchDelay={0}>
+              <Tooltip title="Go to About Me">
                 <InfoIcon size={30} className={styles.footerIcon} />
-              </MUITooltip>
+              </Tooltip>
             </a>
           </li>
 
@@ -37,7 +37,7 @@ export default function Footer() {
               rel="noopener"
               aria-label="LinkedIn profile"
             >
-              <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
+              <Tooltip title="Open my LinkedIn page">
                 <LinkedInIcon size={30} className={styles.footerIcon} />
               </Tooltip>
             </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               rel="noopener"
               aria-label="GitHub repository"
             >
-              <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
+              <Tooltip title="Open my GitHub page">
                 <GitHubIcon size={30} className={styles.footerIcon} />
               </Tooltip>
             </a>
