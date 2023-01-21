@@ -11,6 +11,8 @@ Optional CSS variables to set here or globally
   position: relative;
 }
 [data-md-tooltip]:before {
+  --tooltipDelay: 0.3s;
+
   content: attr(data-md-tooltip);
   position: absolute;
   bottom: -35px;
