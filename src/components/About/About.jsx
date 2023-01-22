@@ -1,7 +1,7 @@
 import React from 'react';
-import { Tooltip } from '@mui/material';
+// import { Tooltip } from '@mui/material';
 // import { Tooltip as mdTooltip } from '../Tooltip/Tooltip';
-// import { Tooltip } from '../Tooltip/Tooltip';
+import { Tooltip } from '../Tooltip/Tooltip';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

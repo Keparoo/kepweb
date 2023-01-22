@@ -10,7 +10,7 @@ Optional CSS variables to set here or globally
 [data-md-tooltip] {
   position: relative;
 }
-[data-md-tooltip]:before {
+[data-md-tooltip]::before {
   --tooltipDelay: 0.3s;
 
   content: attr(data-md-tooltip);
@@ -30,11 +30,11 @@ Optional CSS variables to set here or globally
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
-[data-md-tooltip]:hover:before {
+[data-md-tooltip]:hover::before {
   transform: translateX(-50%) scale(1);
 }
 
-[data-md-tooltip].mdTooltipRight:before {
+[data-md-tooltip].mdTooltipRight::before {
   left: auto;
   right: -10px;
   bottom: auto;
@@ -42,10 +42,10 @@ Optional CSS variables to set here or globally
   transform: translate(100%, -50%) scale(0);
   transform-origin: left center;
 }
-[data-md-tooltip].mdTooltipRight:hover:before {
+[data-md-tooltip].mdTooltipRight:hover::before {
   transform: translate(100%, -50%) scale(1);
 }
-[data-md-tooltip].mdTooltipLeft:before {
+[data-md-tooltip].mdTooltipLeft::before {
   left: -15px;
   right: auto;
   bottom: auto;
@@ -53,7 +53,7 @@ Optional CSS variables to set here or globally
   transform: translate(-100%, -50%) scale(0);
   transform-origin: right center;
 }
-[data-md-tooltip].mdTooltipLeft:hover:before {
+[data-md-tooltip].mdTooltipLeft:hover::before {
   transform: translate(-100%, -50%) scale(1);
 }
 .mdTooltipTop:before {
@@ -63,6 +63,6 @@ Optional CSS variables to set here or globally
   transform-origin: bottom center;
 }
 
-[data-md-tooltip].mdTooltipDisabled:before {
+[data-md-tooltip].mdTooltipDisabled::before {
   display: none;
 }

@@ -31,8 +31,8 @@ export const Tooltip = ({ title, type, children }) => {
       break;
   }
   return (
-    <div className={`${tooltipType}`} data-md-tooltip={title}>
+    <span className={`${tooltipType}`} data-md-tooltip={title}>
       {children}
-    </div>
+    </span>
   );
 };
