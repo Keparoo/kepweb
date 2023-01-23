@@ -204,7 +204,11 @@ const Links = () => {
 
         <p>
           <LinkedInIcon className={styles.icon} />
-          <Tooltip title="Open my LinkedIn page" enterTouchDelay={0}>
+          <Tooltip
+            title="Open my LinkedIn page"
+            type="left"
+            enterTouchDelay={0}
+          >
             <a
               className={`button btn-link ${styles.link}`}
               href="https://www.linkedin.com/in/kep-kaeppeler"
@@ -218,7 +222,7 @@ const Links = () => {
 
         <p>
           <GitHubIcon className={styles.icon} />
-          <Tooltip title="Open my GitHub page" enterTouchDelay={0}>
+          <Tooltip title="Open my GitHub page" type="left" enterTouchDelay={0}>
             <a
               className={`button btn-link ${styles.link}`}
               href="https://github.com/Keparoo"
@@ -233,7 +237,11 @@ const Links = () => {
         <div>
           <IconMastodon className={styles.icon} />
 
-          <Tooltip title="Open my Mastodon Page" enterTouchDelay={0}>
+          <Tooltip
+            title="Open my Mastodon Page"
+            type="left"
+            enterTouchDelay={0}
+          >
             <a
               className={`button btn-link ${styles.link}`}
               rel="me noopener"
@@ -247,7 +255,7 @@ const Links = () => {
 
         <p>
           <TwitterIcon className={styles.icon} />
-          <Tooltip title="Open my Twitter page" enterTouchDelay={0}>
+          <Tooltip title="Open my Twitter page" type="left" enterTouchDelay={0}>
             <a
               className={`button btn-link ${styles.link}`}
               href="https://twitter.com/KepKaeppeler"

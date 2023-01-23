@@ -15,8 +15,8 @@ Optional CSS variables to set here or globally
 
   content: attr(data-md-tooltip);
   position: absolute;
+  /* display: block; */
   bottom: -35px;
-  left: 50%;
   padding: 2px 8px;
   transform: translateX(-50%) scale(0);
   transition: transform 0.3s ease-in-out;
@@ -46,6 +46,7 @@ Optional CSS variables to set here or globally
   transform: translate(100%, -50%) scale(1);
 }
 [data-md-tooltip].mdTooltipLeft::before {
+  display: block;
   left: -15px;
   right: auto;
   bottom: auto;
