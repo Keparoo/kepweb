@@ -150,7 +150,7 @@ const Fediverse = () => {
       </p>
 
       <p className={styles.body}>
-        To find your Twitter follows on Mastodon, try{' '}
+        To migrate your Twitter follows/followers on Mastodon, try{' '}
         <a
           className="link"
           rel="noopener"
