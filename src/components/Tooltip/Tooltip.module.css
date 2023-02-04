@@ -7,8 +7,6 @@ Optional CSS variables to set here or globally
 
 */
 
-/* Tooltip */
-
 [data-md-tooltip] {
   position: relative;
 }
