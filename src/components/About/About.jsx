@@ -173,11 +173,12 @@ const Fediverse = () => {
       <p className={styles.body}>
         Although my Twitter link is below, my current engagement is on Mastedon
         as I find the sense of community stronger and supportive; also, I prefer
-        supporting a decentralized open-source social media platform where data
-        and content belong to the users, not a single person or corporation and
-        my feed is determined by engagement and not ad re venu. I am a monthly
-        Patreon donor to my Mastodon instance.
+        supporting a decentralized open-source social media platform where
+        content, data, and the social graph belong to the users rather than a
+        single person or corporation. Mastodon's feed is determined by
+        engagement and not ad revenue.
       </p>
+      <p>I am a monthly Patreon donor to my Mastodon instance.</p>
     </section>
   );
 };
