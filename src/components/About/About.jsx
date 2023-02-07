@@ -178,7 +178,9 @@ const Fediverse = () => {
         single person or corporation. Mastodon's feed is determined by
         engagement and not ad revenue.
       </p>
-      <p>I am a monthly Patreon donor to my Mastodon instance.</p>
+      <p>
+        <strong>I am a monthly Patreon donor to my Mastodon instance.</strong>
+      </p>
     </section>
   );
 };
