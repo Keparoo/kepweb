@@ -176,7 +176,7 @@ const Fediverse = () => {
         supporting a decentralized open-source social media platform where
         content, data, and the social graph belong to the users rather than a
         single person or corporation. Mastodon's feed is determined by
-        engagement and not ad revenue.
+        engagement and post time: not ad revenue or algorithm.
       </p>
       <p>
         <strong>I am a monthly Patreon donor to my Mastodon instance.</strong>
