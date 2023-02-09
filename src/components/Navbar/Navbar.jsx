@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import CodeIcon from '@mui/icons-material/Code';
 
-import resume from '../../static/kep-kaeppeler-resume.11.1.pdf';
+import resume from '../../static/kep-kaeppeler-resume.2.23.1.pdf';
 
 import styles from './Navbar.module.css';
 
