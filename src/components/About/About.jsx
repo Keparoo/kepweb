@@ -179,6 +179,18 @@ const Fediverse = () => {
         engagement and post time: not ad revenue or algorithm.
       </p>
       <p>
+        <a
+          className="link"
+          rel="noopener"
+          href="https://www.fosstodon.org/"
+          target="_blank"
+        >
+          Fosstodon.org
+        </a>{' '}
+        is a Mastodon instance that has formed a community of like-minded people
+        who enjoy Free & Open Source Software (FOSS).
+      </p>
+      <p>
         <strong>I am a monthly Patreon donor to my Mastodon instance.</strong>
       </p>
     </section>
