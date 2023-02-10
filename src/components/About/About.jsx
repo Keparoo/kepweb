@@ -188,7 +188,7 @@ const Fediverse = () => {
           Fosstodon.org
         </a>{' '}
         is a Mastodon instance that has formed a community of like-minded people
-        who enjoy Free & Open Source Software (FOSS).
+        who support and enjoy Free & Open Source Software (FOSS).
       </p>
       <p>
         <strong>I am a monthly Patreon donor to my Mastodon instance.</strong>
