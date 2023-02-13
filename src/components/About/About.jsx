@@ -191,7 +191,9 @@ const Fediverse = () => {
         who support and enjoy Free & Open Source Software (FOSS).
       </p>
       <p>
-        <strong>I am a Patreon donor to my Mastodon instance.</strong>
+        <strong>
+          I am a Patreon donor to my Mastodon instance (Fosstodon.org).
+        </strong>
       </p>
     </section>
   );
