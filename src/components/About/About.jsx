@@ -192,7 +192,7 @@ const Fediverse = () => {
       </p>
       <p>
         <strong>
-          I am a Patreon donor to my Mastodon instance (Fosstodon.org).
+          I am a Patreon supporter of my Mastodon instance (Fosstodon.org).
         </strong>
       </p>
     </section>
