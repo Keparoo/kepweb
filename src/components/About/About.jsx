@@ -150,7 +150,8 @@ const Fediverse = () => {
       </p>
 
       <p className={styles.body}>
-        To migrate your Twitter follows/followers on Mastodon, try{' '}
+        To easily copy your follows/followers from your Twitter account to a
+        Mastodon account, try{' '}
         <a
           className="link"
           rel="noopener"
