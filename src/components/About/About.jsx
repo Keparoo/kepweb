@@ -188,7 +188,18 @@ const Fediverse = () => {
           Fosstodon.org
         </a>{' '}
         is a Mastodon instance that has formed a community of like-minded people
-        who support and enjoy Free & Open Source Software (FOSS).
+        who support and enjoy Free & Open Source Software (FOSS).{' '}
+        <a
+          className="link"
+          rel="noopener"
+          href="https://www.hachyderm.io/"
+          target="_blank"
+        >
+          Hachyderm.io
+        </a>{' '}
+        is a curated network of respectful professionals in the tech industry
+        around the globe including hackers, professionals, and enthusiasts, who
+        are passionate about life, respect, and digital freedom.
       </p>
       <p>
         <strong>
