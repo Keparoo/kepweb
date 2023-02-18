@@ -179,6 +179,9 @@ const Fediverse = () => {
         single person or corporation. Mastodon's feed is determined by
         engagement and post time: not ad revenue or algorithm.
       </p>
+      <h4>
+        <strong>Two great dev-related Mastodon Instances:</strong>
+      </h4>
       <p className={styles.body}>
         <a
           className="link"
