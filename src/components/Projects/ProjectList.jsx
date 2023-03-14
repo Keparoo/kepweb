@@ -138,7 +138,7 @@ const ProjectList = () => {
               </>
             }
             image={tuttitracks}
-            demo="https://spotiflavor.herokuapp.com/"
+            demo="https://tuttitracks.com/"
             github="https://github.com/Keparoo/Tuttitracks"
           />
         </div>
