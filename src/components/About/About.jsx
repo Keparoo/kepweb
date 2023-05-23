@@ -11,7 +11,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 import IconMastodon from '../IconMastodon';
 
-import resume from '/src/static/kep-kaeppeler-resume.2.23.1.pdf';
+import resume from '/src/static/kep-kaeppeler-resume.5.23.1.pdf';
 
 import styles from './About.module.css';
 
