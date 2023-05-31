@@ -8,6 +8,7 @@ To update the resume, update links in the following components:
 
 - Navbar
 - About
+- Current resume: 5.23.1
 
 ## Development
 
