@@ -1,6 +1,6 @@
 # Kep Kaeppeler Portfolio Site
 
-This is the repository for Kep Kaeppeler's development portfolio site, bio, resume and contact information.
+This is the repository for Kep Kaeppeler's development portfolio site, bio, resume, and contact information.
 
 ## Resume
 
