@@ -4,7 +4,7 @@ This is the repository for Kep Kaeppeler's development portfolio site, bio, resu
 
 ## Resume
 
-To update the resume, update links in the following components:
+To update the resume, update the links in the following components:
 
 - Navbar
 - About
