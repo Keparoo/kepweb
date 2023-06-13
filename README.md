@@ -18,7 +18,7 @@ The site is built using React 18.
 This project was originally bootstrapped with create-react-app.  
 It has been refactored and restructured to use Vite as the development server.
 
-The web components for this site were originally Material UI components.  
+The web components for this site were originally imiplemented with Material UI components.  
 I have since replaced the Material UI components with my own React components built from scratch to allow better customization with carefully structured CSS.
 
 - The form submission uses https://formsubmit.co to forward email.
