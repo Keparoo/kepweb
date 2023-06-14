@@ -15,7 +15,7 @@ Current resume: version 5.23.1
 
 The site is built using React 18.
 
-This project was originally bootstrapped with create-react-app.  
+This project was originally bootstrapped with the create-react-app.  
 It has been refactored and restructured to use Vite as the development server.
 
 The web components for this site were originally imiplemented with Material UI components.  
