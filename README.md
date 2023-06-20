@@ -32,7 +32,7 @@ This page is currently deployed to
 
 ## Next.js
 
-The nextjs branch is currently under development and testing to refactor the site using [Next.js](https://nextjs.org/).
+The nextjs branch is currently under development and testing with the plan to refactor and migrigte the site to [Next.js](https://nextjs.org/).
 
 ## Under Construction
 
