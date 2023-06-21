@@ -36,8 +36,7 @@ The nextjs branch is currently under development and testing with the plan to re
 
 ## Under Construction
 
-- Explore JS line-clamp options to solve Safari issues
-- Write a Tooltip component
+- Explore JS line-clamp options to solve Safari compatibility issues
 - Write a Toast component
 - Create page for each project
 - Create more project screenshots
