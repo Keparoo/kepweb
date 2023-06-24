@@ -38,6 +38,7 @@ The nextjs branch is currently under development and testing with the plan to re
 
 - Explore JS line-clamp options to solve Safari compatibility issues
 - Write a Toast component
+- Video filename project
 - Create page for each project
 - Create more project screenshots
 - Include website design portfolio
