@@ -44,6 +44,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Include website design portfolio
 - Link to WebToSmart
 - Analytics
+- Create Blog page
 
 ---
 
