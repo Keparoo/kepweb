@@ -46,7 +46,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Web Analytics
 - Create Blog page
 - Update project cards
-- Move hosting
+- Move site hosting
 
 ---
 
