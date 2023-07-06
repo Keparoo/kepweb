@@ -43,7 +43,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Create more project screenshots
 - Link to website design portfolio
 - Link to WebToSmart
-- Web Analytics
+- Implement Web Analytics
 - Create Blog page
 - Update project cards
 - Move project hosting site
