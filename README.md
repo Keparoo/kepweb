@@ -45,7 +45,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to WebToSmart
 - Implement Web Analytics
 - Create Blog page
-- Update project cards
+- Update & add project cards
 - Migrate project hosting site
 
 ---
