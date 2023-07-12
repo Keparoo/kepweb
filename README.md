@@ -41,7 +41,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Video filename project
 - Create a page for each project
 - Create more project screenshots
-- Link to website design portfolio
+- Link to kep.design
 - Link to WebToSmart
 - Implement Web Analytics
 - Create Blog page
