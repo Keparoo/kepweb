@@ -47,6 +47,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Create Blog page
 - Update & add project cards
 - Migrate project hosting service
+- Solve card collapse on iPhone issue
 
 ---
 
