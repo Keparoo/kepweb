@@ -37,7 +37,7 @@ The nextjs branch is currently under development and testing with the plan to re
 ## Under Construction
 
 - Explore JS line-clamp options to solve Safari compatibility issues
-- Write a Toast component
+- Write a toast component
 - Video filename project
 - Create a description page for each project
 - Create more project screenshots
