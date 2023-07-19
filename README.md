@@ -38,7 +38,7 @@ The nextjs branch is currently under development and testing with the plan to re
 
 - Explore JS line-clamp options to solve Safari compatibility issues
 - Write a toast component
-- Python Video filename project
+- Implement Python Video filename project
 - Create a description page for each project
 - Create more project screenshots
 - Link to kep.design
