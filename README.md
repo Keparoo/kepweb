@@ -40,8 +40,8 @@ The nextjs branch is currently under development and testing with the plan to re
 - Write a toast component
 - Create a description page for each project
 - Create more project screenshots
-- Link to kep.design
 - Link to WebToSmart
+- Link to kep.design
 - Implement Web Analytics
 - Create Blog page
 - Update & add project cards
