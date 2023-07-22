@@ -38,13 +38,13 @@ The nextjs branch is currently under development and testing with the plan to re
 
 - Explore JS line-clamp options to solve Safari compatibility issues
 - Write a toast component
+- Update & add project cards
 - Create a description page for each project
 - Create more project screenshots
 - Link to WebToSmart
 - Link to kep.design
 - Implement Web Analytics
 - Create Blog page
-- Update & add project cards
 - Migrate project hosting service
 - Solve card collapse on iPhone issue
 - Implement Python Video filename project
