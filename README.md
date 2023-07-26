@@ -43,7 +43,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Create more project screenshots
 - Link to WebToSmart
 - Link to kep.design
-- Implement Web Analytics
+- Web Analytics
 - Create Blog page
 - Migrate project hosting service
 - Solve IOS paragraph collapse issue
