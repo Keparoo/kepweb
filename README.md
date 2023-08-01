@@ -37,6 +37,7 @@ The nextjs branch is currently under development and testing with the plan to re
 ## Under Construction
 
 - Explore JS line-clamp options to solve Safari compatibility issues
+- Migrate project hosting
 - Write a toast component
 - Update & add project cards
 - Create a description page for each project
@@ -45,7 +46,6 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to kep.design
 - Implement Web Analytics
 - Create Blog page
-- Migrate project hosting
 - Solve IOS paragraph collapse issue
 - Python Video filename project
 
