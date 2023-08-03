@@ -46,7 +46,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to kep.design
 - Implement Web Analytics
 - Create Blog page
-- Solve IOS paragraph collapse issue
+- IOS paragraph collapse issue
 - Python Video filename project
 
 ---
