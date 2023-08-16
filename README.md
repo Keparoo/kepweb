@@ -38,8 +38,8 @@ The nextjs branch is currently under development and testing with the plan to re
 
 - Migrate project hosting
 - JS line-clamp options to solve IOS compatibility issues
-- Write a toast component
 - Update & add project cards
+- Write a toast component
 - Create additional project screenshots
 - Create a description page for each project
 - Link to WebToSmart
