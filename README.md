@@ -47,7 +47,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Web Analytics
 - Python Video filename project
 - Create Blog page
-- Implement local storage state for Dark mode
+- Implement local storage for Dark mode
 
 ---
 
