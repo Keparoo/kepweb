@@ -48,7 +48,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Python Video filename lookup project
 - Create Blog pages
 - Implement local storage for Dark/Light mode
-- Review site's accessibility
+- Review site's accessibility features
 
 ---
 
