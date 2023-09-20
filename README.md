@@ -49,6 +49,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Create a Blog page
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
+- Explore SEO options
 
 ---
 
