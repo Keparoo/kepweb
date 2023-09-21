@@ -36,7 +36,7 @@ The nextjs branch is currently under development and testing with the plan to re
 
 ## Under Construction
 
-- Migrate project hosting
+- Migrate project hosting service
 - Solve JS line-clamp IOS compatibility issues
 - Update & add project cards
 - Write a toast component
