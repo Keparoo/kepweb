@@ -47,7 +47,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Implement Web Analytics
 - Python Video filename lookup project
 - Create Blog pages
-- Implement local storage state for Dark/Light mode
+- Implement local storage for Dark/Light mode
 - Review site accessibility features
 - Explore SEO optimization
 
