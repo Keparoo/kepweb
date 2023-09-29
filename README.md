@@ -49,7 +49,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Set up Blog page
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
-- Explore SEO optimizations
+- SEO optimization
 
 ---
 
