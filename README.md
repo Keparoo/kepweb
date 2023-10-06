@@ -44,7 +44,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Create project description pages
 - Link to WebToSmart
 - Link to kep.design
-- Implement Web Analytics
+- Research & Implement Web Analytics
 - Python Video filename lookup project
 - Set up Blog pages
 - Implement local storage for Dark/Light mode
