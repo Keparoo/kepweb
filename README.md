@@ -46,7 +46,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to kep.design
 - Research & Implement Web Analytics
 - Python Video filename lookup project
-- Set up Blog pages
+- Set up Blog page
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
 - SEO optimizations
