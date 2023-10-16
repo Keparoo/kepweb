@@ -50,7 +50,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
 - SEO optimizations
-- Review font choices
+- Review fonts
 
 ---
 
