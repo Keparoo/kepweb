@@ -45,7 +45,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to WebToSmart
 - Link to kep.design
 - Research & Implement Web Analytics
-- Python Plex filename lookup project
+- Python Plex filename formatting project
 - Set up Blog page
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
