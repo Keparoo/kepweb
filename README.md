@@ -51,7 +51,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Review site accessibility features
 - Implement SEO optimization
 - Review font choices
-- Integrate AI projects and intent
+- Integrate AI projects (LLM, Transformer)
 
 ---
 
