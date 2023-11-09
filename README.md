@@ -54,7 +54,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Review font choices
 - Integrate AI projects (LLM, Transformer)
 - Explore Android/Kotlin Projects
-- Google Cloud, Firebase Projects
+- Google Cloud & Firebase Projects
 
 ---
 
