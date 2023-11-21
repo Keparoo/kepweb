@@ -55,6 +55,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Integrate AI projects (LLM, Transformer)
 - Explore Android & Kotlin Projects
 - Google Cloud and Firebase Projects
+- Chat GPT crisis!
 
 ---
 
