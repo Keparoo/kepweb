@@ -93,15 +93,14 @@ const Skills = () => {
 
       <p className={styles.body}>
         This website was created with <span className="fw-bold">React v18</span>{' '}
-        in a Vite environment using <span className="fw-bold">Material UI</span>{' '}
-        components. <br />I have since redesigned and refactored the site
-        replacing the Material UI components with my own React components built
-        from scratch with vanilla <strong>JavaScript ES6</strong> and{' '}
-        <strong>CSS5</strong> to allow for greater customization.
+        in a Vite environment and originally used{' '}
+        <span className="fw-bold">Material UI</span> components. I have since
+        redesigned and refactored the site replacing the Material UI components
+        with my own React components built from scratch using vanilla{' '}
+        <strong>JavaScript ES6</strong> and <strong>CSS5</strong> to allow for
+        greater customization.
       </p>
       <p>
-        Recently finished was the TextField/TextArea form components.
-        <br />
         Currently, I'm working on more accessible Tooltip components.
         <br /> See my{' '}
         <a
@@ -174,7 +173,7 @@ const Fediverse = () => {
 
       <p className={styles.body}>
         Although my Twitter link is below, my current engagement is on Mastedon
-        as I find the sense of community stronger and supportive; also, I prefer
+        as I find the sense of community and engagement stronger; also, I prefer
         supporting a decentralized open-source social media platform where
         content, data, and the social graph belong to the users rather than a
         single person or corporation. Mastodon's feed is determined by
