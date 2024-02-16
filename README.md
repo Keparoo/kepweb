@@ -72,7 +72,7 @@ To create a production build and save in ./dist folder
 npm build
 ```
 
-To start a local web server that serves the production build storted in ./dist (preview the production build locally)
+To start a local web server that serves the production build stored in ./dist (preview the production build locally)
 
 ```bash
 npm preview

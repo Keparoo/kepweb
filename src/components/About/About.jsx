@@ -10,6 +10,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import ArticleIcon from '@mui/icons-material/Article';
 import PrintIcon from '@mui/icons-material/Print';
 import IconMastodon from '../IconMastodon';
+import IconBluesky from '../IconBluesky';
 
 import resume from '/src/static/kep-kaeppeler-resume.5.23.1.pdf';
 
@@ -294,6 +295,21 @@ const Links = () => {
               target="_blank"
             >
               @Kep@fosstodon.org
+            </a>
+          </Tooltip>
+        </div>
+
+        <div>
+          <IconBluesky className={styles.icon} />
+
+          <Tooltip title="Open my Bluesky Page" type="left" enterTouchDelay={0}>
+            <a
+              className={`button btn-link ${styles.link}`}
+              rel="me noopener"
+              href="https://bsky.app/profile/Keparoo.bsky.social"
+              target="_blank"
+            >
+              @Keparoo.bsky.social
             </a>
           </Tooltip>
         </div>
