@@ -30,6 +30,8 @@ The Material UI components have been replaced with custom-built React components
 This page is currently deployed to
 [https://kepweb.dev](https://kepweb.dev) hosted on Digital Ocean
 
+To redeploy, Log into DigitalOcean, go to Apps, Select kepweb.dev app, and under actions choose deploy.
+
 ## Next.js
 
 The nextjs branch is currently under development and testing with the plan to refactor and migrigte the site to [Next.js](https://nextjs.org/).
