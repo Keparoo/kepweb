@@ -1,8 +1,17 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
+    {
+      "path": "."
+    },
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../../dev-projects/plex-file-naming-utility"
+    },
+    {
+      "path": "../../../dev-projects"
+    }
   ],
   "settings": {}
 }
