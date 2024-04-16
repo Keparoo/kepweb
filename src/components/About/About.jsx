@@ -82,7 +82,7 @@ const Skills = () => {
       <p className={styles.body}>
         <span className="fw-bold">Development</span>: Linux, Unix, Git, GitHub,
         VS Code, PyCharm, ZenHub, <br />
-        Agile workflow, Data Structures, Algorithms, Deployment, Windows, Mac,
+        Agile workflow, Data Structures, Algorithms, Deployment, Docker, NGINX, Windows, Mac,
         Android, Vite, Heroku, Netlify, Vercel, Digital Ocean, Surge
       </p>
 
