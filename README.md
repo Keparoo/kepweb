@@ -48,7 +48,6 @@ The nextjs branch is currently under development and testing with the plan to re
 - Link to kep.design
 - Research & Implement Web Analytics
 - Finish Python Plex filename formatting project
-  Start with command line version
 - Set up Blog page
 - Implement local storage for Dark/Light mode
 - Review site accessibility features
