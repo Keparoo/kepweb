@@ -57,6 +57,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Google Cloud and Firebase Projects
 - Containerize all projects
 - Implement NGINX reverse proxy on a virtual server to serve multiple Docker containers
+- Explore Rust
 
 ---
 
