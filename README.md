@@ -61,6 +61,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Explore Rust Projects
 - 2-Factor Auth project
 - python / node packaging
+- split screen search
 
 ---
 
