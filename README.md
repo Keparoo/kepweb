@@ -60,8 +60,8 @@ The nextjs branch is currently under development and testing with the plan to re
 - Implement NGINX reverse proxy on a virtual server to serve multiple Docker containers
 - Explore Rust Projects
 - 2-Factor Auth project
-- python / node packaging
-- split screen search
+- Python / NodeJS packaging
+- Split-screen search
 
 ---
 
