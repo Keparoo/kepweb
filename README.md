@@ -62,6 +62,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - 2-Factor Auth project
 - Python / NodeJS packaging
 - Split-screen search comparison chrome extension
+- Google AI
 
 ---
 
