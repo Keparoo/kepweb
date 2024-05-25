@@ -61,7 +61,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Rust Project
 - 2-Factor Auth project
 - Python / NodeJS packaging
-- Split-screen search comparison chrome extension
+- Split-screen search comparison Chrome extension
 - Google AI Vertex Projects
 
 ---
