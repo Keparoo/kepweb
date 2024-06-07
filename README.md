@@ -59,7 +59,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - CI for portfolio
 - Implement NGINX reverse proxy on a virtual server to serve multiple Docker containers
 - Rust project
-- 2-Factor Auth project
+- 2-Factor auth project
 - Python / NodeJS packaging
 - Split-screen search comparison Chrome extension
 - Google AI Vertex Project
