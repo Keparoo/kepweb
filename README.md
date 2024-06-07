@@ -62,7 +62,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - 2-Factor auth project
 - Python / NodeJS packaging
 - Split-screen search comparison Chrome extension
-- Google AI Vertex Project
+- Google AI Vertex Projects
 - Flutter / Dart YouTube App
 
 ---
