@@ -63,7 +63,7 @@ The nextjs branch is currently under development and testing with the plan to re
 - Python / NodeJS packaging
 - Split-screen search comparison Chrome extension
 - Google AI Vertex Project
-- Flutter / Dart YouTube App
+- Flutter / Dart YouTube Apps
 
 ---
 
